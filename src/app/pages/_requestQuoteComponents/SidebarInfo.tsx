@@ -11,7 +11,12 @@ export function SidebarInfo() {
       >
         <h3
           className="mb-4"
-          style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.95rem" }}
+          style={{
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: 700,
+            color: "#123A6F",
+            fontSize: "0.95rem",
+          }}
         >
           Prefer to Talk Directly?
         </h3>
@@ -20,7 +25,10 @@ export function SidebarInfo() {
             <a
               key={channel.title}
               href={channel.href}
-              {...(channel.external && { target: "_blank", rel: "noopener noreferrer" })}
+              {...(channel.external && {
+                target: "_blank",
+                rel: "noopener noreferrer",
+              })}
               className="flex items-center gap-3 p-3 rounded-lg transition-all hover:bg-gray-50"
               style={{ border: "1px solid #E5E7EB" }}
             >
@@ -31,10 +39,19 @@ export function SidebarInfo() {
                 <channel.icon size={16} style={{ color: channel.iconColor }} />
               </div>
               <div>
-                <p className="text-xs font-semibold" style={{ fontFamily: "Montserrat, sans-serif", color: "#374151" }}>
+                <p
+                  className="text-xs font-semibold"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    color: "#374151",
+                  }}
+                >
                   {channel.title}
                 </p>
-                <p className="text-xs" style={{ fontFamily: "Inter, sans-serif", color: "#6B7280" }}>
+                <p
+                  className="text-xs"
+                  style={{ fontFamily: "Inter, sans-serif", color: "#6B7280" }}
+                >
                   {channel.description}
                 </p>
               </div>
@@ -44,23 +61,32 @@ export function SidebarInfo() {
       </div>
 
       {/* Why choose */}
-      <div
-        className="rounded-xl p-6"
-        style={{ backgroundColor: "#123A6F" }}
-      >
+      <div className="rounded-xl p-6" style={{ backgroundColor: "#123A6F" }}>
         <h3
           className="text-white mb-4"
-          style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "0.95rem", color: "#fff" }}
+          style={{
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: 700,
+            fontSize: "0.95rem",
+            color: "#fff",
+          }}
         >
           Why Request From Kanato?
         </h3>
         <div className="space-y-3">
           {whyChoosePoints.map((point, i) => (
             <div key={i} className="flex items-start gap-2">
-              <CheckCircle size={14} className="shrink-0 mt-0.5" style={{ color: "#F26B21" }} />
+              <CheckCircle
+                size={14}
+                className="shrink-0 mt-0.5"
+                style={{ color: "#F26B21" }}
+              />
               <span
                 className="text-xs leading-relaxed"
-                style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.8)" }}
+                style={{
+                  fontFamily: "Inter, sans-serif",
+                  color: "rgba(255,255,255,0.8)",
+                }}
               >
                 {point}
               </span>

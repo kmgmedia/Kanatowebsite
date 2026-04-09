@@ -19,7 +19,12 @@ export function ContactInfoCards() {
               </div>
               <h3
                 className="text-white mb-3"
-                style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "0.85rem", color: "#fff" }}
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontWeight: 700,
+                  fontSize: "0.85rem",
+                  color: "#fff",
+                }}
               >
                 {card.title}
               </h3>
@@ -30,7 +35,10 @@ export function ContactInfoCards() {
                       key={j}
                       href={card.href}
                       className="block text-sm transition-colors hover:text-orange-300"
-                      style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.7)" }}
+                      style={{
+                        fontFamily: "Inter, sans-serif",
+                        color: "rgba(255,255,255,0.7)",
+                      }}
                     >
                       {line}
                     </a>
@@ -38,11 +46,14 @@ export function ContactInfoCards() {
                     <p
                       key={j}
                       className="text-sm"
-                      style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.7)" }}
+                      style={{
+                        fontFamily: "Inter, sans-serif",
+                        color: "rgba(255,255,255,0.7)",
+                      }}
                     >
                       {line}
                     </p>
-                  )
+                  ),
                 )}
               </div>
             </div>

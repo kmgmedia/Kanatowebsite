@@ -7,7 +7,11 @@ export function CoreValues() {
         <div className="text-center mb-14">
           <p
             className="uppercase tracking-widest text-xs mb-3"
-            style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21", fontWeight: 600 }}
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              color: "#F26B21",
+              fontWeight: 600,
+            }}
           >
             What Drives Us
           </p>
@@ -21,7 +25,10 @@ export function CoreValues() {
           >
             Our Core Values
           </h2>
-          <div className="w-16 h-1 mx-auto mt-4 rounded" style={{ backgroundColor: "#F26B21" }} />
+          <div
+            className="w-16 h-1 mx-auto mt-4 rounded"
+            style={{ backgroundColor: "#F26B21" }}
+          />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {coreValues.map((value, i) => (
@@ -38,7 +45,12 @@ export function CoreValues() {
               </div>
               <h3
                 className="mb-2"
-                style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.95rem" }}
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontWeight: 700,
+                  color: "#123A6F",
+                  fontSize: "0.95rem",
+                }}
               >
                 {value.title}
               </h3>

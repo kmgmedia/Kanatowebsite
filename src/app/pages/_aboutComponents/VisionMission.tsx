@@ -7,7 +7,11 @@ export function VisionMission() {
         <div className="text-center mb-14">
           <p
             className="uppercase tracking-widest text-xs mb-3"
-            style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21", fontWeight: 600 }}
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              color: "#F26B21",
+              fontWeight: 600,
+            }}
           >
             Our Purpose
           </p>
@@ -35,14 +39,23 @@ export function VisionMission() {
             </div>
             <h3
               className="mb-3"
-              style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "1.15rem" }}
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontWeight: 700,
+                color: "#123A6F",
+                fontSize: "1.15rem",
+              }}
             >
               Our Vision
             </h3>
-            <p className="leading-relaxed" style={{ fontFamily: "Inter, sans-serif", color: "#4B5563" }}>
-              To provide excellent service of Electrical, Mechanical, and Civil Installation and
-              Servicing through a professional team — becoming a trusted engineering partner
-              recognized for delivering efficient and reliable solutions across Nigeria and West Africa.
+            <p
+              className="leading-relaxed"
+              style={{ fontFamily: "Inter, sans-serif", color: "#4B5563" }}
+            >
+              To provide excellent service of Electrical, Mechanical, and Civil
+              Installation and Servicing through a professional team — becoming
+              a trusted engineering partner recognized for delivering efficient
+              and reliable solutions across Nigeria and West Africa.
             </p>
           </div>
           <div
@@ -57,14 +70,26 @@ export function VisionMission() {
             </div>
             <h3
               className="mb-3 text-white"
-              style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "1.15rem", color: "#fff" }}
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontWeight: 700,
+                fontSize: "1.15rem",
+                color: "#fff",
+              }}
             >
               Our Mission
             </h3>
-            <p className="leading-relaxed" style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.75)" }}>
-              To uphold integrity and professionalism in the daily discharge of our products and
-              services — to bring the dreams of our clients to reality through quality workmanship,
-              innovation, and unwavering commitment to excellence.
+            <p
+              className="leading-relaxed"
+              style={{
+                fontFamily: "Inter, sans-serif",
+                color: "rgba(255,255,255,0.75)",
+              }}
+            >
+              To uphold integrity and professionalism in the daily discharge of
+              our products and services — to bring the dreams of our clients to
+              reality through quality workmanship, innovation, and unwavering
+              commitment to excellence.
             </p>
           </div>
         </div>

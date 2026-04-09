@@ -10,7 +10,10 @@ export function IconBoxesShowcase() {
         desc="Icon container sizes, background fills, and color combinations used throughout the site."
       />
 
-      <div className="bg-white rounded-xl p-8" style={{ border: "1px solid #E5E7EB" }}>
+      <div
+        className="bg-white rounded-xl p-8"
+        style={{ border: "1px solid #E5E7EB" }}
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             {
@@ -18,9 +21,17 @@ export function IconBoxesShowcase() {
               size: 48,
               iconSize: 22,
               variants: [
-                { bg: "rgba(18,58,111,0.1)", icon: "#123A6F", label: "Default" },
+                {
+                  bg: "rgba(18,58,111,0.1)",
+                  icon: "#123A6F",
+                  label: "Default",
+                },
                 { bg: "#F26B21", icon: "#fff", label: "Hover" },
-                { bg: "rgba(242,107,33,0.2)", icon: "#F26B21", label: "Orange tint" },
+                {
+                  bg: "rgba(242,107,33,0.2)",
+                  icon: "#F26B21",
+                  label: "Orange tint",
+                },
               ],
             },
             {
@@ -28,8 +39,16 @@ export function IconBoxesShowcase() {
               size: 44,
               iconSize: 20,
               variants: [
-                { bg: "rgba(242,107,33,0.1)", icon: "#F26B21", label: "Orange light" },
-                { bg: "rgba(18,58,111,0.1)", icon: "#123A6F", label: "Blue light" },
+                {
+                  bg: "rgba(242,107,33,0.1)",
+                  icon: "#F26B21",
+                  label: "Orange light",
+                },
+                {
+                  bg: "rgba(18,58,111,0.1)",
+                  icon: "#123A6F",
+                  label: "Blue light",
+                },
                 { bg: "#123A6F", icon: "#fff", label: "Solid blue" },
               ],
             },
@@ -38,9 +57,21 @@ export function IconBoxesShowcase() {
               size: 40,
               iconSize: 18,
               variants: [
-                { bg: "rgba(242,107,33,0.2)", icon: "#F26B21", label: "Orange warm" },
-                { bg: "rgba(18,58,111,0.1)", icon: "#123A6F", label: "Blue cool" },
-                { bg: "rgba(37,211,102,0.1)", icon: "#25D366", label: "WhatsApp" },
+                {
+                  bg: "rgba(242,107,33,0.2)",
+                  icon: "#F26B21",
+                  label: "Orange warm",
+                },
+                {
+                  bg: "rgba(18,58,111,0.1)",
+                  icon: "#123A6F",
+                  label: "Blue cool",
+                },
+                {
+                  bg: "rgba(37,211,102,0.1)",
+                  icon: "#25D366",
+                  label: "WhatsApp",
+                },
               ],
             },
             {
@@ -55,7 +86,16 @@ export function IconBoxesShowcase() {
             },
           ].map((group, gi) => (
             <div key={gi}>
-              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: "#9CA3AF", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "12px" }}>
+              <p
+                style={{
+                  fontFamily: "Inter, sans-serif",
+                  fontSize: "0.65rem",
+                  color: "#9CA3AF",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  marginBottom: "12px",
+                }}
+              >
                 {group.label}
               </p>
               <div className="flex flex-col gap-4">
@@ -63,16 +103,43 @@ export function IconBoxesShowcase() {
                   <div key={vi} className="flex items-center gap-3">
                     <div
                       className="rounded flex items-center justify-center shrink-0"
-                      style={{ width: group.size, height: group.size, backgroundColor: v.bg }}
+                      style={{
+                        width: group.size,
+                        height: group.size,
+                        backgroundColor: v.bg,
+                      }}
                     >
                       <Zap size={group.iconSize} style={{ color: v.icon }} />
                     </div>
                     <div>
-                      <p style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 600, fontSize: "0.72rem", color: "#374151" }}>
+                      <p
+                        style={{
+                          fontFamily: "Montserrat, sans-serif",
+                          fontWeight: 600,
+                          fontSize: "0.72rem",
+                          color: "#374151",
+                        }}
+                      >
                         {v.label}
                       </p>
-                      <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.6rem", color: "#9CA3AF" }}>bg: {v.bg}</p>
-                      <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.6rem", color: "#9CA3AF" }}>icon: {v.icon}</p>
+                      <p
+                        style={{
+                          fontFamily: "Inter, sans-serif",
+                          fontSize: "0.6rem",
+                          color: "#9CA3AF",
+                        }}
+                      >
+                        bg: {v.bg}
+                      </p>
+                      <p
+                        style={{
+                          fontFamily: "Inter, sans-serif",
+                          fontSize: "0.6rem",
+                          color: "#9CA3AF",
+                        }}
+                      >
+                        icon: {v.icon}
+                      </p>
                     </div>
                   </div>
                 ))}

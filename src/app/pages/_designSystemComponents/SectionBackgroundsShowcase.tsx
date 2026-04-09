@@ -11,8 +11,19 @@ export function SectionBackgroundsShowcase() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
         {/* Section BG order */}
-        <div className="bg-white rounded-xl p-8" style={{ border: "1px solid #E5E7EB" }}>
-          <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.9rem", marginBottom: "16px" }}>
+        <div
+          className="bg-white rounded-xl p-8"
+          style={{ border: "1px solid #E5E7EB" }}
+        >
+          <h3
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 700,
+              color: "#123A6F",
+              fontSize: "0.9rem",
+              marginBottom: "16px",
+            }}
+          >
             Section Background Rotation
           </h3>
           <div className="flex flex-col gap-2">
@@ -24,16 +35,35 @@ export function SectionBackgroundsShowcase() {
               { section: "Footer main", hex: "#0d2d57" },
               { section: "Footer CTA strip", hex: "#F26B21" },
             ].map((row, i) => (
-              <div key={i} className="flex items-center gap-3 py-2" style={{ borderBottom: "1px solid #F5F7FA" }}>
+              <div
+                key={i}
+                className="flex items-center gap-3 py-2"
+                style={{ borderBottom: "1px solid #F5F7FA" }}
+              >
                 <div
                   className="w-8 h-8 rounded shrink-0 border"
                   style={{ backgroundColor: row.hex, borderColor: "#E5E7EB" }}
                 />
                 <div>
-                  <p style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 600, fontSize: "0.72rem", color: "#374151" }}>
+                  <p
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                      fontWeight: 600,
+                      fontSize: "0.72rem",
+                      color: "#374151",
+                    }}
+                  >
                     {row.section}
                   </p>
-                  <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.6rem", color: "#9CA3AF" }}>{row.hex}</p>
+                  <p
+                    style={{
+                      fontFamily: "Inter, sans-serif",
+                      fontSize: "0.6rem",
+                      color: "#9CA3AF",
+                    }}
+                  >
+                    {row.hex}
+                  </p>
                 </div>
               </div>
             ))}
@@ -41,8 +71,19 @@ export function SectionBackgroundsShowcase() {
         </div>
 
         {/* Layout tokens */}
-        <div className="bg-white rounded-xl p-8" style={{ border: "1px solid #E5E7EB" }}>
-          <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.9rem", marginBottom: "16px" }}>
+        <div
+          className="bg-white rounded-xl p-8"
+          style={{ border: "1px solid #E5E7EB" }}
+        >
+          <h3
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 700,
+              color: "#123A6F",
+              fontSize: "0.9rem",
+              marginBottom: "16px",
+            }}
+          >
             Layout Tokens
           </h3>
           <div className="space-y-3">
@@ -54,11 +95,30 @@ export function SectionBackgroundsShowcase() {
               { label: "Border radius (card)", value: "rounded-lg (8px)" },
               { label: "Border radius (pill)", value: "rounded-full" },
             ].map((t) => (
-              <div key={t.label} className="flex items-center justify-between gap-4 pb-2" style={{ borderBottom: "1px solid #F5F7FA" }}>
-                <p style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 600, fontSize: "0.72rem", color: "#374151" }}>
+              <div
+                key={t.label}
+                className="flex items-center justify-between gap-4 pb-2"
+                style={{ borderBottom: "1px solid #F5F7FA" }}
+              >
+                <p
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: 600,
+                    fontSize: "0.72rem",
+                    color: "#374151",
+                  }}
+                >
                   {t.label}
                 </p>
-                <span className="px-2 py-1 rounded text-xs shrink-0" style={{ backgroundColor: "rgba(18,58,111,0.08)", color: "#123A6F", fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
+                <span
+                  className="px-2 py-1 rounded text-xs shrink-0"
+                  style={{
+                    backgroundColor: "rgba(18,58,111,0.08)",
+                    color: "#123A6F",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: 600,
+                  }}
+                >
                   {t.value}
                 </span>
               </div>

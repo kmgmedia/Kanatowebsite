@@ -9,7 +9,11 @@ export function FeaturedProjects() {
         <div className="text-center mb-14">
           <p
             className="uppercase tracking-widest text-xs mb-3"
-            style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21", fontWeight: 600 }}
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              color: "#F26B21",
+              fontWeight: 600,
+            }}
           >
             Our Work
           </p>
@@ -23,7 +27,10 @@ export function FeaturedProjects() {
           >
             Selected Projects
           </h2>
-          <div className="w-16 h-1 mx-auto mt-4 rounded" style={{ backgroundColor: "#F26B21" }} />
+          <div
+            className="w-16 h-1 mx-auto mt-4 rounded"
+            style={{ backgroundColor: "#F26B21" }}
+          />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredProjects.map((project, i) => (
@@ -31,7 +38,10 @@ export function FeaturedProjects() {
               key={i}
               className="group rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white"
             >
-              <div className="relative overflow-hidden" style={{ height: "200px" }}>
+              <div
+                className="relative overflow-hidden"
+                style={{ height: "200px" }}
+              >
                 <img
                   src={project.image}
                   alt={project.title}
@@ -39,7 +49,11 @@ export function FeaturedProjects() {
                 />
                 <div
                   className="absolute top-3 left-3 px-3 py-1 rounded text-xs font-semibold"
-                  style={{ backgroundColor: "#F26B21", color: "#fff", fontFamily: "Inter, sans-serif" }}
+                  style={{
+                    backgroundColor: "#F26B21",
+                    color: "#fff",
+                    fontFamily: "Inter, sans-serif",
+                  }}
                 >
                   {project.year}
                 </div>
@@ -53,7 +67,12 @@ export function FeaturedProjects() {
                 </div>
                 <h3
                   className="mb-2"
-                  style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.95rem" }}
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: 700,
+                    color: "#123A6F",
+                    fontSize: "0.95rem",
+                  }}
                 >
                   {project.title}
                 </h3>
@@ -63,9 +82,14 @@ export function FeaturedProjects() {
                 >
                   Client: {project.client}
                 </p>
-                <div className="flex items-center gap-1 text-xs" style={{ color: "#9CA3AF" }}>
+                <div
+                  className="flex items-center gap-1 text-xs"
+                  style={{ color: "#9CA3AF" }}
+                >
                   <MapPin size={11} />
-                  <span style={{ fontFamily: "Inter, sans-serif" }}>{project.location}</span>
+                  <span style={{ fontFamily: "Inter, sans-serif" }}>
+                    {project.location}
+                  </span>
                 </div>
               </div>
             </div>
@@ -75,7 +99,11 @@ export function FeaturedProjects() {
           <Link
             to="/projects"
             className="inline-flex items-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
-            style={{ backgroundColor: "#123A6F", color: "#fff", fontFamily: "Inter, sans-serif" }}
+            style={{
+              backgroundColor: "#123A6F",
+              color: "#fff",
+              fontFamily: "Inter, sans-serif",
+            }}
           >
             See All Projects
             <ArrowRight size={16} />

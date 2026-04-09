@@ -16,13 +16,20 @@ export function TrustBar() {
               <div>
                 <div
                   className="text-white"
-                  style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "1.35rem" }}
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: 700,
+                    fontSize: "1.35rem",
+                  }}
                 >
                   {stat.value}
                 </div>
                 <div
                   className="text-sm"
-                  style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.65)" }}
+                  style={{
+                    fontFamily: "Inter, sans-serif",
+                    color: "rgba(255,255,255,0.65)",
+                  }}
                 >
                   {stat.label}
                 </div>

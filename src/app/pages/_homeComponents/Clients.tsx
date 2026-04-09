@@ -7,7 +7,11 @@ export function Clients() {
         <div className="text-center mb-10">
           <p
             className="uppercase tracking-widest text-xs mb-3"
-            style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21", fontWeight: 600 }}
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              color: "#F26B21",
+              fontWeight: 600,
+            }}
           >
             Our Clients
           </p>

@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
-export const HERO_IMG = "https://images.unsplash.com/photo-1760009436767-d154e930e55c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHRlYW0lMjBwcm9mZXNzaW9uYWwlMjB3b3JrZXJzJTIwc2l0ZXxlbnwxfHx8fDE3NzUyMTEzODR8MA&ixlib=rb-4.1.0&q=80&w=1080";
+export const HERO_IMG =
+  "https://images.unsplash.com/photo-1760009436767-d154e930e55c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHRlYW0lMjBwcm9mZXNzaW9uYWwlMjB3b3JrZXJzJTIwc2l0ZXxlbnwxfHx8fDE3NzUyMTEzODR8MA&ixlib=rb-4.1.0&q=80&w=1080";
 
 export const contactCards = [
   {
@@ -18,7 +19,11 @@ export const contactCards = [
   {
     icon: MapPin,
     title: "Head Office",
-    lines: ["Suite 7, Carol Plaza,", "29-39 Alimosho Road,", "Iyana Ipaja, Lagos."],
+    lines: [
+      "Suite 7, Carol Plaza,",
+      "29-39 Alimosho Road,",
+      "Iyana Ipaja, Lagos.",
+    ],
     href: null,
   },
   {

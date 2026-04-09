@@ -28,14 +28,25 @@ export function MapAndInfo() {
       >
         <div className="flex items-center gap-3 mb-4">
           <Clock size={18} style={{ color: "#123A6F" }} />
-          <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.9rem" }}>
+          <h3
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 700,
+              color: "#123A6F",
+              fontSize: "0.9rem",
+            }}
+          >
             Office Hours
           </h3>
         </div>
         <div className="space-y-2">
           {officeHours.map((h, i) => (
             <div key={i} className="flex items-center justify-between text-sm">
-              <span style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}>{h.day}</span>
+              <span
+                style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
+              >
+                {h.day}
+              </span>
               <span
                 style={{
                   fontFamily: "Inter, sans-serif",

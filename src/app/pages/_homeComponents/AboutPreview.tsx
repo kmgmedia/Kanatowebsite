@@ -10,7 +10,11 @@ export function AboutPreview() {
           <div>
             <p
               className="uppercase tracking-widest text-xs mb-4"
-              style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21", fontWeight: 600 }}
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                color: "#F26B21",
+                fontWeight: 600,
+              }}
             >
               About Kanato
             </p>
@@ -30,23 +34,29 @@ export function AboutPreview() {
               className="mb-4 leading-relaxed"
               style={{ fontFamily: "Inter, sans-serif", color: "#4B5563" }}
             >
-              Kanato Engineering Resources Nigeria Limited was incorporated on the 23rd of July
-              1991 as a distinct engineering company specialising in Electrical, Mechanical, and
-              Civil services — RC 666713.
+              Kanato Engineering Resources Nigeria Limited was incorporated on
+              the 23rd of July 1991 as a distinct engineering company
+              specialising in Electrical, Mechanical, and Civil services — RC
+              666713.
             </p>
             <p
               className="mb-6 leading-relaxed"
               style={{ fontFamily: "Inter, sans-serif", color: "#4B5563" }}
             >
-              As a wholly indigenous engineering company, we engage in Electrical & Mechanical
-              Installation, Sales, Supply, Construction, and Service/Maintenance. Our dynamic,
-              resourceful, and experienced professionals uphold integrity and professionalism in
-              every project we undertake.
+              As a wholly indigenous engineering company, we engage in
+              Electrical & Mechanical Installation, Sales, Supply, Construction,
+              and Service/Maintenance. Our dynamic, resourceful, and experienced
+              professionals uphold integrity and professionalism in every
+              project we undertake.
             </p>
             <Link
               to="/about"
               className="inline-flex items-center gap-2 px-6 py-3 rounded text-sm font-semibold transition-all hover:opacity-90"
-              style={{ backgroundColor: "#123A6F", color: "#fff", fontFamily: "Inter, sans-serif" }}
+              style={{
+                backgroundColor: "#123A6F",
+                color: "#fff",
+                fontFamily: "Inter, sans-serif",
+              }}
             >
               Learn More About Us
               <ArrowRight size={16} />

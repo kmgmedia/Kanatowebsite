@@ -7,7 +7,11 @@ export function Milestones() {
         <div className="text-center mb-14">
           <p
             className="uppercase tracking-widest text-xs mb-3"
-            style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21", fontWeight: 600 }}
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              color: "#F26B21",
+              fontWeight: 600,
+            }}
           >
             Our Journey
           </p>
@@ -26,7 +30,10 @@ export function Milestones() {
         <div className="relative">
           <div
             className="absolute left-1/2 top-0 bottom-0 w-px hidden lg:block"
-            style={{ backgroundColor: "rgba(242,107,33,0.3)", transform: "translateX(-50%)" }}
+            style={{
+              backgroundColor: "rgba(242,107,33,0.3)",
+              transform: "translateX(-50%)",
+            }}
           />
           <div className="space-y-8">
             {milestones.map((m, i) => (
@@ -52,13 +59,19 @@ export function Milestones() {
                 >
                   <span
                     className="text-xs uppercase tracking-wider mb-1 block"
-                    style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21" }}
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                      color: "#F26B21",
+                    }}
                   >
                     {m.year}
                   </span>
                   <p
                     className="text-sm leading-relaxed"
-                    style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.8)" }}
+                    style={{
+                      fontFamily: "Inter, sans-serif",
+                      color: "rgba(255,255,255,0.8)",
+                    }}
                   >
                     {m.event}
                   </p>

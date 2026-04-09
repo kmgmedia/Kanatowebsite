@@ -9,7 +9,11 @@ export function ServicesPreview() {
         <div className="text-center mb-14">
           <p
             className="uppercase tracking-widest text-xs mb-3"
-            style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21", fontWeight: 600 }}
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              color: "#F26B21",
+              fontWeight: 600,
+            }}
           >
             What We Do
           </p>
@@ -23,7 +27,10 @@ export function ServicesPreview() {
           >
             Our Core Engineering Services
           </h2>
-          <div className="w-16 h-1 mx-auto mt-4 rounded" style={{ backgroundColor: "#F26B21" }} />
+          <div
+            className="w-16 h-1 mx-auto mt-4 rounded"
+            style={{ backgroundColor: "#F26B21" }}
+          />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, i) => (
@@ -44,7 +51,12 @@ export function ServicesPreview() {
               </div>
               <h3
                 className="mb-3"
-                style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "1rem" }}
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontWeight: 700,
+                  color: "#123A6F",
+                  fontSize: "1rem",
+                }}
               >
                 {service.title}
               </h3>
@@ -68,7 +80,11 @@ export function ServicesPreview() {
           <Link
             to="/services"
             className="inline-flex items-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
-            style={{ backgroundColor: "#123A6F", color: "#fff", fontFamily: "Inter, sans-serif" }}
+            style={{
+              backgroundColor: "#123A6F",
+              color: "#fff",
+              fontFamily: "Inter, sans-serif",
+            }}
           >
             Explore All Services
             <ArrowRight size={16} />

@@ -138,12 +138,36 @@ export const featuredProjects = [
 ];
 
 export const industries = [
-  { icon: Building2, label: "Residential & Housing", desc: "Duplexes, flats, and estate developments" },
-  { icon: Settings, label: "Commercial Buildings", desc: "Office complexes and business facilities" },
-  { icon: Radio, label: "Telecommunications", desc: "Mast installation and power-to-site" },
-  { icon: Zap, label: "Financial Institutions", desc: "Banks and corporate office upgrades" },
-  { icon: Shield, label: "Government Projects", desc: "Public infrastructure and electrification" },
-  { icon: Package, label: "Industrial Facilities", desc: "Manufacturing and industrial complexes" },
+  {
+    icon: Building2,
+    label: "Residential & Housing",
+    desc: "Duplexes, flats, and estate developments",
+  },
+  {
+    icon: Settings,
+    label: "Commercial Buildings",
+    desc: "Office complexes and business facilities",
+  },
+  {
+    icon: Radio,
+    label: "Telecommunications",
+    desc: "Mast installation and power-to-site",
+  },
+  {
+    icon: Zap,
+    label: "Financial Institutions",
+    desc: "Banks and corporate office upgrades",
+  },
+  {
+    icon: Shield,
+    label: "Government Projects",
+    desc: "Public infrastructure and electrification",
+  },
+  {
+    icon: Package,
+    label: "Industrial Facilities",
+    desc: "Manufacturing and industrial complexes",
+  },
 ];
 
 export const clients = [
