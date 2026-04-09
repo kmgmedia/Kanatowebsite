@@ -7,7 +7,6 @@ A modern, responsive website for Kanato - a digital design and development agenc
 - [Overview](#overview)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
-- [Installation](#installation)
 - [Available Scripts](#available-scripts)
 - [Project Structure](#project-structure)
 - [Technology Stack](#technology-stack)
@@ -40,46 +39,7 @@ Before you begin, ensure you have the following installed:
 - **npm** (v7.0.0 or higher) or **yarn**
 - **Git** (for version control)
 
-## 🚀 Installation
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/kmgmedia/Kanatowebsite.git
-cd Kanatowebsite
-```
-
-### 2. Install Dependencies
-
-```bash
-npm install
-```
-
-Or if you prefer yarn:
-
-```bash
-yarn install
-```
-
-### 3. Environment Setup
-
-Create a `.env.local` file in the root directory with your EmailJS configuration:
-
-```env
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
-```
-
-### 4. Start Development Server
-
-```bash
-npm run dev
-```
-
-The application will be available at `http://localhost:5173`
-
-## 📝 Available Scripts
+## Available Scripts
 
 ### Development
 
