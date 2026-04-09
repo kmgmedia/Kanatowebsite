@@ -11,20 +11,20 @@
 //                                   {{from_email}}, {{phone}},
 //                                   {{service_type}}, {{project_location}},
 //                                   {{budget}}, {{description}}
-// 4. Copy each Template ID and paste below.
-// 5. Go to Account → API Keys and copy your Public Key.
+// 4. Copy each Template ID and paste in your .env.local file.
+// 5. Go to Account → API Keys and copy your Public Key to .env.local.
 // ============================================================
 
 export const EMAILJS_CONFIG = {
   /** Your EmailJS Public Key  –  Account > API Keys */
-  PUBLIC_KEY: "YOUR_EMAILJS_PUBLIC_KEY",
+  PUBLIC_KEY: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "",
 
   /** Service ID  –  Email Services > your connected service */
-  SERVICE_ID: "YOUR_SERVICE_ID",
+  SERVICE_ID: import.meta.env.VITE_EMAILJS_SERVICE_ID || "",
 
   /** Template ID for the Contact Us page form */
-  CONTACT_TEMPLATE_ID: "YOUR_CONTACT_TEMPLATE_ID",
+  CONTACT_TEMPLATE_ID: import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID || "",
 
   /** Template ID for the Request a Quote page form */
-  QUOTE_TEMPLATE_ID: "YOUR_QUOTE_TEMPLATE_ID",
+  QUOTE_TEMPLATE_ID: import.meta.env.VITE_EMAILJS_QUOTE_TEMPLATE_ID || "",
 };
