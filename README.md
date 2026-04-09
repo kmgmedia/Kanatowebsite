@@ -120,13 +120,10 @@ Kanatowebsite/
 │   │   ├── index.css              # Global styles
 │   │   ├── tailwind.css           # Tailwind CSS
 │   │   └── theme.css              # Theme variables
-│   ├── imports/                   # Static assets and documents
 │   └── main.tsx                   # Entry point
 ├── public/
 │   ├── robots.txt                 # SEO robots file
 │   └── sitemap.xml                # Sitemap for SEO
-├── guidelines/
-│   └── Guidelines.md              # Project guidelines
 ├── index.html                     # HTML template
 ├── package.json                   # Dependencies and scripts
 ├── vite.config.ts                 # Vite configuration
