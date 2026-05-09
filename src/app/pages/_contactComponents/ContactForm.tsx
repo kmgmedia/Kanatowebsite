@@ -37,7 +37,7 @@ export function ContactForm({
         style={{
           fontFamily: "Montserrat, sans-serif",
           fontWeight: 700,
-          color: "#123A6F",
+          color: "#3B52A5",
           fontSize: "1.25rem",
         }}
       >
@@ -63,7 +63,7 @@ export function ContactForm({
             style={{
               fontFamily: "Montserrat, sans-serif",
               fontWeight: 700,
-              color: "#123A6F",
+              color: "#3B52A5",
             }}
           >
             Message Sent!
@@ -78,7 +78,7 @@ export function ContactForm({
             onClick={onReset}
             className="px-5 py-2.5 rounded text-sm font-semibold hover:opacity-90"
             style={{
-              backgroundColor: "#123A6F",
+              backgroundColor: "#3B52A5",
               color: "#fff",
               fontFamily: "Inter, sans-serif",
             }}
@@ -225,7 +225,7 @@ export function ContactForm({
             disabled={sending}
             className="w-full py-3.5 rounded text-sm font-semibold hover:opacity-90 transition-all flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
             style={{
-              backgroundColor: "#F26B21",
+              backgroundColor: "#2FA84F",
               color: "#fff",
               fontFamily: "Inter, sans-serif",
             }}
@@ -247,3 +247,5 @@ export function ContactForm({
     </div>
   );
 }
+
+

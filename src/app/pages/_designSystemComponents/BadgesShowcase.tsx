@@ -45,7 +45,7 @@ export function BadgesShowcase() {
                   className="uppercase tracking-widest text-xs"
                   style={{
                     fontFamily: "Montserrat, sans-serif",
-                    color: "#F26B21",
+                    color: "#2FA84F",
                     fontWeight: 600,
                   }}
                 >
@@ -66,15 +66,15 @@ export function BadgesShowcase() {
                 <div
                   className="inline-flex items-center gap-2 px-4 py-1.5 rounded"
                   style={{
-                    backgroundColor: "rgba(242,107,33,0.2)",
-                    border: "1px solid rgba(242,107,33,0.4)",
+                    backgroundColor: "rgba(47,168,79,0.2)",
+                    border: "1px solid rgba(47,168,79,0.4)",
                   }}
                 >
                   <span
                     className="text-xs uppercase tracking-widest"
                     style={{
                       fontFamily: "Inter, sans-serif",
-                      color: "#F26B21",
+                      color: "#2FA84F",
                     }}
                   >
                     Established 1991 · RC 666713
@@ -113,7 +113,7 @@ export function BadgesShowcase() {
                 <span
                   className="px-3 py-1 rounded text-xs font-semibold"
                   style={{
-                    backgroundColor: "#F26B21",
+                    backgroundColor: "#2FA84F",
                     color: "#fff",
                     fontFamily: "Inter, sans-serif",
                   }}
@@ -134,7 +134,7 @@ export function BadgesShowcase() {
                 </p>
                 <span
                   className="text-xs uppercase tracking-wider"
-                  style={{ fontFamily: "Inter, sans-serif", color: "#F26B21" }}
+                  style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}
                 >
                   Telecom Infrastructure
                 </span>
@@ -175,7 +175,7 @@ export function BadgesShowcase() {
                 </p>
                 <div
                   className="w-16 h-1 rounded"
-                  style={{ backgroundColor: "#F26B21" }}
+                  style={{ backgroundColor: "#2FA84F" }}
                 />
                 <p
                   style={{
@@ -185,7 +185,7 @@ export function BadgesShowcase() {
                     marginTop: "4px",
                   }}
                 >
-                  w-16 h-1 rounded · #F26B21
+                  w-16 h-1 rounded · #2FA84F
                 </p>
               </div>
             </div>
@@ -281,3 +281,5 @@ export function BadgesShowcase() {
     </>
   );
 }
+
+

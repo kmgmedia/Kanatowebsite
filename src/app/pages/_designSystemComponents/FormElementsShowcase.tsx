@@ -13,7 +13,7 @@ export function FormElementsShowcase() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Inputs */}
         <div className="bg-white rounded-xl p-8" style={{ border: "1px solid #E5E7EB" }}>
-          <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.9rem", marginBottom: "20px" }}>
+          <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#3B52A5", fontSize: "0.9rem", marginBottom: "20px" }}>
             Input Fields
           </h3>
           <div className="space-y-5">
@@ -42,7 +42,7 @@ export function FormElementsShowcase() {
                 type="email"
                 defaultValue="john@company.com"
                 className="w-full px-4 py-3 rounded border text-sm outline-none ring-2"
-                style={{ fontFamily: "Inter, sans-serif", borderColor: "#123A6F", color: "#1F2937", boxShadow: "0 0 0 2px rgba(18,58,111,0.2)" }}
+                style={{ fontFamily: "Inter, sans-serif", borderColor: "#3B52A5", color: "#1F2937", boxShadow: "0 0 0 2px rgba(59,82,165,0.2)" }}
               />
             </div>
             <div>
@@ -78,7 +78,7 @@ export function FormElementsShowcase() {
         {/* Error & Success States */}
         <div className="flex flex-col gap-6">
           <div className="bg-white rounded-xl p-6" style={{ border: "1px solid #E5E7EB" }}>
-            <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.9rem", marginBottom: "16px" }}>
+            <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#3B52A5", fontSize: "0.9rem", marginBottom: "16px" }}>
               Error & Validation States
             </h3>
             <div>
@@ -98,14 +98,14 @@ export function FormElementsShowcase() {
           </div>
 
           <div className="bg-white rounded-xl p-6" style={{ border: "1px solid #E5E7EB" }}>
-            <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.9rem", marginBottom: "16px" }}>
+            <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#3B52A5", fontSize: "0.9rem", marginBottom: "16px" }}>
               Success State (Post-Submit)
             </h3>
             <div className="rounded-xl p-8 text-center" style={{ border: "1px solid #E5E7EB" }}>
               <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: "rgba(34,197,94,0.1)" }}>
                 <CheckCircle size={32} style={{ color: "#22C55E" }} />
               </div>
-              <h2 className="mb-2" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, color: "#123A6F", fontSize: "1.2rem" }}>
+              <h2 className="mb-2" style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, color: "#3B52A5", fontSize: "1.2rem" }}>
                 Quote Request Submitted!
               </h2>
               <p className="mb-4" style={{ fontFamily: "Inter, sans-serif", color: "#6B7280", fontSize: "0.875rem" }}>
@@ -115,7 +115,7 @@ export function FormElementsShowcase() {
           </div>
 
           <div className="bg-white rounded-xl p-6" style={{ border: "1px solid #E5E7EB" }}>
-            <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.9rem", marginBottom: "12px" }}>
+            <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#3B52A5", fontSize: "0.9rem", marginBottom: "12px" }}>
               Form Container Specs
             </h3>
             <div className="flex flex-col gap-2">
@@ -123,10 +123,10 @@ export function FormElementsShowcase() {
                 "Container BG: #FFFFFF",
                 "Label: Inter 600 text-sm #374151",
                 "Input padding: px-4 py-3",
-                "Submit btn: #F26B21 · full width · py-4",
+                "Submit btn: #2FA84F · full width · py-4",
               ].map((s) => (
                 <div key={s} className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#F26B21" }} />
+                  <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#2FA84F" }} />
                   <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.72rem", color: "#6B7280" }}>{s}</span>
                 </div>
               ))}
@@ -139,3 +139,5 @@ export function FormElementsShowcase() {
     </>
   );
 }
+
+

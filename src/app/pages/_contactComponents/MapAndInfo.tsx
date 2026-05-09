@@ -27,12 +27,12 @@ export function MapAndInfo() {
         style={{ border: "1px solid #E5E7EB" }}
       >
         <div className="flex items-center gap-3 mb-4">
-          <Clock size={18} style={{ color: "#123A6F" }} />
+          <Clock size={18} style={{ color: "#3B52A5" }} />
           <h3
             style={{
               fontFamily: "Montserrat, sans-serif",
               fontWeight: 700,
-              color: "#123A6F",
+              color: "#3B52A5",
               fontSize: "0.9rem",
             }}
           >
@@ -50,7 +50,7 @@ export function MapAndInfo() {
               <span
                 style={{
                   fontFamily: "Inter, sans-serif",
-                  color: h.day === "Sunday" ? "#EF4444" : "#123A6F",
+                  color: h.day === "Sunday" ? "#EF4444" : "#3B52A5",
                   fontWeight: 600,
                 }}
               >
@@ -91,3 +91,5 @@ export function MapAndInfo() {
     </div>
   );
 }
+
+

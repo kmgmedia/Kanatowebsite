@@ -10,7 +10,7 @@ export function CompanyOverview() {
               className="uppercase tracking-widest text-xs mb-4"
               style={{
                 fontFamily: "Montserrat, sans-serif",
-                color: "#F26B21",
+                color: "#2FA84F",
                 fontWeight: 600,
               }}
             >
@@ -22,7 +22,7 @@ export function CompanyOverview() {
                 fontFamily: "Montserrat, sans-serif",
                 fontWeight: 800,
                 fontSize: "clamp(1.5rem, 2.5vw, 2.1rem)",
-                color: "#123A6F",
+                color: "#3B52A5",
                 lineHeight: 1.3,
               }}
             >
@@ -82,7 +82,7 @@ export function CompanyOverview() {
             </div>
             <div
               className="absolute -bottom-5 -right-5 rounded-lg p-6 shadow-xl hidden md:block"
-              style={{ backgroundColor: "#123A6F", maxWidth: "200px" }}
+              style={{ backgroundColor: "#3B52A5", maxWidth: "200px" }}
             >
               <p
                 className="text-white text-3xl font-extrabold"
@@ -103,3 +103,5 @@ export function CompanyOverview() {
     </section>
   );
 }
+
+

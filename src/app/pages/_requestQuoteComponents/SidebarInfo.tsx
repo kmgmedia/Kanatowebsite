@@ -14,7 +14,7 @@ export function SidebarInfo() {
           style={{
             fontFamily: "Montserrat, sans-serif",
             fontWeight: 700,
-            color: "#123A6F",
+            color: "#3B52A5",
             fontSize: "0.95rem",
           }}
         >
@@ -61,7 +61,7 @@ export function SidebarInfo() {
       </div>
 
       {/* Why choose */}
-      <div className="rounded-xl p-6" style={{ backgroundColor: "#123A6F" }}>
+      <div className="rounded-xl p-6" style={{ backgroundColor: "#3B52A5" }}>
         <h3
           className="text-white mb-4"
           style={{
@@ -79,7 +79,7 @@ export function SidebarInfo() {
               <CheckCircle
                 size={14}
                 className="shrink-0 mt-0.5"
-                style={{ color: "#F26B21" }}
+                style={{ color: "#2FA84F" }}
               />
               <span
                 className="text-xs leading-relaxed"
@@ -98,7 +98,7 @@ export function SidebarInfo() {
       {/* Response time */}
       <div
         className="rounded-xl p-5 text-center"
-        style={{ backgroundColor: "#F26B21" }}
+        style={{ backgroundColor: "#2FA84F" }}
       >
         <p
           className="text-white text-3xl font-black mb-1"
@@ -116,3 +116,5 @@ export function SidebarInfo() {
     </div>
   );
 }
+
+

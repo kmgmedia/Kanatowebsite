@@ -52,7 +52,7 @@ export function QuoteForm({
           style={{
             fontFamily: "Montserrat, sans-serif",
             fontWeight: 800,
-            color: "#123A6F",
+            color: "#3B52A5",
             fontSize: "1.5rem",
           }}
         >
@@ -77,7 +77,7 @@ export function QuoteForm({
           For urgent inquiries, call us directly at{" "}
           <a
             href="tel:08096691601"
-            style={{ color: "#F26B21", fontWeight: 600 }}
+            style={{ color: "#2FA84F", fontWeight: 600 }}
           >
             08096691601
           </a>
@@ -86,7 +86,7 @@ export function QuoteForm({
           onClick={onReset}
           className="px-6 py-3 rounded text-sm font-semibold transition-all hover:opacity-90"
           style={{
-            backgroundColor: "#123A6F",
+            backgroundColor: "#3B52A5",
             color: "#fff",
             fontFamily: "Inter, sans-serif",
           }}
@@ -107,7 +107,7 @@ export function QuoteForm({
         style={{
           fontFamily: "Montserrat, sans-serif",
           fontWeight: 700,
-          color: "#123A6F",
+          color: "#3B52A5",
           fontSize: "1.25rem",
         }}
       >
@@ -350,7 +350,7 @@ export function QuoteForm({
           disabled={sending}
           className="w-full py-4 rounded text-sm font-semibold transition-all hover:opacity-90 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
           style={{
-            backgroundColor: "#F26B21",
+            backgroundColor: "#2FA84F",
             color: "#fff",
             fontFamily: "Inter, sans-serif",
           }}
@@ -371,3 +371,5 @@ export function QuoteForm({
     </div>
   );
 }
+
+

@@ -2,14 +2,14 @@ import { milestones } from "./data";
 
 export function Milestones() {
   return (
-    <section className="py-20" style={{ backgroundColor: "#123A6F" }}>
+    <section className="py-20" style={{ backgroundColor: "#3B52A5" }}>
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="text-center mb-14">
           <p
             className="uppercase tracking-widest text-xs mb-3"
             style={{
               fontFamily: "Montserrat, sans-serif",
-              color: "#F26B21",
+              color: "#2FA84F",
               fontWeight: 600,
             }}
           >
@@ -31,7 +31,7 @@ export function Milestones() {
           <div
             className="absolute left-1/2 top-0 bottom-0 w-px hidden lg:block"
             style={{
-              backgroundColor: "rgba(242,107,33,0.3)",
+              backgroundColor: "rgba(255,163,35,0.3)",
               transform: "translateX(-50%)",
             }}
           />
@@ -44,7 +44,7 @@ export function Milestones() {
                 <div className="flex-1 hidden lg:block" />
                 <div
                   className="w-16 h-16 rounded-full flex items-center justify-center shrink-0 z-10"
-                  style={{ backgroundColor: "#F26B21" }}
+                  style={{ backgroundColor: "#2FA84F" }}
                 >
                   <span
                     className="text-white text-xs font-bold"
@@ -61,7 +61,7 @@ export function Milestones() {
                     className="text-xs uppercase tracking-wider mb-1 block"
                     style={{
                       fontFamily: "Montserrat, sans-serif",
-                      color: "#F26B21",
+                      color: "#2FA84F",
                     }}
                   >
                     {m.year}
@@ -84,3 +84,5 @@ export function Milestones() {
     </section>
   );
 }
+
+

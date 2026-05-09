@@ -9,7 +9,7 @@ export function VisionMission() {
             className="uppercase tracking-widest text-xs mb-3"
             style={{
               fontFamily: "Montserrat, sans-serif",
-              color: "#F26B21",
+              color: "#2FA84F",
               fontWeight: 600,
             }}
           >
@@ -20,7 +20,7 @@ export function VisionMission() {
               fontFamily: "Montserrat, sans-serif",
               fontWeight: 800,
               fontSize: "clamp(1.5rem, 2.5vw, 2.1rem)",
-              color: "#123A6F",
+              color: "#3B52A5",
             }}
           >
             Vision & Mission
@@ -33,16 +33,16 @@ export function VisionMission() {
           >
             <div
               className="w-14 h-14 rounded-lg flex items-center justify-center mb-5"
-              style={{ backgroundColor: "rgba(242,107,33,0.1)" }}
+              style={{ backgroundColor: "rgba(47,168,79,0.1)" }}
             >
-              <Eye size={26} style={{ color: "#F26B21" }} />
+              <Eye size={26} style={{ color: "#2FA84F" }} />
             </div>
             <h3
               className="mb-3"
               style={{
                 fontFamily: "Montserrat, sans-serif",
                 fontWeight: 700,
-                color: "#123A6F",
+                color: "#3B52A5",
                 fontSize: "1.15rem",
               }}
             >
@@ -60,13 +60,13 @@ export function VisionMission() {
           </div>
           <div
             className="p-8 rounded-lg shadow-sm"
-            style={{ backgroundColor: "#123A6F", border: "1px solid #123A6F" }}
+            style={{ backgroundColor: "#3B52A5", border: "1px solid #3B52A5" }}
           >
             <div
               className="w-14 h-14 rounded-lg flex items-center justify-center mb-5"
-              style={{ backgroundColor: "rgba(242,107,33,0.2)" }}
+              style={{ backgroundColor: "rgba(47,168,79,0.2)" }}
             >
-              <Target size={26} style={{ color: "#F26B21" }} />
+              <Target size={26} style={{ color: "#2FA84F" }} />
             </div>
             <h3
               className="mb-3 text-white"
@@ -97,3 +97,5 @@ export function VisionMission() {
     </section>
   );
 }
+
+

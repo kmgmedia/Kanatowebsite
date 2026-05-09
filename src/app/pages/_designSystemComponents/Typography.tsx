@@ -13,10 +13,10 @@ export function Typography() {
         {/* Montserrat */}
         <div className="bg-white rounded-xl p-8" style={{ border: "1px solid #E5E7EB" }}>
           <div className="flex items-center justify-between mb-6">
-            <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, color: "#123A6F", fontSize: "1rem" }}>
+            <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, color: "#3B52A5", fontSize: "1rem" }}>
               Montserrat — Headings
             </h3>
-            <span className="px-3 py-1 rounded text-xs" style={{ backgroundColor: "rgba(18,58,111,0.08)", color: "#123A6F", fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
+            <span className="px-3 py-1 rounded text-xs" style={{ backgroundColor: "rgba(59,82,165,0.08)", color: "#3B52A5", fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
               Display / Heading
             </span>
           </div>
@@ -39,7 +39,7 @@ export function Typography() {
                   fontFamily: "Montserrat, sans-serif",
                   fontWeight: t.weight,
                   fontSize: t.size,
-                  color: "#123A6F",
+                  color: "#3B52A5",
                   lineHeight: 1.2,
                   textTransform: t.upper ? "uppercase" : undefined,
                   letterSpacing: t.upper ? "0.12em" : undefined,
@@ -54,10 +54,10 @@ export function Typography() {
         {/* Inter */}
         <div className="bg-white rounded-xl p-8" style={{ border: "1px solid #E5E7EB" }}>
           <div className="flex items-center justify-between mb-6">
-            <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, color: "#123A6F", fontSize: "1rem" }}>
+            <h3 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, color: "#3B52A5", fontSize: "1rem" }}>
               Inter — Body & UI
             </h3>
-            <span className="px-3 py-1 rounded text-xs" style={{ backgroundColor: "rgba(242,107,33,0.1)", color: "#F26B21", fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
+            <span className="px-3 py-1 rounded text-xs" style={{ backgroundColor: "rgba(47,168,79,0.1)", color: "#2FA84F", fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
               Body / UI
             </span>
           </div>
@@ -65,12 +65,12 @@ export function Typography() {
             {[
               { label: "Body Large", size: "clamp(1rem, 2vw, 1.15rem)", weight: 400, color: "#4B5563", sample: "We deliver dependable electrical, mechanical, and civil engineering solutions backed by experience." },
               { label: "Body Regular", size: "1rem", weight: 400, color: "#4B5563", sample: "Kanato Engineering Resources Nigeria Limited was incorporated in 1991." },
-              { label: "Body Small", size: "0.875rem", weight: 400, color: "#6B7280", sample: "Suite 7, Carol Plaza, 29-39 Alimosho Road, Iyana Ipaja, Lagos." },
+              { label: "Body Small", size: "0.875rem", weight: 400, color: "#6B7280", sample: "10, Oyewole Close, Baruwa B/Stop, Ipaja, Lagos." },
               { label: "UI Medium (semibold)", size: "0.875rem", weight: 600, color: "#374151", sample: "Request a Quote" },
-              { label: "UI Small", size: "0.875rem", weight: 500, color: "#F26B21", sample: "Learn more →" },
+              { label: "UI Small", size: "0.875rem", weight: 500, color: "#2FA84F", sample: "Learn more →" },
               { label: "Caption / Meta", size: "0.75rem", weight: 400, color: "#9CA3AF", sample: "Client: Union Bank Plc · Lagos · 2001" },
-              { label: "Micro / Footer", size: "0.75rem", weight: 400, color: "rgba(255,255,255,0.4)", bg: "#0d2d57", sample: "© 2025 Kanato Engineering Resources Nig. Ltd. All rights reserved." },
-              { label: "Tag / Badge", size: "0.75rem", weight: 600, color: "#F26B21", upper: true, sample: "Telecom Infrastructure" },
+              { label: "Micro / Footer", size: "0.75rem", weight: 400, color: "rgba(255,255,255,0.4)", bg: "#2C3F81", sample: "© 2025 Kanato Engineering Resources Nig. Ltd. All rights reserved." },
+              { label: "Tag / Badge", size: "0.75rem", weight: 600, color: "#2FA84F", upper: true, sample: "Telecom Infrastructure" },
             ].map((t, i) => (
               <div key={i} className="rounded-lg p-3 pb-4" style={{ borderBottom: i < 7 ? "1px solid #F5F7FA" : "none", backgroundColor: t.bg || "transparent" }}>
                 <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: t.bg ? "rgba(255,255,255,0.4)" : "#9CA3AF", marginBottom: "4px", textTransform: "uppercase", letterSpacing: "0.05em" }}>
@@ -97,3 +97,5 @@ export function Typography() {
     </>
   );
 }
+
+

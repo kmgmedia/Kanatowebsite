@@ -38,19 +38,19 @@ export function Home() {
       {/* FINAL CTA SECTION */}
       <section
         className="py-20 relative overflow-hidden"
-        style={{ backgroundColor: "#123A6F" }}
+        style={{ backgroundColor: "#3B52A5" }}
       >
         <div
           className="absolute inset-0 opacity-10"
           style={{
             backgroundImage:
-              "radial-gradient(circle at 20% 50%, #F26B21 0%, transparent 50%), radial-gradient(circle at 80% 50%, #F26B21 0%, transparent 50%)",
+              "radial-gradient(circle at 20% 50%, #FFA323 0%, transparent 50%), radial-gradient(circle at 80% 50%, #2FA84F 0%, transparent 50%)",
           }}
         />
         <div className="relative max-w-4xl mx-auto px-4 lg:px-6 text-center">
           <p
             className="uppercase tracking-widest text-xs mb-4"
-            style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21", fontWeight: 600 }}
+            style={{ fontFamily: "Montserrat, sans-serif", color: "#FFA323", fontWeight: 600 }}
           >
             Get Started
           </p>
@@ -81,7 +81,7 @@ export function Home() {
             <Link
               to="/request-quote"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-base font-semibold transition-all hover:opacity-90"
-              style={{ backgroundColor: "#F26B21", color: "#fff", fontFamily: "Inter, sans-serif" }}
+              style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
             >
               Request a Quote
               <ArrowRight size={18} />
@@ -103,3 +103,6 @@ export function Home() {
     </div>
   );
 }
+
+
+

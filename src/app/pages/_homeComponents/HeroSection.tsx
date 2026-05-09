@@ -16,7 +16,7 @@ export function HeroSection() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(135deg, rgba(12,40,80,0.92) 0%, rgba(18,58,111,0.85) 50%, rgba(12,40,80,0.75) 100%)",
+            "linear-gradient(135deg, rgba(30,45,97,0.92) 0%, rgba(59,82,165,0.85) 50%, rgba(30,45,97,0.75) 100%)",
         }}
       />
       <div className="relative max-w-7xl mx-auto px-4 lg:px-6 py-20">
@@ -24,13 +24,13 @@ export function HeroSection() {
           <div
             className="inline-flex items-center gap-2 px-4 py-2 rounded mb-6"
             style={{
-              backgroundColor: "rgba(242,107,33,0.2)",
-              border: "1px solid rgba(242,107,33,0.4)",
+              backgroundColor: "rgba(255,163,35,0.16)",
+              border: "1px solid rgba(255,163,35,0.35)",
             }}
           >
             <span
               className="text-xs uppercase tracking-widest"
-              style={{ fontFamily: "Inter, sans-serif", color: "#F26B21" }}
+              style={{ fontFamily: "Inter, sans-serif", color: "#FFA323" }}
             >
               Established 1991 · RC 666713
             </span>
@@ -48,7 +48,7 @@ export function HeroSection() {
             <span style={{ color: "#fff" }}>
               Reliable Electrical, Mechanical &{" "}
             </span>
-            <span style={{ color: "#F26B21" }}>Civil Engineering</span>
+            <span style={{ color: "#2FA84F" }}>Civil Engineering</span>
             <span style={{ color: "#fff" }}> Solutions</span>
           </h1>
           <p
@@ -69,7 +69,7 @@ export function HeroSection() {
               to="/request-quote"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-base font-semibold transition-all hover:opacity-90"
               style={{
-                backgroundColor: "#F26B21",
+                backgroundColor: "#2FA84F",
                 color: "#fff",
                 fontFamily: "Inter, sans-serif",
               }}
@@ -97,10 +97,13 @@ export function HeroSection() {
           className="w-px h-12"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(242,107,33,0.8), transparent)",
+              "linear-gradient(to bottom, rgba(255,163,35,0.82), transparent)",
           }}
         />
       </div>
     </section>
   );
 }
+
+
+

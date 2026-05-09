@@ -7,7 +7,7 @@ export const contactCards = [
   {
     icon: Phone,
     title: "Call Us",
-    lines: ["08096691601", "08033201366", "08023945686", "08055799998"],
+    lines: ["08096691601", "08033201366"],
     href: "tel:08096691601",
   },
   {
@@ -20,16 +20,20 @@ export const contactCards = [
     icon: MapPin,
     title: "Head Office",
     lines: [
-      "Suite 7, Carol Plaza,",
-      "29-39 Alimosho Road,",
-      "Iyana Ipaja, Lagos.",
+      "10, Oyewole Close,",
+      "Baruwa B/Stop,",
+      "Ipaja, Lagos.",
     ],
     href: null,
   },
   {
     icon: MapPin,
     title: "Branch Office",
-    lines: ["10, Oyewole Close,", "Baruwa B/Stop,", "Ipaja, Lagos."],
+    lines: [
+      "Suite 7, Carol Plaza,",
+      "29-39 Alimosho Road,",
+      "Alimosho, Iyana Ipaja, Lagos.",
+    ],
     href: null,
   },
 ];
@@ -45,3 +49,5 @@ export const whatsappConfig = {
   title: "Chat on WhatsApp",
   subtitle: "Get a fast response from our team",
 };
+
+

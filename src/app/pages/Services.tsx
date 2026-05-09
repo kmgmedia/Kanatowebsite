@@ -160,7 +160,7 @@ export function Services() {
       {/* HERO */}
       <section className="relative flex items-center" style={{ paddingTop: "110px", paddingBottom: "80px" }}>
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${HERO_IMG})` }} />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(12,40,80,0.95) 0%, rgba(18,58,111,0.85) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(30,45,97,0.95) 0%, rgba(59,82,165,0.85) 100%)" }} />
         <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-10">
           <nav className="flex items-center gap-2 text-xs mb-6" style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.5)" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
@@ -169,9 +169,9 @@ export function Services() {
           </nav>
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded mb-4"
-            style={{ backgroundColor: "rgba(242,107,33,0.2)", border: "1px solid rgba(242,107,33,0.4)" }}
+            style={{ backgroundColor: "rgba(47,168,79,0.2)", border: "1px solid rgba(47,168,79,0.4)" }}
           >
-            <span className="text-xs uppercase tracking-widest" style={{ fontFamily: "Inter, sans-serif", color: "#F26B21" }}>
+            <span className="text-xs uppercase tracking-widest" style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}>
               Our Services
             </span>
           </div>
@@ -187,7 +187,7 @@ export function Services() {
             }}
           >
             Integrated Engineering Services for{" "}
-            <span style={{ color: "#F26B21" }}>Every Project Scale</span>
+            <span style={{ color: "#2FA84F" }}>Every Project Scale</span>
           </h1>
           <p
             style={{
@@ -203,7 +203,7 @@ export function Services() {
       </section>
 
       {/* HOW WE WORK */}
-      <section className="py-14" style={{ backgroundColor: "#F26B21" }}>
+      <section className="py-14" style={{ backgroundColor: "#2FA84F" }}>
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, i) => (
@@ -249,13 +249,13 @@ export function Services() {
                 <div style={i % 2 !== 0 ? { direction: "ltr" } : {}}>
                   <div
                     className="w-12 h-12 rounded-lg flex items-center justify-center mb-5"
-                    style={{ backgroundColor: "rgba(18,58,111,0.08)" }}
+                    style={{ backgroundColor: "rgba(59,82,165,0.08)" }}
                   >
-                    <service.icon size={22} style={{ color: "#123A6F" }} />
+                    <service.icon size={22} style={{ color: "#3B52A5" }} />
                   </div>
                   <p
                     className="uppercase tracking-widest text-xs mb-2"
-                    style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21", fontWeight: 600 }}
+                    style={{ fontFamily: "Montserrat, sans-serif", color: "#2FA84F", fontWeight: 600 }}
                   >
                     {service.tagline}
                   </p>
@@ -265,7 +265,7 @@ export function Services() {
                       fontFamily: "Montserrat, sans-serif",
                       fontWeight: 800,
                       fontSize: "clamp(1.4rem, 2.5vw, 1.9rem)",
-                      color: "#123A6F",
+                      color: "#3B52A5",
                       lineHeight: 1.3,
                     }}
                   >
@@ -280,7 +280,7 @@ export function Services() {
                   <ul className="space-y-2 mb-6">
                     {service.scope.map((item, j) => (
                       <li key={j} className="flex items-start gap-2">
-                        <CheckCircle size={16} className="shrink-0 mt-0.5" style={{ color: "#F26B21" }} />
+                        <CheckCircle size={16} className="shrink-0 mt-0.5" style={{ color: "#2FA84F" }} />
                         <span className="text-sm" style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}>
                           {item}
                         </span>
@@ -290,7 +290,7 @@ export function Services() {
                   <Link
                     to="/request-quote"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded text-sm font-semibold transition-all hover:opacity-90"
-                    style={{ backgroundColor: "#F26B21", color: "#fff", fontFamily: "Inter, sans-serif" }}
+                    style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
                   >
                     Request This Service
                     <ArrowRight size={15} />
@@ -312,7 +312,7 @@ export function Services() {
       </section>
 
       {/* CTA */}
-      <section className="py-20" style={{ backgroundColor: "#123A6F" }}>
+      <section className="py-20" style={{ backgroundColor: "#3B52A5" }}>
         <div className="max-w-4xl mx-auto px-4 lg:px-6 text-center">
           <h2
             className="text-white mb-5"
@@ -335,7 +335,7 @@ export function Services() {
             <Link
               to="/request-quote"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
-              style={{ backgroundColor: "#F26B21", color: "#fff", fontFamily: "Inter, sans-serif" }}
+              style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
             >
               Request a Quote
               <ArrowRight size={16} />
@@ -353,3 +353,4 @@ export function Services() {
     </div>
   );
 }
+

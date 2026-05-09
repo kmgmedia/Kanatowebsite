@@ -47,13 +47,13 @@ export function CardsShowcase() {
               style={{ borderColor: "#E5E7EB", backgroundColor: "#fff" }}
             >
               <div
-                className="w-12 h-12 rounded-lg flex items-center justify-center mb-5 transition-colors group-hover:bg-orange-500"
-                style={{ backgroundColor: "rgba(18,58,111,0.1)" }}
+                className="w-12 h-12 rounded-lg flex items-center justify-center mb-5 transition-colors group-hover:bg-[var(--color-primary)]"
+                style={{ backgroundColor: "rgba(59,82,165,0.1)" }}
               >
                 <s.icon
                   size={22}
                   className="transition-colors group-hover:text-white"
-                  style={{ color: "#123A6F" }}
+                  style={{ color: "#3B52A5" }}
                 />
               </div>
               <h3
@@ -61,7 +61,7 @@ export function CardsShowcase() {
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   fontWeight: 700,
-                  color: "#123A6F",
+                  color: "#3B52A5",
                   fontSize: "1rem",
                 }}
               >
@@ -93,7 +93,7 @@ export function CardsShowcase() {
         </p>
         <div
           className="rounded-xl p-6"
-          style={{ backgroundColor: "#123A6F", maxWidth: "320px" }}
+          style={{ backgroundColor: "#3B52A5", maxWidth: "320px" }}
         >
           <h3
             className="mb-4"
@@ -119,7 +119,7 @@ export function CardsShowcase() {
                 <CheckCircle
                   size={14}
                   className="shrink-0 mt-0.5"
-                  style={{ color: "#F26B21" }}
+                  style={{ color: "#2FA84F" }}
                 />
                 <span
                   className="text-xs leading-relaxed"
@@ -140,3 +140,5 @@ export function CardsShowcase() {
     </>
   );
 }
+
+

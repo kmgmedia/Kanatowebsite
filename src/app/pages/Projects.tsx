@@ -68,7 +68,7 @@ export function Projects() {
       {/* HERO */}
       <section className="relative flex items-center" style={{ paddingTop: "110px", paddingBottom: "80px" }}>
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${HERO_IMG})` }} />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(12,40,80,0.95) 0%, rgba(18,58,111,0.85) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(30,45,97,0.95) 0%, rgba(59,82,165,0.85) 100%)" }} />
         <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-10">
           <nav className="flex items-center gap-2 text-xs mb-6" style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.5)" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
@@ -77,9 +77,9 @@ export function Projects() {
           </nav>
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded mb-4"
-            style={{ backgroundColor: "rgba(242,107,33,0.2)", border: "1px solid rgba(242,107,33,0.4)" }}
+            style={{ backgroundColor: "rgba(47,168,79,0.2)", border: "1px solid rgba(47,168,79,0.4)" }}
           >
-            <span className="text-xs uppercase tracking-widest" style={{ fontFamily: "Inter, sans-serif", color: "#F26B21" }}>
+            <span className="text-xs uppercase tracking-widest" style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}>
               Our Work
             </span>
           </div>
@@ -95,7 +95,7 @@ export function Projects() {
             }}
           >
             Projects Delivered Across{" "}
-            <span style={{ color: "#F26B21" }}>Nigeria Since 1991</span>
+            <span style={{ color: "#2FA84F" }}>Nigeria Since 1991</span>
           </h1>
           <p
             style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.75)", maxWidth: "560px" }}
@@ -123,9 +123,9 @@ export function Projects() {
                 className="px-4 py-2 rounded-full text-sm font-medium transition-all"
                 style={{
                   fontFamily: "Inter, sans-serif",
-                  backgroundColor: activeFilter === cat ? "#123A6F" : "#fff",
+                  backgroundColor: activeFilter === cat ? "#3B52A5" : "#fff",
                   color: activeFilter === cat ? "#fff" : "#374151",
-                  border: `1px solid ${activeFilter === cat ? "#123A6F" : "#D1D5DB"}`,
+                  border: `1px solid ${activeFilter === cat ? "#3B52A5" : "#D1D5DB"}`,
                 }}
               >
                 {cat}
@@ -154,7 +154,7 @@ export function Projects() {
                   />
                   <div
                     className="absolute top-3 left-3 px-2.5 py-1 rounded text-xs font-semibold"
-                    style={{ backgroundColor: "#F26B21", color: "#fff", fontFamily: "Inter, sans-serif" }}
+                    style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
                   >
                     {project.category}
                   </div>
@@ -162,7 +162,7 @@ export function Projects() {
                 <div className="p-5">
                   <h3
                     className="mb-2"
-                    style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.9rem" }}
+                    style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#3B52A5", fontSize: "0.9rem" }}
                   >
                     {project.title}
                   </h3>
@@ -190,7 +190,7 @@ export function Projects() {
       </section>
 
       {/* CTA */}
-      <section className="py-16" style={{ backgroundColor: "#123A6F" }}>
+      <section className="py-16" style={{ backgroundColor: "#3B52A5" }}>
         <div className="max-w-4xl mx-auto px-4 lg:px-6 text-center">
           <h2
             className="text-white mb-5"
@@ -207,7 +207,7 @@ export function Projects() {
           <Link
             to="/request-quote"
             className="inline-flex items-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
-            style={{ backgroundColor: "#F26B21", color: "#fff", fontFamily: "Inter, sans-serif" }}
+            style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
           >
             Request a Quote
             <ArrowRight size={16} />
@@ -217,3 +217,4 @@ export function Projects() {
     </div>
   );
 }
+

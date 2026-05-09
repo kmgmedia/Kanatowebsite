@@ -1,29 +1,29 @@
 // Color palette data for Design System
 
 export const primaryColors = [
-  { shade: "50", hex: "#E8EEF7", rgb: "232, 238, 247" },
-  { shade: "100", hex: "#C6D4E9", rgb: "198, 212, 233" },
-  { shade: "200", hex: "#9FB8D8", rgb: "159, 184, 216" },
-  { shade: "300", hex: "#6E96C1", rgb: "110, 150, 193" },
-  { shade: "400", hex: "#4A7BB2", rgb: "74, 123, 178" },
-  { shade: "500", hex: "#123A6F", rgb: "18, 58, 111", base: true },
-  { shade: "600", hex: "#0f3260", rgb: "15, 50, 96" },
-  { shade: "700", hex: "#0d2d57", rgb: "13, 45, 87" },
-  { shade: "800", hex: "#0a2347", rgb: "10, 35, 71" },
-  { shade: "900", hex: "#071a35", rgb: "7, 26, 53" },
+  { shade: "50", hex: "#EEF1FB", rgb: "238, 241, 251" },
+  { shade: "100", hex: "#D9E0F6", rgb: "217, 224, 246" },
+  { shade: "200", hex: "#B8C6EC", rgb: "184, 198, 236" },
+  { shade: "300", hex: "#94A6DF", rgb: "148, 166, 223" },
+  { shade: "400", hex: "#6C82CE", rgb: "108, 130, 206" },
+  { shade: "500", hex: "#3B52A5", rgb: "59, 82, 165", base: true },
+  { shade: "600", hex: "#324691", rgb: "50, 70, 145" },
+  { shade: "700", hex: "#2C3F81", rgb: "44, 63, 129" },
+  { shade: "800", hex: "#1E2D61", rgb: "30, 45, 97" },
+  { shade: "900", hex: "#16214A", rgb: "22, 33, 74" },
 ];
 
 export const secondaryColors = [
-  { shade: "50", hex: "#FEF0E7", rgb: "254, 240, 231" },
-  { shade: "100", hex: "#FDD9C0", rgb: "253, 217, 192" },
-  { shade: "200", hex: "#FBC095", rgb: "251, 192, 149" },
-  { shade: "300", hex: "#F8A469", rgb: "248, 164, 105" },
-  { shade: "400", hex: "#F47D3A", rgb: "244, 125, 58" },
-  { shade: "500", hex: "#F26B21", rgb: "242, 107, 33", base: true },
-  { shade: "600", hex: "#D45C18", rgb: "212, 92, 24" },
-  { shade: "700", hex: "#B54D14", rgb: "181, 77, 20" },
-  { shade: "800", hex: "#963E10", rgb: "150, 62, 16" },
-  { shade: "900", hex: "#772F0C", rgb: "119, 47, 12" },
+  { shade: "50", hex: "#ECF8EF", rgb: "236, 248, 239" },
+  { shade: "100", hex: "#D1F0D8", rgb: "209, 240, 216" },
+  { shade: "200", hex: "#ACE2B9", rgb: "172, 226, 185" },
+  { shade: "300", hex: "#7CCB90", rgb: "124, 203, 144" },
+  { shade: "400", hex: "#48BC65", rgb: "72, 188, 101" },
+  { shade: "500", hex: "#2FA84F", rgb: "47, 168, 79", base: true },
+  { shade: "600", hex: "#24863D", rgb: "36, 134, 61" },
+  { shade: "700", hex: "#1D6C31", rgb: "29, 108, 49" },
+  { shade: "800", hex: "#175526", rgb: "23, 85, 38" },
+  { shade: "900", hex: "#113D1B", rgb: "17, 61, 27" },
 ];
 
 export const textColors = [
@@ -77,3 +77,5 @@ export const errorColors = [
   { shade: "800", hex: "#991B1B", rgb: "153, 27, 27" },
   { shade: "900", hex: "#7F1D1D", rgb: "127, 29, 29" },
 ];
+
+

@@ -11,7 +11,7 @@ export function ServicesPreview() {
             className="uppercase tracking-widest text-xs mb-3"
             style={{
               fontFamily: "Montserrat, sans-serif",
-              color: "#F26B21",
+              color: "#2FA84F",
               fontWeight: 600,
             }}
           >
@@ -22,14 +22,14 @@ export function ServicesPreview() {
               fontFamily: "Montserrat, sans-serif",
               fontWeight: 800,
               fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
-              color: "#123A6F",
+              color: "#3B52A5",
             }}
           >
             Our Core Engineering Services
           </h2>
           <div
             className="w-16 h-1 mx-auto mt-4 rounded"
-            style={{ backgroundColor: "#F26B21" }}
+            style={{ backgroundColor: "#2FA84F" }}
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -40,13 +40,13 @@ export function ServicesPreview() {
               style={{ borderColor: "#E5E7EB", backgroundColor: "#fff" }}
             >
               <div
-                className="w-12 h-12 rounded-lg flex items-center justify-center mb-5 transition-colors group-hover:bg-orange-500"
-                style={{ backgroundColor: "rgba(18,58,111,0.1)" }}
+                className="w-12 h-12 rounded-lg flex items-center justify-center mb-5 transition-colors group-hover:bg-[var(--color-primary)]"
+                style={{ backgroundColor: "rgba(59,82,165,0.1)" }}
               >
                 <service.icon
                   size={22}
                   className="transition-colors group-hover:text-white"
-                  style={{ color: "#123A6F" }}
+                  style={{ color: "#3B52A5" }}
                 />
               </div>
               <h3
@@ -54,7 +54,7 @@ export function ServicesPreview() {
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   fontWeight: 700,
-                  color: "#123A6F",
+                  color: "#3B52A5",
                   fontSize: "1rem",
                 }}
               >
@@ -69,7 +69,7 @@ export function ServicesPreview() {
               <Link
                 to={service.path}
                 className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors"
-                style={{ fontFamily: "Inter, sans-serif", color: "#F26B21" }}
+                style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}
               >
                 Learn more <ChevronRight size={14} />
               </Link>
@@ -81,7 +81,7 @@ export function ServicesPreview() {
             to="/services"
             className="inline-flex items-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
             style={{
-              backgroundColor: "#123A6F",
+              backgroundColor: "#3B52A5",
               color: "#fff",
               fontFamily: "Inter, sans-serif",
             }}
@@ -94,3 +94,5 @@ export function ServicesPreview() {
     </section>
   );
 }
+
+

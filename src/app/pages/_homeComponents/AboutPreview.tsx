@@ -12,7 +12,7 @@ export function AboutPreview() {
               className="uppercase tracking-widest text-xs mb-4"
               style={{
                 fontFamily: "Montserrat, sans-serif",
-                color: "#F26B21",
+                color: "#2FA84F",
                 fontWeight: 600,
               }}
             >
@@ -24,7 +24,7 @@ export function AboutPreview() {
                 fontFamily: "Montserrat, sans-serif",
                 fontWeight: 800,
                 fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
-                color: "#123A6F",
+                color: "#3B52A5",
                 lineHeight: 1.25,
               }}
             >
@@ -53,7 +53,7 @@ export function AboutPreview() {
               to="/about"
               className="inline-flex items-center gap-2 px-6 py-3 rounded text-sm font-semibold transition-all hover:opacity-90"
               style={{
-                backgroundColor: "#123A6F",
+                backgroundColor: "#3B52A5",
                 color: "#fff",
                 fontFamily: "Inter, sans-serif",
               }}
@@ -75,7 +75,7 @@ export function AboutPreview() {
             </div>
             <div
               className="absolute -bottom-5 -left-5 rounded-lg p-5 shadow-xl hidden md:block"
-              style={{ backgroundColor: "#F26B21" }}
+              style={{ backgroundColor: "#2FA84F" }}
             >
               <p
                 className="text-white text-2xl font-bold"
@@ -96,3 +96,5 @@ export function AboutPreview() {
     </section>
   );
 }
+
+

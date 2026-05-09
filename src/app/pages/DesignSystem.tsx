@@ -19,16 +19,16 @@ export function DesignSystem() {
       />
 
       {/* PAGE HEADER */}
-      <div style={{ backgroundColor: "#0d2d57", paddingTop: "100px", paddingBottom: "60px" }}>
+      <div style={{ backgroundColor: "#2C3F81", paddingTop: "100px", paddingBottom: "60px" }}>
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded mb-4"
-            style={{ backgroundColor: "rgba(242,107,33,0.2)", border: "1px solid rgba(242,107,33,0.4)" }}
+            style={{ backgroundColor: "rgba(47,168,79,0.2)", border: "1px solid rgba(47,168,79,0.4)" }}
           >
             <span
               style={{
                 fontFamily: "Inter, sans-serif",
-                color: "#F26B21",
+                color: "#2FA84F",
                 fontSize: "0.75rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.1em",
@@ -47,7 +47,7 @@ export function DesignSystem() {
               marginBottom: "12px",
             }}
           >
-            Kanato Engineering <span style={{ color: "#F26B21" }}>Style Guide</span>
+            Kanato Engineering <span style={{ color: "#2FA84F" }}>Style Guide</span>
           </h1>
           <p
             style={{
@@ -78,3 +78,5 @@ export function DesignSystem() {
     </div>
   );
 }
+
+

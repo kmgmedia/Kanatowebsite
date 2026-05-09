@@ -20,7 +20,7 @@ export function ButtonsShowcase() {
             style={{
               fontFamily: "Montserrat, sans-serif",
               fontWeight: 700,
-              color: "#123A6F",
+              color: "#3B52A5",
               fontSize: "0.9rem",
               marginBottom: "20px",
             }}
@@ -46,7 +46,7 @@ export function ButtonsShowcase() {
                 <button
                   className="inline-flex items-center gap-2 px-8 py-4 rounded text-base transition-all hover:opacity-90"
                   style={{
-                    backgroundColor: "#F26B21",
+                    backgroundColor: "#2FA84F",
                     color: "#fff",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 600,
@@ -57,7 +57,7 @@ export function ButtonsShowcase() {
                 <button
                   className="inline-flex items-center gap-2 px-6 py-3 rounded text-sm transition-all hover:opacity-90"
                   style={{
-                    backgroundColor: "#F26B21",
+                    backgroundColor: "#2FA84F",
                     color: "#fff",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 600,
@@ -68,7 +68,7 @@ export function ButtonsShowcase() {
                 <button
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded text-sm transition-all hover:opacity-90"
                   style={{
-                    backgroundColor: "#F26B21",
+                    backgroundColor: "#2FA84F",
                     color: "#fff",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 600,
@@ -79,7 +79,7 @@ export function ButtonsShowcase() {
               </div>
               <div className="mt-2 flex flex-wrap gap-2">
                 {[
-                  { label: "BG", value: "#F26B21" },
+                  { label: "BG", value: "#2FA84F" },
                   { label: "Text", value: "#FFFFFF" },
                   { label: "Hover", value: "opacity 0.9" },
                   { label: "Radius", value: "4px (rounded)" },
@@ -119,7 +119,7 @@ export function ButtonsShowcase() {
                 <button
                   className="inline-flex items-center gap-2 px-8 py-4 rounded text-base transition-all hover:opacity-90"
                   style={{
-                    backgroundColor: "#123A6F",
+                    backgroundColor: "#3B52A5",
                     color: "#fff",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 600,
@@ -130,7 +130,7 @@ export function ButtonsShowcase() {
                 <button
                   className="inline-flex items-center gap-2 px-6 py-3 rounded text-sm transition-all hover:opacity-90"
                   style={{
-                    backgroundColor: "#123A6F",
+                    backgroundColor: "#3B52A5",
                     color: "#fff",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 600,
@@ -141,7 +141,7 @@ export function ButtonsShowcase() {
                 <button
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded text-sm transition-all hover:opacity-90"
                   style={{
-                    backgroundColor: "#123A6F",
+                    backgroundColor: "#3B52A5",
                     color: "#fff",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 600,
@@ -155,7 +155,7 @@ export function ButtonsShowcase() {
             {/* Outline Ghost */}
             <div
               className="rounded-lg p-4"
-              style={{ backgroundColor: "#123A6F" }}
+              style={{ backgroundColor: "#3B52A5" }}
             >
               <p
                 style={{
@@ -212,7 +212,7 @@ export function ButtonsShowcase() {
               <a
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded transition-all hover:opacity-90"
                 style={{
-                  backgroundColor: "#F26B21",
+                  backgroundColor: "#2FA84F",
                   color: "#fff",
                   fontFamily: "Inter, sans-serif",
                   fontSize: "0.78rem",
@@ -234,7 +234,7 @@ export function ButtonsShowcase() {
             style={{
               fontFamily: "Montserrat, sans-serif",
               fontWeight: 700,
-              color: "#123A6F",
+              color: "#3B52A5",
               fontSize: "0.9rem",
               marginBottom: "20px",
             }}
@@ -302,7 +302,7 @@ export function ButtonsShowcase() {
                 <button
                   className={`inline-flex items-center gap-2 ${s.px} rounded transition-all hover:opacity-90`}
                   style={{
-                    backgroundColor: "#F26B21",
+                    backgroundColor: "#2FA84F",
                     color: "#fff",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 600,
@@ -342,7 +342,7 @@ export function ButtonsShowcase() {
               <button
                 className="px-6 py-3 rounded text-sm"
                 style={{
-                  backgroundColor: "#F26B21",
+                  backgroundColor: "#2FA84F",
                   color: "#fff",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: 600,
@@ -386,7 +386,7 @@ export function ButtonsShowcase() {
               <button
                 className="px-6 py-3 rounded text-sm flex items-center gap-2 opacity-60 cursor-not-allowed"
                 style={{
-                  backgroundColor: "#F26B21",
+                  backgroundColor: "#2FA84F",
                   color: "#fff",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: 600,
@@ -409,7 +409,7 @@ export function ButtonsShowcase() {
               <button
                 className="px-6 py-3 rounded text-sm flex items-center gap-2"
                 style={{
-                  backgroundColor: "#F26B21",
+                  backgroundColor: "#2FA84F",
                   color: "#fff",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: 600,
@@ -448,7 +448,7 @@ export function ButtonsShowcase() {
               <button
                 className="inline-flex items-center gap-2 px-6 py-3 rounded text-sm hover:opacity-90"
                 style={{
-                  backgroundColor: "#F26B21",
+                  backgroundColor: "#2FA84F",
                   color: "#fff",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: 600,
@@ -459,7 +459,7 @@ export function ButtonsShowcase() {
               <button
                 className="inline-flex items-center gap-2 px-6 py-3 rounded text-sm hover:opacity-90"
                 style={{
-                  backgroundColor: "#123A6F",
+                  backgroundColor: "#3B52A5",
                   color: "#fff",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: 600,
@@ -470,7 +470,7 @@ export function ButtonsShowcase() {
               <button
                 className="inline-flex items-center gap-2 px-6 py-3 rounded text-sm hover:opacity-90"
                 style={{
-                  backgroundColor: "#123A6F",
+                  backgroundColor: "#3B52A5",
                   color: "#fff",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: 600,
@@ -487,3 +487,5 @@ export function ButtonsShowcase() {
     </>
   );
 }
+
+

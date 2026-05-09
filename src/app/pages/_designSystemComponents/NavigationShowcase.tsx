@@ -1,4 +1,5 @@
 import { Menu } from "lucide-react";
+import { BrandLogo } from "../../components/BrandLogo";
 import { SectionHeader, Divider } from "./helpers";
 
 export function NavigationShowcase() {
@@ -28,8 +29,8 @@ export function NavigationShowcase() {
         >
           Navbar Preview
         </p>
-        <div style={{ backgroundColor: "rgba(18, 58, 111, 0.97)" }}>
-          <div style={{ backgroundColor: "#F26B21" }} className="py-1.5 px-4">
+        <div style={{ backgroundColor: "rgba(59, 82, 165, 0.97)" }}>
+          <div style={{ backgroundColor: "#FFA323" }} className="py-1.5 px-4">
             <div className="max-w-4xl mx-auto flex justify-between items-center">
               <span
                 className="text-white text-xs"
@@ -46,31 +47,7 @@ export function NavigationShowcase() {
             </div>
           </div>
           <nav className="max-w-4xl mx-auto px-4 flex items-center justify-between py-4">
-            <div className="flex flex-col">
-              <span
-                className="text-white"
-                style={{
-                  fontFamily: "Montserrat, sans-serif",
-                  fontWeight: 800,
-                  fontSize: "1.5rem",
-                  letterSpacing: "-0.02em",
-                }}
-              >
-                KANATO
-              </span>
-              <span
-                style={{
-                  fontFamily: "Inter, sans-serif",
-                  fontWeight: 400,
-                  fontSize: "0.6rem",
-                  color: "#F26B21",
-                  letterSpacing: "0.12em",
-                  textTransform: "uppercase",
-                }}
-              >
-                Engineering Resources
-              </span>
-            </div>
+            <BrandLogo onDark imageClassName="h-10" />
             <div className="hidden lg:flex items-center gap-1">
               {["Home", "About Us", "Services"].map((link, i) => (
                 <span
@@ -78,9 +55,9 @@ export function NavigationShowcase() {
                   className="px-4 py-2 text-sm rounded"
                   style={{
                     fontFamily: "Inter, sans-serif",
-                    color: i === 1 ? "#F26B21" : "rgba(255,255,255,0.9)",
+                    color: i === 1 ? "#48BC65" : "rgba(255,255,255,0.9)",
                     borderBottom:
-                      i === 1 ? "2px solid #F26B21" : "2px solid transparent",
+                      i === 1 ? "2px solid #FFA323" : "2px solid transparent",
                     fontWeight: 500,
                   }}
                 >
@@ -90,7 +67,7 @@ export function NavigationShowcase() {
               <span
                 className="ml-4 px-5 py-2.5 rounded text-sm font-semibold"
                 style={{
-                  backgroundColor: "#F26B21",
+                  backgroundColor: "#2FA84F",
                   color: "#fff",
                   fontFamily: "Inter, sans-serif",
                 }}
@@ -111,7 +88,7 @@ export function NavigationShowcase() {
           {
             title: "Top Bar",
             specs: [
-              "BG: #F26B21",
+              "BG: #FFA323",
               "Text: white · text-xs · Inter",
               "Height: py-1.5",
               "Content: RC · phone",
@@ -120,18 +97,18 @@ export function NavigationShowcase() {
           {
             title: "Main Nav",
             specs: [
-              "BG: rgba(18,58,111,0.97)",
+              "BG: rgba(59,82,165,0.97)",
               "Position: fixed top-0 z-50",
               "Links: Inter 500 text-sm",
-              "Active: #F26B21 + border-bottom",
+              "Active: #48BC65 + amber underline",
             ],
           },
           {
             title: "Mobile Menu",
             specs: [
-              "BG: #123A6F",
-              "Active bg: rgba(242,107,33,0.1)",
-              "Active text: #F26B21",
+              "BG: #3B52A5",
+              "Active bg: rgba(47,168,79,0.1)",
+              "Active text: #2FA84F",
               "Closes on route",
             ],
           },
@@ -145,7 +122,7 @@ export function NavigationShowcase() {
               style={{
                 fontFamily: "Montserrat, sans-serif",
                 fontWeight: 700,
-                color: "#123A6F",
+                color: "#3B52A5",
                 fontSize: "0.85rem",
                 marginBottom: "10px",
               }}
@@ -157,7 +134,7 @@ export function NavigationShowcase() {
                 <div key={s} className="flex items-start gap-2">
                   <div
                     className="w-1 h-1 rounded-full shrink-0 mt-1.5"
-                    style={{ backgroundColor: "#F26B21" }}
+                    style={{ backgroundColor: "#2FA84F" }}
                   />
                   <span
                     style={{
@@ -179,3 +156,6 @@ export function NavigationShowcase() {
     </>
   );
 }
+
+
+

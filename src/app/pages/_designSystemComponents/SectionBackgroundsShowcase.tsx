@@ -19,7 +19,7 @@ export function SectionBackgroundsShowcase() {
             style={{
               fontFamily: "Montserrat, sans-serif",
               fontWeight: 700,
-              color: "#123A6F",
+              color: "#3B52A5",
               fontSize: "0.9rem",
               marginBottom: "16px",
             }}
@@ -28,12 +28,12 @@ export function SectionBackgroundsShowcase() {
           </h3>
           <div className="flex flex-col gap-2">
             {[
-              { section: "Hero / Page Header", hex: "rgba(12,40,80,0.92)" },
-              { section: "Trust / Stats Bar", hex: "#123A6F" },
+              { section: "Hero / Page Header", hex: "rgba(30,45,97,0.92)" },
+              { section: "Trust / Stats Bar", hex: "#3B52A5" },
               { section: "About / Why Choose", hex: "#F5F7FA" },
               { section: "Services / Industries", hex: "#FFFFFF" },
-              { section: "Footer main", hex: "#0d2d57" },
-              { section: "Footer CTA strip", hex: "#F26B21" },
+              { section: "Footer main", hex: "#2C3F81" },
+              { section: "Footer CTA strip", hex: "#2FA84F" },
             ].map((row, i) => (
               <div
                 key={i}
@@ -79,7 +79,7 @@ export function SectionBackgroundsShowcase() {
             style={{
               fontFamily: "Montserrat, sans-serif",
               fontWeight: 700,
-              color: "#123A6F",
+              color: "#3B52A5",
               fontSize: "0.9rem",
               marginBottom: "16px",
             }}
@@ -113,8 +113,8 @@ export function SectionBackgroundsShowcase() {
                 <span
                   className="px-2 py-1 rounded text-xs shrink-0"
                   style={{
-                    backgroundColor: "rgba(18,58,111,0.08)",
-                    color: "#123A6F",
+                    backgroundColor: "rgba(59,82,165,0.08)",
+                    color: "#3B52A5",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 600,
                   }}
@@ -131,3 +131,5 @@ export function SectionBackgroundsShowcase() {
     </>
   );
 }
+
+

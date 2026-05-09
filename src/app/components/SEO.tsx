@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 // ─── Site-wide defaults ────────────────────────────────────────────────────────
 const SITE_NAME = "Kanato Engineering Resources Nig. Ltd.";
 const SITE_URL  = "https://www.kanato-engineering.com"; // ← replace with your real domain
-const SITE_LOGO = `${SITE_URL}/kanato-og-image.jpg`;   // ← add a 1200×630 jpg to /public
+const SITE_LOGO = `${SITE_URL}/kanato-logo.png`;
 
 // ─── Local Business JSON-LD (appears on every page) ───────────────────────────
 const LOCAL_BUSINESS_SCHEMA = {
@@ -21,8 +21,8 @@ const LOCAL_BUSINESS_SCHEMA = {
   identifier: "RC 666713",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Suite 7, Carol Plaza, 29-39 Alimosho Road",
-    addressLocality: "Iyana Ipaja",
+    streetAddress: "10, Oyewole Close, Baruwa B/Stop",
+    addressLocality: "Ipaja",
     addressRegion: "Lagos",
     addressCountry: "NG",
   },
@@ -141,3 +141,6 @@ export function SEO({ title, description, path = "", schema, ogImage }: SEOProps
     </Helmet>
   );
 }
+
+
+

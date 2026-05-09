@@ -126,7 +126,7 @@ export function Clients() {
       {/* HERO */}
       <section className="relative flex items-center" style={{ paddingTop: "110px", paddingBottom: "80px" }}>
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${HERO_IMG})` }} />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(12,40,80,0.95) 0%, rgba(18,58,111,0.85) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(30,45,97,0.95) 0%, rgba(59,82,165,0.85) 100%)" }} />
         <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-10">
           <nav className="flex items-center gap-2 text-xs mb-6" style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.5)" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
@@ -135,9 +135,9 @@ export function Clients() {
           </nav>
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded mb-4"
-            style={{ backgroundColor: "rgba(242,107,33,0.2)", border: "1px solid rgba(242,107,33,0.4)" }}
+            style={{ backgroundColor: "rgba(47,168,79,0.2)", border: "1px solid rgba(47,168,79,0.4)" }}
           >
-            <span className="text-xs uppercase tracking-widest" style={{ fontFamily: "Inter, sans-serif", color: "#F26B21" }}>
+            <span className="text-xs uppercase tracking-widest" style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}>
               Our Clients
             </span>
           </div>
@@ -153,7 +153,7 @@ export function Clients() {
             }}
           >
             Trusted by Organizations &{" "}
-            <span style={{ color: "#F26B21" }}>Institutions Across Nigeria</span>
+            <span style={{ color: "#2FA84F" }}>Institutions Across Nigeria</span>
           </h1>
           <p
             style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.75)", maxWidth: "560px" }}
@@ -164,7 +164,7 @@ export function Clients() {
       </section>
 
       {/* TRUST STATS */}
-      <section style={{ backgroundColor: "#123A6F" }} className="py-10">
+      <section style={{ backgroundColor: "#3B52A5" }} className="py-10">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -198,7 +198,7 @@ export function Clients() {
           <div className="text-center mb-14">
             <p
               className="uppercase tracking-widest text-xs mb-3"
-              style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21", fontWeight: 600 }}
+              style={{ fontFamily: "Montserrat, sans-serif", color: "#2FA84F", fontWeight: 600 }}
             >
               By Sector
             </p>
@@ -207,12 +207,12 @@ export function Clients() {
                 fontFamily: "Montserrat, sans-serif",
                 fontWeight: 800,
                 fontSize: "clamp(1.5rem, 2.5vw, 2.1rem)",
-                color: "#123A6F",
+                color: "#3B52A5",
               }}
             >
               Clients Across Multiple Industries
             </h2>
-            <div className="w-16 h-1 mx-auto mt-4 rounded" style={{ backgroundColor: "#F26B21" }} />
+            <div className="w-16 h-1 mx-auto mt-4 rounded" style={{ backgroundColor: "#2FA84F" }} />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {clientSectors.map((sector, i) => (
@@ -224,12 +224,12 @@ export function Clients() {
                 <div className="flex items-center gap-3 mb-5">
                   <div
                     className="w-10 h-10 rounded flex items-center justify-center"
-                    style={{ backgroundColor: "rgba(18,58,111,0.08)" }}
+                    style={{ backgroundColor: "rgba(59,82,165,0.08)" }}
                   >
-                    <sector.icon size={18} style={{ color: "#123A6F" }} />
+                    <sector.icon size={18} style={{ color: "#3B52A5" }} />
                   </div>
                   <h3
-                    style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#123A6F", fontSize: "0.9rem" }}
+                    style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#3B52A5", fontSize: "0.9rem" }}
                   >
                     {sector.sector}
                   </h3>
@@ -237,7 +237,7 @@ export function Clients() {
                 <ul className="space-y-2">
                   {sector.clients.map((client, j) => (
                     <li key={j} className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#F26B21" }} />
+                      <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#2FA84F" }} />
                       <span
                         className="text-sm"
                         style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
@@ -259,7 +259,7 @@ export function Clients() {
           <div className="text-center mb-12">
             <p
               className="uppercase tracking-widest text-xs mb-3"
-              style={{ fontFamily: "Montserrat, sans-serif", color: "#F26B21", fontWeight: 600 }}
+              style={{ fontFamily: "Montserrat, sans-serif", color: "#2FA84F", fontWeight: 600 }}
             >
               Full Client List
             </p>
@@ -268,7 +268,7 @@ export function Clients() {
                 fontFamily: "Montserrat, sans-serif",
                 fontWeight: 800,
                 fontSize: "clamp(1.5rem, 2.5vw, 2.1rem)",
-                color: "#123A6F",
+                color: "#3B52A5",
               }}
             >
               Organizations We Have Served
@@ -303,7 +303,7 @@ export function Clients() {
       </section>
 
       {/* CTA */}
-      <section className="py-16" style={{ backgroundColor: "#123A6F" }}>
+      <section className="py-16" style={{ backgroundColor: "#3B52A5" }}>
         <div className="max-w-4xl mx-auto px-4 lg:px-6 text-center">
           <h2
             className="text-white mb-5"
@@ -321,7 +321,7 @@ export function Clients() {
             <Link
               to="/request-quote"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
-              style={{ backgroundColor: "#F26B21", color: "#fff", fontFamily: "Inter, sans-serif" }}
+              style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
             >
               Request a Quote
               <ArrowRight size={16} />
@@ -339,3 +339,4 @@ export function Clients() {
     </div>
   );
 }
+

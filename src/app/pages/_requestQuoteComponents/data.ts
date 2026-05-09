@@ -21,16 +21,16 @@ export const contactChannels = [
     title: "Call Us",
     description: "08096691601 / 08033201366",
     href: "tel:08096691601",
-    bgColor: "rgba(18,58,111,0.1)",
-    iconColor: "#123A6F",
+    bgColor: "rgba(59,82,165,0.1)",
+    iconColor: "#3B52A5",
   },
   {
     icon: Mail,
     title: "Email Us",
     description: "kanato4reel@yahoo.com",
     href: "mailto:kanato4reel@yahoo.com",
-    bgColor: "rgba(242,107,33,0.1)",
-    iconColor: "#F26B21",
+    bgColor: "rgba(47,168,79,0.1)",
+    iconColor: "#2FA84F",
   },
   {
     icon: MessageCircle,
@@ -60,3 +60,5 @@ export const budgetRanges = [
   { value: "Above ₦50M", label: "Above ₦50,000,000" },
   { value: "To be determined", label: "To be determined" },
 ];
+
+

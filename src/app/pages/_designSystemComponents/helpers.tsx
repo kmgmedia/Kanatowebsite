@@ -33,7 +33,7 @@ export function ColorSwatch({ shade, hex, rgb, base }: { shade: string; hex: str
 export function PaletteColumn({ title, colors }: { title: string; colors: ColorShade[] }) {
   return (
     <div>
-      <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "0.75rem", color: "#123A6F", marginBottom: "12px" }}>
+      <h4 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "0.75rem", color: "#3B52A5", marginBottom: "12px" }}>
         {title}
       </h4>
       <div className="flex flex-col gap-3">
@@ -48,14 +48,14 @@ export function PaletteColumn({ title, colors }: { title: string; colors: ColorS
 export function SectionHeader({ label, title, desc }: { label: string; title: string; desc?: string }) {
   return (
     <div className="mb-12">
-      <p style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 600, fontSize: "0.75rem", color: "#F26B21", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "8px" }}>
+      <p style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 600, fontSize: "0.75rem", color: "#2FA84F", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "8px" }}>
         {label}
       </p>
-      <h2 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, fontSize: "1.8rem", color: "#123A6F", marginBottom: "8px" }}>
+      <h2 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, fontSize: "1.8rem", color: "#3B52A5", marginBottom: "8px" }}>
         {title}
       </h2>
       {desc && <p style={{ fontFamily: "Inter, sans-serif", color: "#6B7280", fontSize: "0.95rem" }}>{desc}</p>}
-      <div className="w-12 h-1 rounded mt-4" style={{ backgroundColor: "#F26B21" }} />
+      <div className="w-12 h-1 rounded mt-4" style={{ backgroundColor: "#2FA84F" }} />
     </div>
   );
 }
@@ -63,3 +63,5 @@ export function SectionHeader({ label, title, desc }: { label: string; title: st
 export function Divider() {
   return <div className="my-12 border-t" style={{ borderColor: "#E5E7EB" }} />;
 }
+
+

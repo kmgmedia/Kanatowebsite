@@ -71,7 +71,7 @@ export function Contact() {
     <div>
       <SEO
         title="Contact Us — Get in Touch with Kanato Engineering"
-        description="Contact Kanato Engineering Resources Nig. Ltd. — call 08096691601, email kanato4reel@yahoo.com, or visit our office at Suite 7, Carol Plaza, Iyana Ipaja, Lagos. We respond within hours."
+        description="Contact Kanato Engineering Resources Nig. Ltd. — call 08096691601, email kanato4reel@yahoo.com, or visit our head office at 10, Oyewole Close, Baruwa B/Stop, Ipaja, Lagos. We respond within hours."
         path="/contact"
       />
       <HeroSection />
@@ -96,7 +96,7 @@ export function Contact() {
       </section>
 
       {/* CTA */}
-      <section className="py-14" style={{ backgroundColor: "#123A6F" }}>
+      <section className="py-14" style={{ backgroundColor: "#3B52A5" }}>
         <div className="max-w-4xl mx-auto px-4 lg:px-6 text-center">
           <h2
             className="text-white mb-5"
@@ -113,7 +113,7 @@ export function Contact() {
           <a
             href="/request-quote"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
-            style={{ backgroundColor: "#F26B21", color: "#fff", fontFamily: "Inter, sans-serif" }}
+            style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
           >
             Get a Quote →
           </a>
@@ -122,3 +122,5 @@ export function Contact() {
     </div>
   );
 }
+
+

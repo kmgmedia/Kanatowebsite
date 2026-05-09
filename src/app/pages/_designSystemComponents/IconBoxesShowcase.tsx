@@ -22,14 +22,14 @@ export function IconBoxesShowcase() {
               iconSize: 22,
               variants: [
                 {
-                  bg: "rgba(18,58,111,0.1)",
-                  icon: "#123A6F",
+                  bg: "rgba(59,82,165,0.1)",
+                  icon: "#3B52A5",
                   label: "Default",
                 },
-                { bg: "#F26B21", icon: "#fff", label: "Hover" },
+                { bg: "#2FA84F", icon: "#fff", label: "Hover" },
                 {
-                  bg: "rgba(242,107,33,0.2)",
-                  icon: "#F26B21",
+                  bg: "rgba(47,168,79,0.2)",
+                  icon: "#2FA84F",
                   label: "Orange tint",
                 },
               ],
@@ -40,16 +40,16 @@ export function IconBoxesShowcase() {
               iconSize: 20,
               variants: [
                 {
-                  bg: "rgba(242,107,33,0.1)",
-                  icon: "#F26B21",
+                  bg: "rgba(47,168,79,0.1)",
+                  icon: "#2FA84F",
                   label: "Orange light",
                 },
                 {
-                  bg: "rgba(18,58,111,0.1)",
-                  icon: "#123A6F",
+                  bg: "rgba(59,82,165,0.1)",
+                  icon: "#3B52A5",
                   label: "Blue light",
                 },
-                { bg: "#123A6F", icon: "#fff", label: "Solid blue" },
+                { bg: "#3B52A5", icon: "#fff", label: "Solid blue" },
               ],
             },
             {
@@ -58,13 +58,13 @@ export function IconBoxesShowcase() {
               iconSize: 18,
               variants: [
                 {
-                  bg: "rgba(242,107,33,0.2)",
-                  icon: "#F26B21",
+                  bg: "rgba(47,168,79,0.2)",
+                  icon: "#2FA84F",
                   label: "Orange warm",
                 },
                 {
-                  bg: "rgba(18,58,111,0.1)",
-                  icon: "#123A6F",
+                  bg: "rgba(59,82,165,0.1)",
+                  icon: "#3B52A5",
                   label: "Blue cool",
                 },
                 {
@@ -79,8 +79,8 @@ export function IconBoxesShowcase() {
               size: 36,
               iconSize: 16,
               variants: [
-                { bg: "rgba(242,107,33,0.2)", icon: "#F26B21", label: "Award" },
-                { bg: "rgba(18,58,111,0.15)", icon: "#123A6F", label: "Blue" },
+                { bg: "rgba(47,168,79,0.2)", icon: "#2FA84F", label: "Award" },
+                { bg: "rgba(59,82,165,0.15)", icon: "#3B52A5", label: "Blue" },
                 { bg: "rgba(239,68,68,0.1)", icon: "#EF4444", label: "Error" },
               ],
             },
@@ -153,3 +153,5 @@ export function IconBoxesShowcase() {
     </>
   );
 }
+
+

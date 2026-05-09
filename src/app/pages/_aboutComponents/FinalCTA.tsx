@@ -11,7 +11,7 @@ export function FinalCTA() {
             fontFamily: "Montserrat, sans-serif",
             fontWeight: 800,
             fontSize: "clamp(1.4rem, 2.5vw, 2rem)",
-            color: "#123A6F",
+            color: "#3B52A5",
           }}
         >
           Ready to Work with a Trusted Engineering Partner?
@@ -33,7 +33,7 @@ export function FinalCTA() {
             to="/request-quote"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
             style={{
-              backgroundColor: "#F26B21",
+              backgroundColor: "#2FA84F",
               color: "#fff",
               fontFamily: "Inter, sans-serif",
             }}
@@ -46,8 +46,8 @@ export function FinalCTA() {
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all"
             style={{
               backgroundColor: "#fff",
-              color: "#123A6F",
-              border: "1px solid #123A6F",
+              color: "#3B52A5",
+              border: "1px solid #3B52A5",
               fontFamily: "Inter, sans-serif",
             }}
           >
@@ -59,3 +59,5 @@ export function FinalCTA() {
     </section>
   );
 }
+
+

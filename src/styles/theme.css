@@ -1,13 +1,20 @@
 :root {
   /* Kanato Brand Colors */
-  --color-primary: #123A6F;
-  --color-primary-dark: #0d2d57;
-  --color-primary-light: #1a4d8f;
-  --color-orange: #F26B21;
-  --color-orange-dark: #d45c18;
-  --color-orange-light: #f47d3a;
-  --color-charcoal: #1F2937;
-  --color-grey-light: #F5F7FA;
+  --color-primary: #2FA84F;
+  --color-primary-dark: #24863D;
+  --color-primary-light: #48BC65;
+  --color-primary-rgb: 47, 168, 79;
+  --color-secondary: #3B52A5;
+  --color-secondary-dark: #2C3F81;
+  --color-secondary-light: #5B73C4;
+  --color-secondary-deep: #1E2D61;
+  --color-secondary-rgb: 59, 82, 165;
+  --color-accent: #FFA323;
+  --color-accent-dark: #DD8A00;
+  --color-accent-light: #FFB84F;
+  --color-accent-rgb: 255, 163, 35;
+  --color-charcoal: #162032;
+  --color-grey-light: #F4F7FB;
   --color-grey-border: #D1D5DB;
   --color-white: #FFFFFF;
   --color-text-muted: #6B7280;
@@ -31,3 +38,5 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--color-charcoal);
 }
+
+

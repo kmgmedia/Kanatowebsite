@@ -15,7 +15,7 @@ export function HeroSection() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(135deg, rgba(12,40,80,0.95) 0%, rgba(18,58,111,0.85) 100%)",
+            "linear-gradient(135deg, rgba(30,45,97,0.95) 0%, rgba(59,82,165,0.85) 100%)",
         }}
       />
       <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-10 w-full">
@@ -35,13 +35,13 @@ export function HeroSection() {
         <div
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded mb-4"
           style={{
-            backgroundColor: "rgba(242,107,33,0.2)",
-            border: "1px solid rgba(242,107,33,0.4)",
+            backgroundColor: "rgba(47,168,79,0.2)",
+            border: "1px solid rgba(47,168,79,0.4)",
           }}
         >
           <span
             className="text-xs uppercase tracking-widest"
-            style={{ fontFamily: "Inter, sans-serif", color: "#F26B21" }}
+            style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}
           >
             Get in Touch
           </span>
@@ -58,7 +58,7 @@ export function HeroSection() {
           }}
         >
           Let's Discuss Your{" "}
-          <span style={{ color: "#F26B21" }}>Engineering Project</span>
+          <span style={{ color: "#2FA84F" }}>Engineering Project</span>
         </h1>
         <p
           style={{
@@ -74,3 +74,5 @@ export function HeroSection() {
     </section>
   );
 }
+
+

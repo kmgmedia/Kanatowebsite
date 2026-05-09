@@ -10,13 +10,13 @@ export function NotFound() {
       <div className="text-center max-w-md">
         <div
           className="text-8xl font-black mb-4"
-          style={{ fontFamily: "Montserrat, sans-serif", color: "#123A6F", opacity: 0.15 }}
+          style={{ fontFamily: "Montserrat, sans-serif", color: "#3B52A5", opacity: 0.15 }}
         >
           404
         </div>
         <h1
           className="mb-4"
-          style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, color: "#123A6F", fontSize: "1.8rem" }}
+          style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, color: "#3B52A5", fontSize: "1.8rem" }}
         >
           Page Not Found
         </h1>
@@ -30,7 +30,7 @@ export function NotFound() {
           <Link
             to="/"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded text-sm font-semibold transition-all hover:opacity-90"
-            style={{ backgroundColor: "#123A6F", color: "#fff", fontFamily: "Inter, sans-serif" }}
+            style={{ backgroundColor: "#3B52A5", color: "#fff", fontFamily: "Inter, sans-serif" }}
           >
             <Home size={16} />
             Go Home
@@ -38,7 +38,7 @@ export function NotFound() {
           <Link
             to="/contact"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded text-sm font-semibold transition-all hover:opacity-90"
-            style={{ backgroundColor: "#F26B21", color: "#fff", fontFamily: "Inter, sans-serif" }}
+            style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
           >
             Contact Us
             <ArrowRight size={16} />
@@ -48,3 +48,5 @@ export function NotFound() {
     </div>
   );
 }
+
+

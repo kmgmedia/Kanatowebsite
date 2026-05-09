@@ -28,3 +28,5 @@ export const EMAILJS_CONFIG = {
   /** Template ID for the Request a Quote page form */
   QUOTE_TEMPLATE_ID: import.meta.env.VITE_EMAILJS_QUOTE_TEMPLATE_ID || "",
 };
+
+

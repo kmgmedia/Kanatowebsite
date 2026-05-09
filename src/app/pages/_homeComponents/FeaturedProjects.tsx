@@ -11,7 +11,7 @@ export function FeaturedProjects() {
             className="uppercase tracking-widest text-xs mb-3"
             style={{
               fontFamily: "Montserrat, sans-serif",
-              color: "#F26B21",
+              color: "#2FA84F",
               fontWeight: 600,
             }}
           >
@@ -22,14 +22,14 @@ export function FeaturedProjects() {
               fontFamily: "Montserrat, sans-serif",
               fontWeight: 800,
               fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
-              color: "#123A6F",
+              color: "#3B52A5",
             }}
           >
             Selected Projects
           </h2>
           <div
             className="w-16 h-1 mx-auto mt-4 rounded"
-            style={{ backgroundColor: "#F26B21" }}
+            style={{ backgroundColor: "#2FA84F" }}
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -50,7 +50,7 @@ export function FeaturedProjects() {
                 <div
                   className="absolute top-3 left-3 px-3 py-1 rounded text-xs font-semibold"
                   style={{
-                    backgroundColor: "#F26B21",
+                    backgroundColor: "#2FA84F",
                     color: "#fff",
                     fontFamily: "Inter, sans-serif",
                   }}
@@ -61,7 +61,7 @@ export function FeaturedProjects() {
               <div className="p-5">
                 <div
                   className="text-xs uppercase tracking-wider mb-2"
-                  style={{ fontFamily: "Inter, sans-serif", color: "#F26B21" }}
+                  style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}
                 >
                   {project.category}
                 </div>
@@ -70,7 +70,7 @@ export function FeaturedProjects() {
                   style={{
                     fontFamily: "Montserrat, sans-serif",
                     fontWeight: 700,
-                    color: "#123A6F",
+                    color: "#3B52A5",
                     fontSize: "0.95rem",
                   }}
                 >
@@ -100,7 +100,7 @@ export function FeaturedProjects() {
             to="/projects"
             className="inline-flex items-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
             style={{
-              backgroundColor: "#123A6F",
+              backgroundColor: "#3B52A5",
               color: "#fff",
               fontFamily: "Inter, sans-serif",
             }}
@@ -113,3 +113,5 @@ export function FeaturedProjects() {
     </section>
   );
 }
+
+
