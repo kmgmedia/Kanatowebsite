@@ -1,4 +1,5 @@
-import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import { COMPANY } from "../../../constants/company";
 
 export const HERO_IMG =
   "https://images.unsplash.com/photo-1760009436767-d154e930e55c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHRlYW0lMjBwcm9mZXNzaW9uYWwlMjB3b3JrZXJzJTIwc2l0ZXxlbnwxfHx8fDE3NzUyMTEzODR8MA&ixlib=rb-4.1.0&q=80&w=1080";
@@ -7,47 +8,37 @@ export const contactCards = [
   {
     icon: Phone,
     title: "Call Us",
-    lines: ["08096691601", "08033201366"],
-    href: "tel:08096691601",
+    lines: [COMPANY.phone.primary, COMPANY.phone.secondary],
+    href: `tel:${COMPANY.phone.primary}`,
   },
   {
     icon: Mail,
     title: "Email Us",
-    lines: ["kanato4reel@yahoo.com"],
-    href: "mailto:kanato4reel@yahoo.com",
+    lines: [COMPANY.email],
+    href: `mailto:${COMPANY.email}`,
   },
   {
     icon: MapPin,
     title: "Head Office",
-    lines: [
-      "10, Oyewole Close,",
-      "Baruwa B/Stop,",
-      "Ipaja, Lagos.",
-    ],
+    lines: COMPANY.addresses.headOffice.lines,
     href: null,
   },
   {
     icon: MapPin,
     title: "Branch Office",
-    lines: [
-      "Suite 7, Carol Plaza,",
-      "29-39 Alimosho Road,",
-      "Alimosho, Iyana Ipaja, Lagos.",
-    ],
+    lines: COMPANY.addresses.branch.lines,
     href: null,
   },
-];
+] as const;
 
 export const officeHours = [
-  { day: "Monday – Friday", time: "8:00 AM – 5:00 PM" },
-  { day: "Saturday", time: "9:00 AM – 2:00 PM" },
+  { day: "Monday – Friday", time: COMPANY.hours.weekdays.label },
+  { day: "Saturday", time: COMPANY.hours.saturday.label },
   { day: "Sunday", time: "Closed" },
 ];
 
 export const whatsappConfig = {
-  href: "https://wa.me/2348096691601?text=Hello%20Kanato%20Engineering%2C%20I%20would%20like%20to%20make%20an%20inquiry.",
+  href: `https://wa.me/${COMPANY.phone.whatsapp}?text=${encodeURIComponent(COMPANY.whatsappMessage)}`,
   title: "Chat on WhatsApp",
   subtitle: "Get a fast response from our team",
 };
-
-

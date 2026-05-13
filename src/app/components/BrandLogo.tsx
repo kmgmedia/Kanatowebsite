@@ -1,4 +1,5 @@
 import { cn } from "./ui/utils";
+import { COMPANY } from "../../constants/company";
 
 type BrandLogoProps = {
   className?: string;
@@ -13,8 +14,8 @@ export function BrandLogo({
   onDark = false,
   boxed = false,
 }: BrandLogoProps) {
-  const wordmarkColor = onDark ? "text-[var(--color-primary-light)]" : "text-[var(--color-primary)]";
-  const detailColor = onDark ? "text-white/88" : "text-[var(--color-primary-dark)]";
+  const wordmarkColor = onDark ? "text-primary-light" : "text-primary";
+  const detailColor = onDark ? "text-white/[0.88]" : "text-primary-dark";
   const rcColor = onDark ? "text-white/55" : "text-black/60";
 
   return (
@@ -34,10 +35,10 @@ export function BrandLogo({
         <span className="relative inline-block pr-8">
           <span
             className={cn(
-              "block text-[1.28rem] font-black tracking-[-0.08em] sm:text-[1.6rem]",
+              "block text-[1.28rem] font-black tracking-[-0.08em] sm:text-[1.6rem] font-heading",
               wordmarkColor,
             )}
-            style={{ fontFamily: "Montserrat, sans-serif", lineHeight: 0.9 }}
+            style={{ lineHeight: 0.9 }}
           >
             KANATO
           </span>
@@ -46,9 +47,8 @@ export function BrandLogo({
               "absolute -top-1 right-0 text-[0.36rem] font-semibold tracking-[0.04em] sm:text-[0.42rem]",
               rcColor,
             )}
-            style={{ fontFamily: "Inter, sans-serif" }}
           >
-            RC 666713
+            {COMPANY.rc}
           </span>
         </span>
         <span
@@ -56,7 +56,6 @@ export function BrandLogo({
             "mt-1 text-[0.38rem] font-bold uppercase tracking-[-0.03em] sm:text-[0.46rem]",
             detailColor,
           )}
-          style={{ fontFamily: "Inter, sans-serif" }}
         >
           Engineering Resources Nig. Ltd.
         </span>
@@ -65,13 +64,10 @@ export function BrandLogo({
             "mt-0.5 text-[0.38rem] font-bold uppercase tracking-[-0.03em] sm:text-[0.46rem]",
             detailColor,
           )}
-          style={{ fontFamily: "Inter, sans-serif" }}
         >
-          Electrical, Mechanical & Civil
+          Electrical, Mechanical &amp; Civil
         </span>
       </span>
     </span>
   );
 }
-
-

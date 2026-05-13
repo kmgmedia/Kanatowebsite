@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { EMAILJS_CONFIG } from "../../lib/emailjs.config";
 import { trackEvent } from "../../hooks/useAnalytics";
+import { COMPANY } from "../../constants/company";
 import { SEO } from "../components/SEO";
 import { HeroSection } from "./_contactComponents/HeroSection";
 import { ContactInfoCards } from "./_contactComponents/ContactInfoCards";
@@ -14,6 +15,16 @@ interface ContactFormState {
   phone: string;
   subject: string;
   message: string;
+}
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function validateContactForm(form: ContactFormState): string {
+  if (form.name.trim().length < 2) return "Please enter your full name (at least 2 characters).";
+  if (!EMAIL_RE.test(form.email)) return "Please enter a valid email address.";
+  if (form.subject.trim().length < 3) return "Please enter a subject (at least 3 characters).";
+  if (form.message.trim().length < 10) return "Please describe how we can help you (at least 10 characters).";
+  return "";
 }
 
 export function Contact() {
@@ -30,10 +41,18 @@ export function Contact() {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+    if (error) setError("");
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const validationError = validateContactForm(form);
+    if (validationError) {
+      setError(validationError);
+      return;
+    }
+
     setSending(true);
     setError("");
 
@@ -47,15 +66,17 @@ export function Contact() {
           phone: form.phone || "Not provided",
           subject: form.subject,
           message: form.message,
-          to_name: "Kanato Engineering Resources",
+          to_name: COMPANY.shortName,
         },
         { publicKey: EMAILJS_CONFIG.PUBLIC_KEY },
       );
       setSubmitted(true);
       trackEvent("contact_form_submit", "engagement", "Contact Us");
-    } catch {
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Unknown error";
+      console.error("[Contact form]", message);
       setError(
-        "Failed to send your message. Please try again or reach us directly at kanato4reel@yahoo.com.",
+        `Failed to send your message. Please try again or reach us directly at ${COMPANY.email}.`,
       );
     } finally {
       setSending(false);
@@ -64,6 +85,7 @@ export function Contact() {
 
   const handleReset = () => {
     setSubmitted(false);
+    setError("");
     setForm({ name: "", email: "", phone: "", subject: "", message: "" });
   };
 
@@ -71,14 +93,14 @@ export function Contact() {
     <div>
       <SEO
         title="Contact Us — Get in Touch with Kanato Engineering"
-        description="Contact Kanato Engineering Resources Nig. Ltd. — call 08096691601, email kanato4reel@yahoo.com, or visit our head office at 10, Oyewole Close, Baruwa B/Stop, Ipaja, Lagos. We respond within hours."
+        description={`Contact ${COMPANY.name} — call ${COMPANY.phone.primary}, email ${COMPANY.email}, or visit our head office at ${COMPANY.addresses.headOffice.full} We respond within hours.`}
         path="/contact"
       />
       <HeroSection />
       <ContactInfoCards />
-      
-      {/* FORM + MAP */}
-      <section className="py-20" style={{ backgroundColor: "#F5F7FA" }}>
+
+      {/* Form + Map */}
+      <section className="py-20 bg-grey-light">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <ContactForm
@@ -96,24 +118,20 @@ export function Contact() {
       </section>
 
       {/* CTA */}
-      <section className="py-14" style={{ backgroundColor: "#3B52A5" }}>
+      <section className="py-14 bg-secondary">
         <div className="max-w-4xl mx-auto px-4 lg:px-6 text-center">
           <h2
-            className="text-white mb-5"
-            style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, fontSize: "clamp(1.4rem, 2.5vw, 2rem)", color: "#fff" }}
+            className="text-white mb-5 font-heading font-extrabold"
+            style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)" }}
           >
             Need an Immediate Quote?
           </h2>
-          <p
-            className="mb-8"
-            style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.7)", maxWidth: "400px", margin: "0 auto 2rem" }}
-          >
+          <p className="mb-8 text-white/70 max-w-sm mx-auto">
             Use our quote request form for a detailed project assessment.
           </p>
           <a
             href="/request-quote"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
-            style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold bg-primary text-white transition-all hover:opacity-90"
           >
             Get a Quote →
           </a>
@@ -122,5 +140,3 @@ export function Contact() {
     </div>
   );
 }
-
-

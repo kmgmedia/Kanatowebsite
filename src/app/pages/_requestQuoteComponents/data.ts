@@ -1,4 +1,16 @@
+import type { ComponentType } from "react";
 import { Phone, Mail, MessageCircle } from "lucide-react";
+import { COMPANY } from "../../../constants/company";
+
+interface ContactChannel {
+  icon: ComponentType<{ size?: number; className?: string }>;
+  title: string;
+  description: string;
+  href: string;
+  bgColor: string;
+  iconColor: string;
+  external?: boolean;
+}
 
 export const HERO_IMG =
   "https://images.unsplash.com/photo-1734184451009-e21cacf54f9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBlbmdpbmVlcmluZyUyMGluZnJhc3RydWN0dXJlJTIwTmlnZXJpYXxlbnwxfHx8fDE3NzUyMTEzODJ8MA&ixlib=rb-4.1.0&q=80&w=1080";
@@ -15,30 +27,30 @@ export const serviceOptions = [
   "Other",
 ];
 
-export const contactChannels = [
+export const contactChannels: ContactChannel[] = [
   {
     icon: Phone,
     title: "Call Us",
-    description: "08096691601 / 08033201366",
-    href: "tel:08096691601",
-    bgColor: "rgba(59,82,165,0.1)",
-    iconColor: "#3B52A5",
+    description: `${COMPANY.phone.primary} / ${COMPANY.phone.secondary}`,
+    href: `tel:${COMPANY.phone.primary}`,
+    bgColor: "bg-secondary/10",
+    iconColor: "text-secondary",
   },
   {
     icon: Mail,
     title: "Email Us",
-    description: "kanato4reel@yahoo.com",
-    href: "mailto:kanato4reel@yahoo.com",
-    bgColor: "rgba(47,168,79,0.1)",
-    iconColor: "#2FA84F",
+    description: COMPANY.email,
+    href: `mailto:${COMPANY.email}`,
+    bgColor: "bg-primary/10",
+    iconColor: "text-primary",
   },
   {
     icon: MessageCircle,
     title: "WhatsApp",
     description: "Chat with our team",
-    href: "https://wa.me/2348096691601",
-    bgColor: "rgba(37,211,102,0.1)",
-    iconColor: "#25D366",
+    href: `https://wa.me/${COMPANY.phone.whatsapp}`,
+    bgColor: "bg-whatsapp/10",
+    iconColor: "text-whatsapp",
     external: true,
   },
 ];
@@ -60,5 +72,3 @@ export const budgetRanges = [
   { value: "Above ₦50M", label: "Above ₦50,000,000" },
   { value: "To be determined", label: "To be determined" },
 ];
-
-

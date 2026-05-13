@@ -3,4 +3,25 @@
 
 @import 'tw-animate-css';
 
+@theme {
+  --color-primary: #2FA84F;
+  --color-primary-dark: #24863D;
+  --color-primary-light: #48BC65;
+  --color-secondary: #3B52A5;
+  --color-secondary-dark: #2C3F81;
+  --color-secondary-light: #5B73C4;
+  --color-secondary-deep: #1E2D61;
+  --color-accent: #FFA323;
+  --color-accent-dark: #DD8A00;
+  --color-accent-light: #FFB84F;
+  --color-charcoal: #162032;
+  --color-grey-light: #F4F7FB;
+  --color-grey-border: #D1D5DB;
+  --color-muted: #6B7280;
+  --color-error: #EF4444;
+  --color-success: #22C55E;
+  --color-whatsapp: #25D366;
 
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}

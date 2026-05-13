@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block design system page from being indexed (internal dev page)
+Disallow: /design-system
+
+Sitemap: https://www.kanato-engineering.com/sitemap.xml

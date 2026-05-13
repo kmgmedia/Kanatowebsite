@@ -1,22 +1,28 @@
+import type { FormEvent, ChangeEvent } from "react";
 import { CheckCircle, Loader2, AlertCircle, ArrowRight } from "lucide-react";
+
+interface ContactFormState {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+}
 
 interface ContactFormProps {
   submitted: boolean;
   sending: boolean;
   error: string;
-  form: {
-    name: string;
-    email: string;
-    phone: string;
-    subject: string;
-    message: string;
-  };
-  onSubmit: (e: React.FormEvent) => void;
-  onChange: (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => void;
+  form: ContactFormState;
+  onSubmit: (e: FormEvent<HTMLFormElement>) => void;
+  onChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
   onReset: () => void;
 }
+
+const inputClass =
+  "w-full px-4 py-3 rounded border border-grey-border text-sm text-gray-800 outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/20";
+
+const labelClass = "block text-xs font-semibold mb-1.5 text-gray-700";
 
 export function ContactForm({
   submitted,
@@ -28,207 +34,127 @@ export function ContactForm({
   onReset,
 }: ContactFormProps) {
   return (
-    <div
-      className="bg-white rounded-xl p-8 shadow-sm"
-      style={{ border: "1px solid #E5E7EB" }}
-    >
-      <h2
-        className="mb-2"
-        style={{
-          fontFamily: "Montserrat, sans-serif",
-          fontWeight: 700,
-          color: "#3B52A5",
-          fontSize: "1.25rem",
-        }}
-      >
+    <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+      <h2 className="mb-2 font-heading font-bold text-secondary text-xl">
         Send Us a Message
       </h2>
-      <p
-        className="mb-7 text-sm"
-        style={{ fontFamily: "Inter, sans-serif", color: "#6B7280" }}
-      >
+      <p className="mb-7 text-sm text-muted">
         We typically respond within a few hours on business days.
       </p>
 
       {submitted ? (
         <div className="text-center py-10">
-          <div
-            className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-            style={{ backgroundColor: "rgba(34,197,94,0.1)" }}
-          >
-            <CheckCircle size={32} style={{ color: "#22C55E" }} />
+          <div className="w-16 h-16 rounded-full bg-success/10 flex items-center justify-center mx-auto mb-4">
+            <CheckCircle size={32} className="text-success" />
           </div>
-          <h3
-            className="mb-2"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              fontWeight: 700,
-              color: "#3B52A5",
-            }}
-          >
+          <h3 className="mb-2 font-heading font-bold text-secondary">
             Message Sent!
           </h3>
-          <p
-            className="text-sm mb-5"
-            style={{ fontFamily: "Inter, sans-serif", color: "#6B7280" }}
-          >
+          <p className="text-sm mb-5 text-muted">
             Thank you for reaching out. We'll be in touch shortly.
           </p>
           <button
             onClick={onReset}
-            className="px-5 py-2.5 rounded text-sm font-semibold hover:opacity-90"
-            style={{
-              backgroundColor: "#3B52A5",
-              color: "#fff",
-              fontFamily: "Inter, sans-serif",
-            }}
+            className="px-5 py-2.5 rounded text-sm font-semibold bg-secondary text-white hover:opacity-90"
           >
             Send Another Message
           </button>
         </div>
       ) : (
-        <form onSubmit={onSubmit} className="space-y-5">
+        <form onSubmit={onSubmit} className="space-y-5" noValidate>
           {error && (
             <div
-              className="flex items-start gap-3 p-4 rounded-lg"
-              style={{
-                backgroundColor: "rgba(239,68,68,0.08)",
-                border: "1px solid rgba(239,68,68,0.25)",
-              }}
+              role="alert"
+              aria-live="polite"
+              className="flex items-start gap-3 p-4 rounded-lg bg-error/[0.08] border border-error/25"
             >
-              <AlertCircle
-                size={16}
-                className="shrink-0 mt-0.5"
-                style={{ color: "#EF4444" }}
-              />
-              <p
-                className="text-sm"
-                style={{ fontFamily: "Inter, sans-serif", color: "#EF4444" }}
-              >
-                {error}
-              </p>
+              <AlertCircle size={16} className="shrink-0 mt-0.5 text-error" />
+              <p className="text-sm text-error">{error}</p>
             </div>
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
-              <label
-                className="block text-xs font-semibold mb-1.5"
-                style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-              >
+              <label htmlFor="contact-name" className={labelClass}>
                 Your Name *
               </label>
               <input
+                id="contact-name"
                 name="name"
                 type="text"
                 required
+                minLength={2}
                 value={form.name}
                 onChange={onChange}
                 placeholder="John Adeyemi"
-                className="w-full px-4 py-3 rounded border text-sm outline-none"
-                style={{
-                  fontFamily: "Inter, sans-serif",
-                  borderColor: "#D1D5DB",
-                  color: "#1F2937",
-                }}
+                className={inputClass}
               />
             </div>
             <div>
-              <label
-                className="block text-xs font-semibold mb-1.5"
-                style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-              >
+              <label htmlFor="contact-email" className={labelClass}>
                 Email Address *
               </label>
               <input
+                id="contact-email"
                 name="email"
                 type="email"
                 required
                 value={form.email}
                 onChange={onChange}
                 placeholder="john@company.com"
-                className="w-full px-4 py-3 rounded border text-sm outline-none"
-                style={{
-                  fontFamily: "Inter, sans-serif",
-                  borderColor: "#D1D5DB",
-                  color: "#1F2937",
-                }}
+                className={inputClass}
               />
             </div>
             <div>
-              <label
-                className="block text-xs font-semibold mb-1.5"
-                style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-              >
+              <label htmlFor="contact-phone" className={labelClass}>
                 Phone Number
               </label>
               <input
+                id="contact-phone"
                 name="phone"
                 type="tel"
                 value={form.phone}
                 onChange={onChange}
                 placeholder="080 0000 0000"
-                className="w-full px-4 py-3 rounded border text-sm outline-none"
-                style={{
-                  fontFamily: "Inter, sans-serif",
-                  borderColor: "#D1D5DB",
-                  color: "#1F2937",
-                }}
+                className={inputClass}
               />
             </div>
             <div>
-              <label
-                className="block text-xs font-semibold mb-1.5"
-                style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-              >
+              <label htmlFor="contact-subject" className={labelClass}>
                 Subject *
               </label>
               <input
+                id="contact-subject"
                 name="subject"
                 type="text"
                 required
+                minLength={3}
                 value={form.subject}
                 onChange={onChange}
                 placeholder="e.g. Electrical Installation Inquiry"
-                className="w-full px-4 py-3 rounded border text-sm outline-none"
-                style={{
-                  fontFamily: "Inter, sans-serif",
-                  borderColor: "#D1D5DB",
-                  color: "#1F2937",
-                }}
+                className={inputClass}
               />
             </div>
           </div>
           <div>
-            <label
-              className="block text-xs font-semibold mb-1.5"
-              style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-            >
+            <label htmlFor="contact-message" className={labelClass}>
               Message *
             </label>
             <textarea
+              id="contact-message"
               name="message"
               required
+              minLength={10}
               rows={5}
               value={form.message}
               onChange={onChange}
               placeholder="How can we help you?"
-              className="w-full px-4 py-3 rounded border text-sm outline-none resize-none"
-              style={{
-                fontFamily: "Inter, sans-serif",
-                borderColor: "#D1D5DB",
-                color: "#1F2937",
-              }}
+              className={`${inputClass} resize-none`}
             />
           </div>
           <button
             type="submit"
             disabled={sending}
-            className="w-full py-3.5 rounded text-sm font-semibold hover:opacity-90 transition-all flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
-            style={{
-              backgroundColor: "#2FA84F",
-              color: "#fff",
-              fontFamily: "Inter, sans-serif",
-            }}
+            className="w-full py-3.5 rounded text-sm font-semibold bg-primary text-white hover:opacity-90 transition-all flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {sending ? (
               <>
@@ -247,5 +173,3 @@ export function ContactForm({
     </div>
   );
 }
-
-

@@ -1,5 +1,7 @@
+import type { FormEvent, ChangeEvent } from "react";
 import { CheckCircle, ArrowRight, AlertCircle, Loader2 } from "lucide-react";
 import { serviceOptions, budgetRanges } from "./data";
+import { COMPANY } from "../../../constants/company";
 
 interface FormState {
   fullName: string;
@@ -17,14 +19,15 @@ interface QuoteFormProps {
   sending: boolean;
   error: string;
   form: FormState;
-  onSubmit: (e: React.FormEvent) => void;
-  onChange: (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >,
-  ) => void;
+  onSubmit: (e: FormEvent<HTMLFormElement>) => void;
+  onChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void;
   onReset: () => void;
 }
+
+const inputClass =
+  "w-full px-4 py-3 rounded border border-grey-border text-sm text-gray-800 outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/20";
+
+const labelClass = "block text-sm font-semibold mb-1.5 text-gray-700";
 
 export function QuoteForm({
   submitted,
@@ -37,59 +40,26 @@ export function QuoteForm({
 }: QuoteFormProps) {
   if (submitted) {
     return (
-      <div
-        className="bg-white rounded-xl p-12 text-center shadow-sm"
-        style={{ border: "1px solid #E5E7EB" }}
-      >
-        <div
-          className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
-          style={{ backgroundColor: "rgba(34,197,94,0.1)" }}
-        >
-          <CheckCircle size={40} style={{ color: "#22C55E" }} />
+      <div className="bg-white rounded-xl p-12 text-center shadow-sm border border-gray-200">
+        <div className="w-20 h-20 rounded-full bg-success/10 flex items-center justify-center mx-auto mb-6">
+          <CheckCircle size={40} className="text-success" />
         </div>
-        <h2
-          className="mb-3"
-          style={{
-            fontFamily: "Montserrat, sans-serif",
-            fontWeight: 800,
-            color: "#3B52A5",
-            fontSize: "1.5rem",
-          }}
-        >
+        <h2 className="mb-3 font-heading font-extrabold text-secondary text-2xl">
           Quote Request Submitted!
         </h2>
-        <p
-          className="mb-6"
-          style={{
-            fontFamily: "Inter, sans-serif",
-            color: "#6B7280",
-            maxWidth: "400px",
-            margin: "0 auto 1.5rem",
-          }}
-        >
+        <p className="text-muted max-w-sm mx-auto mb-6">
           Thank you, <strong>{form.fullName}</strong>. Our engineering team has
           received your request and will respond within 24 hours.
         </p>
-        <p
-          className="text-sm mb-8"
-          style={{ fontFamily: "Inter, sans-serif", color: "#6B7280" }}
-        >
+        <p className="text-sm text-muted mb-8">
           For urgent inquiries, call us directly at{" "}
-          <a
-            href="tel:08096691601"
-            style={{ color: "#2FA84F", fontWeight: 600 }}
-          >
-            08096691601
+          <a href={`tel:${COMPANY.phone.primary}`} className="text-primary font-semibold">
+            {COMPANY.phone.primary}
           </a>
         </p>
         <button
           onClick={onReset}
-          className="px-6 py-3 rounded text-sm font-semibold transition-all hover:opacity-90"
-          style={{
-            backgroundColor: "#3B52A5",
-            color: "#fff",
-            fontFamily: "Inter, sans-serif",
-          }}
+          className="px-6 py-3 rounded text-sm font-semibold bg-secondary text-white transition-all hover:opacity-90"
         >
           Submit Another Request
         </button>
@@ -98,262 +68,148 @@ export function QuoteForm({
   }
 
   return (
-    <div
-      className="bg-white rounded-xl p-8 shadow-sm"
-      style={{ border: "1px solid #E5E7EB" }}
-    >
-      <h2
-        className="mb-2"
-        style={{
-          fontFamily: "Montserrat, sans-serif",
-          fontWeight: 700,
-          color: "#3B52A5",
-          fontSize: "1.25rem",
-        }}
-      >
+    <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+      <h2 className="mb-2 font-heading font-bold text-secondary text-xl">
         Project Quote Request
       </h2>
-      <p
-        className="mb-7 text-sm"
-        style={{ fontFamily: "Inter, sans-serif", color: "#6B7280" }}
-      >
-        All fields marked with * are required.
-      </p>
+      <p className="mb-7 text-sm text-muted">All fields marked with * are required.</p>
 
-      <form onSubmit={onSubmit} className="space-y-6">
+      <form onSubmit={onSubmit} className="space-y-6" noValidate>
         {error && (
           <div
-            className="flex items-start gap-3 p-4 rounded-lg"
-            style={{
-              backgroundColor: "rgba(239,68,68,0.08)",
-              border: "1px solid rgba(239,68,68,0.25)",
-            }}
+            role="alert"
+            aria-live="polite"
+            className="flex items-start gap-3 p-4 rounded-lg bg-error/[0.08] border border-error/25"
           >
-            <AlertCircle
-              size={16}
-              className="shrink-0 mt-0.5"
-              style={{ color: "#EF4444" }}
-            />
-            <p
-              className="text-sm"
-              style={{ fontFamily: "Inter, sans-serif", color: "#EF4444" }}
-            >
-              {error}
-            </p>
+            <AlertCircle size={16} className="shrink-0 mt-0.5 text-error" />
+            <p className="text-sm text-error">{error}</p>
           </div>
         )}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          {/* Full Name */}
           <div>
-            <label
-              className="block text-sm font-semibold mb-1.5"
-              style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-            >
-              Full Name *
-            </label>
+            <label htmlFor="quote-fullName" className={labelClass}>Full Name *</label>
             <input
+              id="quote-fullName"
               name="fullName"
               type="text"
               required
+              minLength={2}
               value={form.fullName}
               onChange={onChange}
               placeholder="John Adeyemi"
-              className="w-full px-4 py-3 rounded border text-sm outline-none transition-all focus:ring-2"
-              style={{
-                fontFamily: "Inter, sans-serif",
-                borderColor: "#D1D5DB",
-                color: "#1F2937",
-              }}
+              className={inputClass}
             />
           </div>
 
-          {/* Company Name */}
           <div>
-            <label
-              className="block text-sm font-semibold mb-1.5"
-              style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-            >
-              Company Name
-            </label>
+            <label htmlFor="quote-companyName" className={labelClass}>Company Name</label>
             <input
+              id="quote-companyName"
               name="companyName"
               type="text"
               value={form.companyName}
               onChange={onChange}
               placeholder="XYZ Construction Ltd."
-              className="w-full px-4 py-3 rounded border text-sm outline-none transition-all"
-              style={{
-                fontFamily: "Inter, sans-serif",
-                borderColor: "#D1D5DB",
-                color: "#1F2937",
-              }}
+              className={inputClass}
             />
           </div>
 
-          {/* Email */}
           <div>
-            <label
-              className="block text-sm font-semibold mb-1.5"
-              style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-            >
-              Email Address *
-            </label>
+            <label htmlFor="quote-email" className={labelClass}>Email Address *</label>
             <input
+              id="quote-email"
               name="email"
               type="email"
               required
               value={form.email}
               onChange={onChange}
               placeholder="john@company.com"
-              className="w-full px-4 py-3 rounded border text-sm outline-none transition-all"
-              style={{
-                fontFamily: "Inter, sans-serif",
-                borderColor: "#D1D5DB",
-                color: "#1F2937",
-              }}
+              className={inputClass}
             />
           </div>
 
-          {/* Phone */}
           <div>
-            <label
-              className="block text-sm font-semibold mb-1.5"
-              style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-            >
-              Phone Number *
-            </label>
+            <label htmlFor="quote-phone" className={labelClass}>Phone Number *</label>
             <input
+              id="quote-phone"
               name="phone"
               type="tel"
               required
               value={form.phone}
               onChange={onChange}
               placeholder="0800 000 0000"
-              className="w-full px-4 py-3 rounded border text-sm outline-none transition-all"
-              style={{
-                fontFamily: "Inter, sans-serif",
-                borderColor: "#D1D5DB",
-                color: "#1F2937",
-              }}
+              className={inputClass}
             />
           </div>
 
-          {/* Service Type */}
           <div>
-            <label
-              className="block text-sm font-semibold mb-1.5"
-              style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-            >
-              Type of Service Needed *
-            </label>
+            <label htmlFor="quote-serviceType" className={labelClass}>Type of Service Needed *</label>
             <select
+              id="quote-serviceType"
               name="serviceType"
               required
               value={form.serviceType}
               onChange={onChange}
-              className="w-full px-4 py-3 rounded border text-sm outline-none transition-all"
-              style={{
-                fontFamily: "Inter, sans-serif",
-                borderColor: "#D1D5DB",
-                color: form.serviceType ? "#1F2937" : "#9CA3AF",
-              }}
+              className={`${inputClass} ${!form.serviceType ? "text-gray-400" : "text-gray-800"}`}
             >
               <option value="">Select a service...</option>
               {serviceOptions.map((opt) => (
-                <option key={opt} value={opt}>
-                  {opt}
-                </option>
+                <option key={opt} value={opt}>{opt}</option>
               ))}
             </select>
           </div>
 
-          {/* Project Location */}
           <div>
-            <label
-              className="block text-sm font-semibold mb-1.5"
-              style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-            >
-              Project Location *
-            </label>
+            <label htmlFor="quote-projectLocation" className={labelClass}>Project Location *</label>
             <input
+              id="quote-projectLocation"
               name="projectLocation"
               type="text"
               required
               value={form.projectLocation}
               onChange={onChange}
               placeholder="Lagos, Abuja, Ibadan..."
-              className="w-full px-4 py-3 rounded border text-sm outline-none transition-all"
-              style={{
-                fontFamily: "Inter, sans-serif",
-                borderColor: "#D1D5DB",
-                color: "#1F2937",
-              }}
+              className={inputClass}
             />
           </div>
         </div>
 
-        {/* Budget */}
         <div>
-          <label
-            className="block text-sm font-semibold mb-1.5"
-            style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-          >
-            Estimated Project Budget (Optional)
-          </label>
+          <label htmlFor="quote-budget" className={labelClass}>Estimated Project Budget (Optional)</label>
           <select
+            id="quote-budget"
             name="budget"
             value={form.budget}
             onChange={onChange}
-            className="w-full px-4 py-3 rounded border text-sm outline-none transition-all"
-            style={{
-              fontFamily: "Inter, sans-serif",
-              borderColor: "#D1D5DB",
-              color: form.budget ? "#1F2937" : "#9CA3AF",
-            }}
+            className={`${inputClass} ${!form.budget ? "text-gray-400" : "text-gray-800"}`}
           >
             <option value="">Select a budget range...</option>
             {budgetRanges.map((range) => (
-              <option key={range.value} value={range.value}>
-                {range.label}
-              </option>
+              <option key={range.value} value={range.value}>{range.label}</option>
             ))}
           </select>
         </div>
 
-        {/* Project Description */}
         <div>
-          <label
-            className="block text-sm font-semibold mb-1.5"
-            style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-          >
-            Project Description *
-          </label>
+          <label htmlFor="quote-description" className={labelClass}>Project Description *</label>
           <textarea
+            id="quote-description"
             name="description"
             required
+            minLength={20}
             rows={5}
             value={form.description}
             onChange={onChange}
             placeholder="Please describe your project — scope, timeline, special requirements..."
-            className="w-full px-4 py-3 rounded border text-sm outline-none transition-all resize-none"
-            style={{
-              fontFamily: "Inter, sans-serif",
-              borderColor: "#D1D5DB",
-              color: "#1F2937",
-            }}
+            className={`${inputClass} resize-none`}
           />
         </div>
 
         <button
           type="submit"
           disabled={sending}
-          className="w-full py-4 rounded text-sm font-semibold transition-all hover:opacity-90 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
-          style={{
-            backgroundColor: "#2FA84F",
-            color: "#fff",
-            fontFamily: "Inter, sans-serif",
-          }}
+          className="w-full py-4 rounded text-sm font-semibold bg-primary text-white transition-all hover:opacity-90 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
         >
           {sending ? (
             <>
@@ -371,5 +227,3 @@ export function QuoteForm({
     </div>
   );
 }
-
-
