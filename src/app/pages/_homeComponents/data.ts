@@ -14,8 +14,7 @@ import {
 export const HERO_BG =
   "https://images.unsplash.com/photo-1734184451009-e21cacf54f9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBlbmdpbmVlcmluZyUyMGluZnJhc3RydWN0dXJlJTIwTmlnZXJpYXxlbnwxfHx8fDE3NzUyMTEzODJ8MA&ixlib=rb-4.1.0&q=80&w=1080";
 
-export const ABOUT_IMG =
-  "https://images.unsplash.com/photo-1760009436767-d154e930e55c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHRlYW0lMjBwcm9mZXNzaW9uYWwlMjB3b3JrZXJzJTIwc2l0ZXxlbnwxfHx8fDE3NzUyMTEzODR8MA&ixlib=rb-4.1.0&q=80&w=1080";
+export const ABOUT_IMG = "/about-engineering-team.jpeg";
 
 export const stats = [
   { icon: Award, value: "33+", label: "Years of Experience" },
@@ -88,7 +87,7 @@ export const featuredProjects = [
     location: "40 Marina, Lagos",
     year: "2001",
     image:
-      "https://images.unsplash.com/photo-1770927423634-14778e8a0fbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwb2ZmaWNlJTIwYnVpbGRpbmclMjBjb25zdHJ1Y3Rpb258ZW58MXx8fHwxNzc1MTEwNDE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778808057/Kanato_Website/Home%20Page/Ultra-realistic_corporate_building_renovation_project_202605150220_pp6mad.jpg",
   },
   {
     title: "Nestle Foods Office Complex",
@@ -97,7 +96,7 @@ export const featuredProjects = [
     location: "Ilupeju, Lagos",
     year: "2005",
     image:
-      "https://images.unsplash.com/photo-1731847999830-6f71b78d720e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZmFjaWxpdHklMjBtYW51ZmFjdHVyaW5nJTIwcGxhbnR8ZW58MXx8fHwxNzc1MjExMzg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778808158/Kanato_Website/Home%20Page/Ultra-realistic_industrial_renovation_and_facility_202605150222_gllypm.jpg",
   },
   {
     title: "MTN/Etisalat Telecom Site Build",
@@ -106,7 +105,7 @@ export const featuredProjects = [
     location: "Lagos State",
     year: "2010",
     image:
-      "https://images.unsplash.com/photo-1760013767150-da8e4ded6286?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWxlY29tJTIwdG93ZXIlMjBpbmZyYXN0cnVjdHVyZSUyMG1hc3R8ZW58MXx8fHwxNzc1MjExMzgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778808373/Kanato_Website/Home%20Page/Ultra-realistic_Nigerian_telecom_infrastructure_construction_202605150225_jxwfoq.jpg",
   },
   {
     title: "Rural Electrification – Ijedodo",
@@ -115,7 +114,7 @@ export const featuredProjects = [
     location: "Ijedodo, Lagos",
     year: "2003",
     image:
-      "https://images.unsplash.com/photo-1758866572399-7ff95ba69562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3dlciUyMHN1YnN0YXRpb24lMjB0cmFuc2Zvcm1lciUyMGVsZWN0cmljaXR5fGVufDF8fHx8MTc3NTIxMTM5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779057503/Kanato_Website/Home%20Page/Rural_Electrification___Ijedodo_Prompt__202605172338_vdpoqq.jpg",
   },
   {
     title: "Street Light Electrification",
@@ -124,7 +123,7 @@ export const featuredProjects = [
     location: "Jimoh Ajao, Lagos",
     year: "2013",
     image:
-      "https://images.unsplash.com/photo-1654762550505-7c58277e0fac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb3Zlcm5tZW50JTIwaW5mcmFzdHJ1Y3R1cmUlMjBwcm9qZWN0JTIwTmlnZXJpYXxlbnwxfHx8fDE3NzUyMTEzOTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779058508/Kanato_Website/Home%20Page/Photorealistic__recommended___Photorealistic_engineering_photo_202605172352_zhouhr.jpg",
   },
   {
     title: "8-Wing Duplex Complex",
@@ -133,7 +132,7 @@ export const featuredProjects = [
     location: "Arepo, Ogun State",
     year: "2011",
     image:
-      "https://images.unsplash.com/photo-1760119097393-e022c73027d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwcmVzaWRlbnRpYWwlMjBob3VzaW5nJTIwZGV2ZWxvcG1lbnR8ZW58MXx8fHwxNzc1MjExMzg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779056817/Kanato_Website/Home%20Page/8_Wing_Duplex___Arepo_Prompt__202605172326_zykmlk.jpg",
   },
 ];
 
@@ -188,5 +187,3 @@ export const clients = [
   "Primal Concept Ltd.",
   "Four Star Nigeria Ltd",
 ];
-
-

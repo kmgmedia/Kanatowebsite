@@ -3,7 +3,7 @@ import { Zap, Building2, Settings, Wrench, Package, Radio, Power, ArrowRight, Ch
 import { SEO } from "../components/SEO";
 
 const HERO_IMG =
-  "https://images.unsplash.com/photo-1759830337357-29c472b6746c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2FsJTIwaW5zdGFsbGF0aW9uJTIwcG93ZXIlMjBwYW5lbCUyMGluZHVzdHJpYWx8ZW58MXx8fHwxNzc1MjExMzgyfDA&ixlib=rb-4.1.0&q=80&w=1080";
+  "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779058508/Kanato_Website/Home%20Page/Photorealistic__recommended___Photorealistic_engineering_photo_202605172352_zhouhr.jpg";
 
 const services = [
   {

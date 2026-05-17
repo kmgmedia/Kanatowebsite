@@ -5,14 +5,18 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: var(--font-body);
-  color: var(--color-charcoal);
-}
+/* Place base element defaults inside @layer base so Tailwind utility classes
+   (in @layer utilities) can override them — e.g. text-white on an <h4>. */
+@layer base {
+  body {
+    font-family: var(--font-body);
+    color: var(--color-charcoal);
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  color: var(--color-charcoal);
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-charcoal);
+  }
 }
 
 /* Navbar gradient backgrounds — too complex for Tailwind arbitrary values */
