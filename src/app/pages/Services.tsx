@@ -1,5 +1,15 @@
 import { Link } from "react-router";
-import { Zap, Building2, Settings, Wrench, Package, Radio, Power, ArrowRight, CheckCircle } from "lucide-react";
+import {
+  Zap,
+  Building2,
+  Settings,
+  Wrench,
+  Package,
+  Radio,
+  Power,
+  ArrowRight,
+  CheckCircle,
+} from "lucide-react";
 import { SEO } from "../components/SEO";
 
 const HERO_IMG =
@@ -143,10 +153,26 @@ const services = [
 ];
 
 const processSteps = [
-  { step: "01", title: "Consultation", desc: "We discuss your project scope, requirements, and timeline in detail." },
-  { step: "02", title: "Assessment", desc: "Our engineers assess the site and develop a detailed project plan." },
-  { step: "03", title: "Execution", desc: "We mobilize our team and begin execution with precision and care." },
-  { step: "04", title: "Delivery", desc: "Project is completed, tested, and handed over to your satisfaction." },
+  {
+    step: "01",
+    title: "Consultation",
+    desc: "We discuss your project scope, requirements, and timeline in detail.",
+  },
+  {
+    step: "02",
+    title: "Assessment",
+    desc: "Our engineers assess the site and develop a detailed project plan.",
+  },
+  {
+    step: "03",
+    title: "Execution",
+    desc: "We mobilize our team and begin execution with precision and care.",
+  },
+  {
+    step: "04",
+    title: "Delivery",
+    desc: "Project is completed, tested, and handed over to your satisfaction.",
+  },
 ];
 
 export function Services() {
@@ -158,20 +184,46 @@ export function Services() {
         path="/services"
       />
       {/* HERO */}
-      <section className="relative flex items-center" style={{ paddingTop: "110px", paddingBottom: "80px" }}>
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${HERO_IMG})` }} />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(30,45,97,0.95) 0%, rgba(59,82,165,0.85) 100%)" }} />
+      <section
+        className="relative flex items-center"
+        style={{ paddingTop: "110px", paddingBottom: "80px" }}
+      >
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${HERO_IMG})` }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(30,45,97,0.95) 0%, rgba(59,82,165,0.85) 100%)",
+          }}
+        />
         <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-10">
-          <nav className="flex items-center gap-2 text-xs mb-6" style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.5)" }}>
-            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+          <nav
+            className="flex items-center gap-2 text-xs mb-6"
+            style={{
+              fontFamily: "Inter, sans-serif",
+              color: "rgba(255,255,255,0.5)",
+            }}
+          >
+            <Link to="/" className="hover:text-white transition-colors">
+              Home
+            </Link>
             <span>/</span>
             <span className="text-white">Services</span>
           </nav>
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded mb-4"
-            style={{ backgroundColor: "rgba(47,168,79,0.2)", border: "1px solid rgba(47,168,79,0.4)" }}
+            style={{
+              backgroundColor: "rgba(47,168,79,0.2)",
+              border: "1px solid rgba(47,168,79,0.4)",
+            }}
           >
-            <span className="text-xs uppercase tracking-widest" style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}>
+            <span
+              className="text-xs uppercase tracking-widest"
+              style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}
+            >
               Our Services
             </span>
           </div>
@@ -197,7 +249,9 @@ export function Services() {
               fontSize: "1rem",
             }}
           >
-            We provide electrical, mechanical, civil, and infrastructure engineering services designed to support construction, power, maintenance, and technical project delivery across Nigeria.
+            We provide electrical, mechanical, civil, and infrastructure
+            engineering services designed to support construction, power,
+            maintenance, and technical project delivery across Nigeria.
           </p>
         </div>
       </section>
@@ -210,20 +264,30 @@ export function Services() {
               <div key={i} className="flex items-start gap-4">
                 <span
                   className="text-4xl font-black leading-none opacity-30 shrink-0"
-                  style={{ fontFamily: "Montserrat, sans-serif", color: "#fff" }}
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    color: "#fff",
+                  }}
                 >
                   {step.step}
                 </span>
                 <div>
                   <h3
                     className="text-white mb-1"
-                    style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, fontSize: "0.95rem" }}
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                      fontWeight: 700,
+                      fontSize: "0.95rem",
+                    }}
                   >
                     {step.title}
                   </h3>
                   <p
                     className="text-sm leading-relaxed"
-                    style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.8)" }}
+                    style={{
+                      fontFamily: "Inter, sans-serif",
+                      color: "rgba(255,255,255,0.8)",
+                    }}
                   >
                     {step.desc}
                   </p>
@@ -255,7 +319,11 @@ export function Services() {
                   </div>
                   <p
                     className="uppercase tracking-widest text-xs mb-2"
-                    style={{ fontFamily: "Montserrat, sans-serif", color: "#2FA84F", fontWeight: 600 }}
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                      color: "#2FA84F",
+                      fontWeight: 600,
+                    }}
                   >
                     {service.tagline}
                   </p>
@@ -273,15 +341,29 @@ export function Services() {
                   </h2>
                   <p
                     className="mb-6 leading-relaxed"
-                    style={{ fontFamily: "Inter, sans-serif", color: "#4B5563", fontSize: "0.975rem" }}
+                    style={{
+                      fontFamily: "Inter, sans-serif",
+                      color: "#4B5563",
+                      fontSize: "0.975rem",
+                    }}
                   >
                     {service.description}
                   </p>
                   <ul className="space-y-2 mb-6">
                     {service.scope.map((item, j) => (
                       <li key={j} className="flex items-start gap-2">
-                        <CheckCircle size={16} className="shrink-0 mt-0.5" style={{ color: "#2FA84F" }} />
-                        <span className="text-sm" style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}>
+                        <CheckCircle
+                          size={16}
+                          className="shrink-0 mt-0.5"
+                          style={{ color: "#2FA84F" }}
+                        />
+                        <span
+                          className="text-sm"
+                          style={{
+                            fontFamily: "Inter, sans-serif",
+                            color: "#374151",
+                          }}
+                        >
                           {item}
                         </span>
                       </li>
@@ -290,14 +372,21 @@ export function Services() {
                   <Link
                     to="/request-quote"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded text-sm font-semibold transition-all hover:opacity-90"
-                    style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
+                    style={{
+                      backgroundColor: "#2FA84F",
+                      color: "#fff",
+                      fontFamily: "Inter, sans-serif",
+                    }}
                   >
                     Request This Service
                     <ArrowRight size={15} />
                   </Link>
                 </div>
                 <div style={i % 2 !== 0 ? { direction: "ltr" } : {}}>
-                  <div className="rounded-lg overflow-hidden shadow-xl" style={{ height: "360px" }}>
+                  <div
+                    className="rounded-lg overflow-hidden shadow-xl"
+                    style={{ height: "360px" }}
+                  >
                     <img
                       src={service.image}
                       alt={service.title}
@@ -327,15 +416,25 @@ export function Services() {
           </h2>
           <p
             className="mb-8"
-            style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.7)", maxWidth: "450px", margin: "0 auto 2rem" }}
+            style={{
+              fontFamily: "Inter, sans-serif",
+              color: "rgba(255,255,255,0.7)",
+              maxWidth: "450px",
+              margin: "0 auto 2rem",
+            }}
           >
-            Contact our team today for a professional consultation and project quote.
+            Contact our team today for a professional consultation and project
+            quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/request-quote"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
-              style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
+              style={{
+                backgroundColor: "#2FA84F",
+                color: "#fff",
+                fontFamily: "Inter, sans-serif",
+              }}
             >
               Request a Quote
               <ArrowRight size={16} />
@@ -343,7 +442,11 @@ export function Services() {
             <Link
               to="/contact"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold hover:bg-white/10 transition-all"
-              style={{ border: "2px solid rgba(255,255,255,0.5)", color: "#fff", fontFamily: "Inter, sans-serif" }}
+              style={{
+                border: "2px solid rgba(255,255,255,0.5)",
+                color: "#fff",
+                fontFamily: "Inter, sans-serif",
+              }}
             >
               Contact Us
             </Link>
@@ -353,4 +456,3 @@ export function Services() {
     </div>
   );
 }
-

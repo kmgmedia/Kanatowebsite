@@ -124,20 +124,46 @@ export function Clients() {
         path="/clients"
       />
       {/* HERO */}
-      <section className="relative flex items-center" style={{ paddingTop: "110px", paddingBottom: "80px" }}>
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${HERO_IMG})` }} />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(30,45,97,0.95) 0%, rgba(59,82,165,0.85) 100%)" }} />
+      <section
+        className="relative flex items-center"
+        style={{ paddingTop: "110px", paddingBottom: "80px" }}
+      >
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${HERO_IMG})` }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(30,45,97,0.95) 0%, rgba(59,82,165,0.85) 100%)",
+          }}
+        />
         <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-10">
-          <nav className="flex items-center gap-2 text-xs mb-6" style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.5)" }}>
-            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+          <nav
+            className="flex items-center gap-2 text-xs mb-6"
+            style={{
+              fontFamily: "Inter, sans-serif",
+              color: "rgba(255,255,255,0.5)",
+            }}
+          >
+            <Link to="/" className="hover:text-white transition-colors">
+              Home
+            </Link>
             <span>/</span>
             <span className="text-white">Clients</span>
           </nav>
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded mb-4"
-            style={{ backgroundColor: "rgba(47,168,79,0.2)", border: "1px solid rgba(47,168,79,0.4)" }}
+            style={{
+              backgroundColor: "rgba(47,168,79,0.2)",
+              border: "1px solid rgba(47,168,79,0.4)",
+            }}
           >
-            <span className="text-xs uppercase tracking-widest" style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}>
+            <span
+              className="text-xs uppercase tracking-widest"
+              style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}
+            >
               Our Clients
             </span>
           </div>
@@ -153,12 +179,20 @@ export function Clients() {
             }}
           >
             Trusted by Organizations &{" "}
-            <span style={{ color: "#2FA84F" }}>Institutions Across Nigeria</span>
+            <span style={{ color: "#2FA84F" }}>
+              Institutions Across Nigeria
+            </span>
           </h1>
           <p
-            style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.75)", maxWidth: "560px" }}
+            style={{
+              fontFamily: "Inter, sans-serif",
+              color: "rgba(255,255,255,0.75)",
+              maxWidth: "560px",
+            }}
           >
-            Our client portfolio spans over three decades and includes leading corporations, financial institutions, telecom companies, government agencies, and private developers.
+            Our client portfolio spans over three decades and includes leading
+            corporations, financial institutions, telecom companies, government
+            agencies, and private developers.
           </p>
         </div>
       </section>
@@ -176,13 +210,20 @@ export function Clients() {
               <div key={i} className="text-center">
                 <div
                   className="text-white mb-1"
-                  style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, fontSize: "2rem" }}
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: 800,
+                    fontSize: "2rem",
+                  }}
                 >
                   {s.val}
                 </div>
                 <div
                   className="text-sm"
-                  style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.65)" }}
+                  style={{
+                    fontFamily: "Inter, sans-serif",
+                    color: "rgba(255,255,255,0.65)",
+                  }}
                 >
                   {s.label}
                 </div>
@@ -198,7 +239,11 @@ export function Clients() {
           <div className="text-center mb-14">
             <p
               className="uppercase tracking-widest text-xs mb-3"
-              style={{ fontFamily: "Montserrat, sans-serif", color: "#2FA84F", fontWeight: 600 }}
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                color: "#2FA84F",
+                fontWeight: 600,
+              }}
             >
               By Sector
             </p>
@@ -212,7 +257,10 @@ export function Clients() {
             >
               Clients Across Multiple Industries
             </h2>
-            <div className="w-16 h-1 mx-auto mt-4 rounded" style={{ backgroundColor: "#2FA84F" }} />
+            <div
+              className="w-16 h-1 mx-auto mt-4 rounded"
+              style={{ backgroundColor: "#2FA84F" }}
+            />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {clientSectors.map((sector, i) => (
@@ -229,7 +277,12 @@ export function Clients() {
                     <sector.icon size={18} style={{ color: "#3B52A5" }} />
                   </div>
                   <h3
-                    style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#3B52A5", fontSize: "0.9rem" }}
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                      fontWeight: 700,
+                      color: "#3B52A5",
+                      fontSize: "0.9rem",
+                    }}
                   >
                     {sector.sector}
                   </h3>
@@ -237,10 +290,16 @@ export function Clients() {
                 <ul className="space-y-2">
                   {sector.clients.map((client, j) => (
                     <li key={j} className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#2FA84F" }} />
+                      <div
+                        className="w-1.5 h-1.5 rounded-full shrink-0"
+                        style={{ backgroundColor: "#2FA84F" }}
+                      />
                       <span
                         className="text-sm"
-                        style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
+                        style={{
+                          fontFamily: "Inter, sans-serif",
+                          color: "#374151",
+                        }}
                       >
                         {client}
                       </span>
@@ -259,7 +318,11 @@ export function Clients() {
           <div className="text-center mb-12">
             <p
               className="uppercase tracking-widest text-xs mb-3"
-              style={{ fontFamily: "Montserrat, sans-serif", color: "#2FA84F", fontWeight: 600 }}
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                color: "#2FA84F",
+                fontWeight: 600,
+              }}
             >
               Full Client List
             </p>
@@ -276,7 +339,10 @@ export function Clients() {
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {allClients.map((client, i) => {
-              const colors = categoryColors[client.category] || { bg: "#F9FAFB", text: "#374151" };
+              const colors = categoryColors[client.category] || {
+                bg: "#F9FAFB",
+                text: "#374151",
+              };
               return (
                 <div
                   key={i}
@@ -291,7 +357,10 @@ export function Clients() {
                   {client.name}
                   <span
                     className="text-xs px-1.5 py-0.5 rounded"
-                    style={{ backgroundColor: "rgba(0,0,0,0.05)", fontSize: "0.65rem" }}
+                    style={{
+                      backgroundColor: "rgba(0,0,0,0.05)",
+                      fontSize: "0.65rem",
+                    }}
                   >
                     {client.category}
                   </span>
@@ -307,21 +376,37 @@ export function Clients() {
         <div className="max-w-4xl mx-auto px-4 lg:px-6 text-center">
           <h2
             className="text-white mb-5"
-            style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem, 3vw, 2.1rem)", color: "#fff" }}
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 800,
+              fontSize: "clamp(1.5rem, 3vw, 2.1rem)",
+              color: "#fff",
+            }}
           >
             Join Our Growing List of Satisfied Clients
           </h2>
           <p
             className="mb-8"
-            style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.7)", maxWidth: "450px", margin: "0 auto 2rem" }}
+            style={{
+              fontFamily: "Inter, sans-serif",
+              color: "rgba(255,255,255,0.7)",
+              maxWidth: "450px",
+              margin: "0 auto 2rem",
+            }}
           >
-            Partner with Kanato Engineering for your next project and experience the difference that professionalism, integrity, and experience makes.
+            Partner with Kanato Engineering for your next project and experience
+            the difference that professionalism, integrity, and experience
+            makes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/request-quote"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
-              style={{ backgroundColor: "#2FA84F", color: "#fff", fontFamily: "Inter, sans-serif" }}
+              style={{
+                backgroundColor: "#2FA84F",
+                color: "#fff",
+                fontFamily: "Inter, sans-serif",
+              }}
             >
               Request a Quote
               <ArrowRight size={16} />
@@ -329,7 +414,11 @@ export function Clients() {
             <Link
               to="/contact"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold hover:bg-white/10 transition-all"
-              style={{ border: "2px solid rgba(255,255,255,0.5)", color: "#fff", fontFamily: "Inter, sans-serif" }}
+              style={{
+                border: "2px solid rgba(255,255,255,0.5)",
+                color: "#fff",
+                fontFamily: "Inter, sans-serif",
+              }}
             >
               Contact Us
             </Link>
@@ -339,4 +428,3 @@ export function Clients() {
     </div>
   );
 }
-
