@@ -1,4 +1,5 @@
 import { SEO } from "../components/SEO";
+import { PAGE_METADATA } from "../seo/pageMetadata";
 import { PageCTA } from "../components/marketing/PageCTA";
 import { HeroSection } from "./_homeComponents/HeroSection";
 import { TrustBar } from "./_homeComponents/TrustBar";
@@ -13,14 +14,14 @@ export function Home() {
   return (
     <div>
       <SEO
-        title="Reliable Electrical, Mechanical & Civil Engineering Services"
-        description="Kanato Engineering Resources Nig. Ltd. - a wholly indigenous Nigerian engineering company since 1991, delivering electrical, mechanical, and civil engineering solutions across Nigeria. RC 666713."
-        path="/"
+        title={PAGE_METADATA.home.title}
+        description={PAGE_METADATA.home.description}
+        path={PAGE_METADATA.home.path}
         schema={{
           "@context": "https://schema.org",
           "@type": "WebPage",
           name: "Home - Kanato Engineering Resources Nig. Ltd.",
-          url: "https://www.kanato-engineering.com",
+          url: "http://kanatoengineering.com.ng",
           description:
             "Kanato Engineering Resources Nigeria Limited provides dependable electrical, mechanical, and civil engineering services across Nigeria since 1991.",
         }}

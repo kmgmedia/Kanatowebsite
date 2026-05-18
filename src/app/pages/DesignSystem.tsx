@@ -1,4 +1,5 @@
 import { SEO } from "../components/SEO";
+import { PAGE_METADATA } from "../seo/pageMetadata";
 import { ColorPalettes } from "./_designSystemComponents/ColorPalettes";
 import { Typography } from "./_designSystemComponents/Typography";
 import { ButtonsShowcase } from "./_designSystemComponents/ButtonsShowcase";
@@ -13,9 +14,10 @@ export function DesignSystem() {
   return (
     <div style={{ backgroundColor: "#F5F7FA", minHeight: "100vh" }}>
       <SEO
-        title="Design System — Complete Style Guide"
-        description="Kanato Engineering Style Guide. Complete color palettes, typography, components, and design specifications used across the website."
-        path="/designsystem"
+        title={PAGE_METADATA.designSystem.title}
+        description={PAGE_METADATA.designSystem.description}
+        path={PAGE_METADATA.designSystem.path}
+        noindex={PAGE_METADATA.designSystem.noindex}
       />
 
       {/* PAGE HEADER */}

@@ -1,6 +1,7 @@
 import { PageCTA } from "../components/marketing/PageCTA";
 import { PageHero } from "../components/marketing/PageHero";
 import { SEO } from "../components/SEO";
+import { PAGE_METADATA } from "../seo/pageMetadata";
 import { ProcessSection } from "./_servicesComponents/ProcessSection";
 import { ServiceDetailsSection } from "./_servicesComponents/ServiceDetailsSection";
 import { servicesHeroImage } from "./_servicesComponents/data";
@@ -9,9 +10,9 @@ export function Services() {
   return (
     <div>
       <SEO
-        title="Engineering Services - Electrical, Mechanical, Civil & More"
-        description="Kanato Engineering offers 7 integrated services: Electrical Installation, Mechanical Installation, Civil Engineering Works, Maintenance & Servicing, Material Supply, Telecom Infrastructure, and Power & Energy Solutions across Nigeria."
-        path="/services"
+        title={PAGE_METADATA.services.title}
+        description={PAGE_METADATA.services.description}
+        path={PAGE_METADATA.services.path}
       />
 
       <PageHero

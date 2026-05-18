@@ -2,6 +2,7 @@ import { useState } from "react";
 import { PageCTA } from "../components/marketing/PageCTA";
 import { PageHero } from "../components/marketing/PageHero";
 import { SEO } from "../components/SEO";
+import { PAGE_METADATA } from "../seo/pageMetadata";
 import { ProjectsGridSection } from "./_projectsComponents/ProjectsGridSection";
 import {
   projectCards,
@@ -22,9 +23,9 @@ export function Projects() {
   return (
     <div>
       <SEO
-        title="Projects - Engineering Work Delivered Across Nigeria Since 1991"
-        description="Browse 27+ completed engineering projects by Kanato Engineering - civil construction, electrical installations, telecom infrastructure, power solutions and more for top Nigerian corporations and government bodies."
-        path="/projects"
+        title={PAGE_METADATA.projects.title}
+        description={PAGE_METADATA.projects.description}
+        path={PAGE_METADATA.projects.path}
       />
 
       <PageHero

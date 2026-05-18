@@ -5,6 +5,7 @@ import { EMAILJS_CONFIG } from "../../lib/emailjs.config";
 import { trackEvent } from "../../hooks/useAnalytics";
 import { COMPANY } from "../../constants/company";
 import { SEO } from "../components/SEO";
+import { PAGE_METADATA } from "../seo/pageMetadata";
 import { HeroSection } from "./_requestQuoteComponents/HeroSection";
 import { QuoteForm } from "./_requestQuoteComponents/QuoteForm";
 import { SidebarInfo } from "./_requestQuoteComponents/SidebarInfo";
@@ -133,9 +134,9 @@ export function RequestQuote() {
   return (
     <div>
       <SEO
-        title="Request a Quote - Free Engineering Project Assessment"
-        description="Request a free, no-obligation engineering quote from Kanato Engineering. We cover Electrical, Mechanical, Civil, Telecom, Power & Energy projects. Get a detailed response within 24 hours."
-        path="/request-quote"
+        title={PAGE_METADATA.requestQuote.title}
+        description={PAGE_METADATA.requestQuote.description}
+        path={PAGE_METADATA.requestQuote.path}
       />
 
       <HeroSection />

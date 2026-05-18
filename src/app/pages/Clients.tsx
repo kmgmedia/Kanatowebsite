@@ -1,6 +1,7 @@
 import { PageCTA } from "../components/marketing/PageCTA";
 import { PageHero } from "../components/marketing/PageHero";
 import { SEO } from "../components/SEO";
+import { PAGE_METADATA } from "../seo/pageMetadata";
 import { ClientsWallSection } from "./_clientsComponents/ClientsWallSection";
 import { SectorsSection } from "./_clientsComponents/SectorsSection";
 import { StatsSection } from "./_clientsComponents/StatsSection";
@@ -10,9 +11,9 @@ export function Clients() {
   return (
     <div>
       <SEO
-        title="Our Clients - Trusted by Corporations, Banks & Government Bodies"
-        description="Kanato Engineering has served 30+ clients including Union Bank, Nestle Foods Nigeria, MTN, Etisalat, Ecobank, Lagos State Government, and many more across multiple sectors since 1991."
-        path="/clients"
+        title={PAGE_METADATA.clients.title}
+        description={PAGE_METADATA.clients.description}
+        path={PAGE_METADATA.clients.path}
       />
 
       <PageHero

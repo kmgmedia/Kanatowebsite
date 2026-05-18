@@ -50,5 +50,7 @@ export const COMPANY = {
     "Hello Kanato Engineering, I would like to inquire about your engineering services.",
 } as const;
 
-export const SITE_URL =
-  import.meta.env.VITE_SITE_URL || "https://www.kanato-engineering.com";
+const envSiteUrl =
+  typeof import.meta !== "undefined" ? import.meta.env?.VITE_SITE_URL : undefined;
+
+export const SITE_URL = envSiteUrl || "http://kanatoengineering.com.ng";

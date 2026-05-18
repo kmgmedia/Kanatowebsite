@@ -1,4 +1,5 @@
 import { SEO } from "../components/SEO";
+import { PAGE_METADATA } from "../seo/pageMetadata";
 import { HeroSection } from "./_aboutComponents/HeroSection";
 import { CompanyOverview } from "./_aboutComponents/CompanyOverview";
 import { VisionMission } from "./_aboutComponents/VisionMission";
@@ -10,14 +11,14 @@ export function About() {
   return (
     <div>
       <SEO
-        title="About Us - 33+ Years of Indigenous Engineering Excellence"
-        description="Learn about Kanato Engineering Resources Nig. Ltd. - incorporated in 1991, RC 666713. A wholly indigenous Nigerian engineering company built on integrity, professionalism, and 33+ years of experience."
-        path="/about"
+        title={PAGE_METADATA.about.title}
+        description={PAGE_METADATA.about.description}
+        path={PAGE_METADATA.about.path}
         schema={{
           "@context": "https://schema.org",
           "@type": "AboutPage",
           name: "About Kanato Engineering Resources Nig. Ltd.",
-          url: "https://www.kanato-engineering.com/about",
+          url: "http://kanatoengineering.com.ng/about",
           description:
             "Kanato Engineering Resources Nigeria Limited was incorporated on 23rd July 1991. We specialise in Electrical, Mechanical, and Civil engineering services across Nigeria.",
         }}

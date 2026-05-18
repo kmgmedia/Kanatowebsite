@@ -5,6 +5,8 @@ interface ImportMetaEnv {
   readonly VITE_EMAILJS_SERVICE_ID: string;
   readonly VITE_EMAILJS_CONTACT_TEMPLATE_ID: string;
   readonly VITE_EMAILJS_QUOTE_TEMPLATE_ID: string;
+  readonly VITE_GA_MEASUREMENT_ID?: string;
+  readonly VITE_SITE_URL?: string;
 }
 
 interface ImportMeta {

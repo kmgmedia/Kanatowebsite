@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import { ArrowRight, Home } from "lucide-react";
+import { SEO } from "../components/SEO";
+import { PAGE_METADATA } from "../seo/pageMetadata";
 
 export function NotFound() {
   return (
@@ -7,6 +9,12 @@ export function NotFound() {
       className="min-h-screen flex items-center justify-center px-4"
       style={{ backgroundColor: "#F5F7FA", paddingTop: "120px" }}
     >
+      <SEO
+        title={PAGE_METADATA.notFound.title}
+        description={PAGE_METADATA.notFound.description}
+        path={PAGE_METADATA.notFound.path}
+        noindex={PAGE_METADATA.notFound.noindex}
+      />
       <div className="text-center max-w-md">
         <div
           className="text-8xl font-black mb-4"

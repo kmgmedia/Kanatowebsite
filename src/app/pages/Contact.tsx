@@ -6,6 +6,7 @@ import { trackEvent } from "../../hooks/useAnalytics";
 import { COMPANY } from "../../constants/company";
 import { PageCTA } from "../components/marketing/PageCTA";
 import { SEO } from "../components/SEO";
+import { PAGE_METADATA } from "../seo/pageMetadata";
 import { HeroSection } from "./_contactComponents/HeroSection";
 import { ContactInfoCards } from "./_contactComponents/ContactInfoCards";
 import { ContactForm } from "./_contactComponents/ContactForm";
@@ -106,9 +107,9 @@ export function Contact() {
   return (
     <div>
       <SEO
-        title="Contact Us - Get in Touch with Kanato Engineering"
-        description={`Contact ${COMPANY.name} - call ${COMPANY.phone.primary}, email ${COMPANY.email}, or visit our head office at ${COMPANY.addresses.headOffice.full} We respond within hours.`}
-        path="/contact"
+        title={PAGE_METADATA.contact.title}
+        description={PAGE_METADATA.contact.description}
+        path={PAGE_METADATA.contact.path}
       />
       <HeroSection />
       <ContactInfoCards />
