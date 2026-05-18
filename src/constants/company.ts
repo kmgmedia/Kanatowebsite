@@ -29,7 +29,11 @@ export const COMPANY = {
       city: "Iyana Ipaja",
       state: "Lagos",
       full: "Suite 7, Carol Plaza, 29-39 Alimosho Road, Alimosho, Iyana Ipaja, Lagos.",
-      lines: ["Suite 7, Carol Plaza,", "29-39 Alimosho Road,", "Alimosho, Iyana Ipaja, Lagos."],
+      lines: [
+        "Suite 7, Carol Plaza,",
+        "29-39 Alimosho Road,",
+        "Alimosho, Iyana Ipaja, Lagos.",
+      ],
     },
   },
   social: {
@@ -38,8 +42,8 @@ export const COMPANY = {
     tiktok: "https://tiktok.com",
   },
   hours: {
-    weekdays: { opens: "08:00", closes: "17:00", label: "8:00 AM – 5:00 PM" },
-    saturday: { opens: "09:00", closes: "14:00", label: "9:00 AM – 2:00 PM" },
+    weekdays: { opens: "08:00", closes: "17:00", label: "8:00 AM - 5:00 PM" },
+    saturday: { opens: "09:00", closes: "14:00", label: "9:00 AM - 2:00 PM" },
   },
   geo: { lat: "6.6012", lng: "3.2890" },
   whatsappMessage:

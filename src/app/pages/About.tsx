@@ -10,8 +10,8 @@ export function About() {
   return (
     <div>
       <SEO
-        title="About Us — 33+ Years of Indigenous Engineering Excellence"
-        description="Learn about Kanato Engineering Resources Nig. Ltd. — incorporated in 1991, RC 666713. A wholly indigenous Nigerian engineering company built on integrity, professionalism, and 33+ years of experience."
+        title="About Us - 33+ Years of Indigenous Engineering Excellence"
+        description="Learn about Kanato Engineering Resources Nig. Ltd. - incorporated in 1991, RC 666713. A wholly indigenous Nigerian engineering company built on integrity, professionalism, and 33+ years of experience."
         path="/about"
         schema={{
           "@context": "https://schema.org",
@@ -31,5 +31,3 @@ export function About() {
     </div>
   );
 }
-
-

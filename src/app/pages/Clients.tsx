@@ -1,430 +1,45 @@
-import { Link } from "react-router";
-import { ArrowRight, Building2, Zap, Radio, Shield, Users } from "lucide-react";
+import { PageCTA } from "../components/marketing/PageCTA";
+import { PageHero } from "../components/marketing/PageHero";
 import { SEO } from "../components/SEO";
-
-const HERO_IMG =
-  "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779057754/Kanato_Website/Home%20Page/2_Office_Complex___Alfa_202605172340_vh7jfq.jpg";
-
-const clientSectors = [
-  {
-    icon: Building2,
-    sector: "Real Estate & Construction",
-    clients: [
-      "Clockwise Dev. Ltd.",
-      "Wauline & Clockwise Ltd.",
-      "Wadmus Const. Ltd.",
-      "Sabkay Nig. Ltd.",
-      "Primal Concept Ltd.",
-      "Four Star Nigeria Ltd.",
-      "Pentorise Ltd.",
-      "Cennic Ltd.",
-      "Francis Alimekhena",
-      "Lawyer Tunde Seriki",
-      "Mr. Ezekor",
-      "Mr. Ayobami",
-    ],
-  },
-  {
-    icon: Zap,
-    sector: "Power & Energy",
-    clients: [
-      "Income Electrix Limited",
-      "A.E.E. Nig. Ltd.",
-      "Afolabi Nig. Ltd.",
-      "M.T.I. Ltd.",
-      "Mass Telecom Innovation Ltd.",
-      "Trusnet Limited",
-      "Tuag Nig. Ltd.",
-    ],
-  },
-  {
-    icon: Radio,
-    sector: "Telecommunications",
-    clients: [
-      "MTN Nigeria",
-      "Etisalat Nigeria",
-      "Mass Telecom Innovation Ltd.",
-      "Servtek",
-      "ATB Technology",
-      "Asteral Ltd.",
-    ],
-  },
-  {
-    icon: Shield,
-    sector: "Financial & Corporate",
-    clients: [
-      "Union Bank Plc",
-      "Union Homes Plc",
-      "Ecobank Nigeria",
-      "Nestle Foods Nigeria",
-    ],
-  },
-  {
-    icon: Users,
-    sector: "Government & Institutions",
-    clients: [
-      "Ikeja Local Government",
-      "Lagos State Government (LASG)",
-      "Siktob Nig. Ltd./LASG",
-    ],
-  },
-];
-
-const allClients = [
-  { name: "Union Bank Plc", category: "Financial" },
-  { name: "Union Homes Plc", category: "Financial" },
-  { name: "Nestle Foods Nigeria", category: "Corporate" },
-  { name: "MTN Nigeria", category: "Telecom" },
-  { name: "Etisalat Nigeria", category: "Telecom" },
-  { name: "Ecobank Nigeria", category: "Financial" },
-  { name: "Ikeja Local Government", category: "Government" },
-  { name: "Lagos State Government", category: "Government" },
-  { name: "Clockwise Dev. Ltd.", category: "Construction" },
-  { name: "Wauline & Clockwise Ltd.", category: "Construction" },
-  { name: "Mass Telecom Innovation Ltd.", category: "Telecom" },
-  { name: "Trusnet Limited", category: "Power" },
-  { name: "Income Electrix Limited", category: "Power" },
-  { name: "Primal Concept Ltd.", category: "Construction" },
-  { name: "Sabkay Nig. Ltd.", category: "Construction" },
-  { name: "Pentorise Ltd.", category: "Construction" },
-  { name: "ATB Technology", category: "Telecom" },
-  { name: "Cennic Ltd.", category: "Construction" },
-  { name: "Siktob Nig. Ltd.", category: "Government" },
-  { name: "Tuag Nig. Ltd.", category: "Engineering" },
-  { name: "Asteral Ltd.", category: "Engineering" },
-  { name: "Wadmus Const. Ltd.", category: "Construction" },
-  { name: "M.T.I. Ltd.", category: "Power" },
-  { name: "Servtek", category: "Telecom" },
-  { name: "A.E.E. Nig. Ltd.", category: "Power" },
-  { name: "Afolabi Nig. Ltd.", category: "Power" },
-  { name: "Four Star Nigeria Ltd.", category: "Construction" },
-  { name: "Export Logistics Apapa", category: "Logistics" },
-  { name: "Soleem Engineering Ltd.", category: "Engineering" },
-  { name: "Sister Galardis", category: "Private" },
-];
-
-const categoryColors: Record<string, { bg: string; text: string }> = {
-  Financial: { bg: "#EFF6FF", text: "#1D4ED8" },
-  Corporate: { bg: "#F0FDF4", text: "#15803D" },
-  Telecom: { bg: "#FFF7ED", text: "#C2410C" },
-  Government: { bg: "#FDF4FF", text: "#7E22CE" },
-  Construction: { bg: "#F0FDF4", text: "#166534" },
-  Power: { bg: "#FFFBEB", text: "#B45309" },
-  Engineering: { bg: "#EFF6FF", text: "#1E40AF" },
-  Logistics: { bg: "#F5F3FF", text: "#6D28D9" },
-  Private: { bg: "#F9FAFB", text: "#374151" },
-};
+import { ClientsWallSection } from "./_clientsComponents/ClientsWallSection";
+import { SectorsSection } from "./_clientsComponents/SectorsSection";
+import { StatsSection } from "./_clientsComponents/StatsSection";
+import { clientsHeroImage } from "./_clientsComponents/data";
 
 export function Clients() {
   return (
     <div>
       <SEO
-        title="Our Clients — Trusted by Corporations, Banks & Government Bodies"
+        title="Our Clients - Trusted by Corporations, Banks & Government Bodies"
         description="Kanato Engineering has served 30+ clients including Union Bank, Nestle Foods Nigeria, MTN, Etisalat, Ecobank, Lagos State Government, and many more across multiple sectors since 1991."
         path="/clients"
       />
-      {/* HERO */}
-      <section
-        className="relative flex items-center"
-        style={{ paddingTop: "110px", paddingBottom: "80px" }}
-      >
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${HERO_IMG})` }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(135deg, rgba(30,45,97,0.95) 0%, rgba(59,82,165,0.85) 100%)",
-          }}
-        />
-        <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-10">
-          <nav
-            className="flex items-center gap-2 text-xs mb-6"
-            style={{
-              fontFamily: "Inter, sans-serif",
-              color: "rgba(255,255,255,0.5)",
-            }}
-          >
-            <Link to="/" className="hover:text-white transition-colors">
-              Home
-            </Link>
-            <span>/</span>
-            <span className="text-white">Clients</span>
-          </nav>
-          <div
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded mb-4"
-            style={{
-              backgroundColor: "rgba(47,168,79,0.2)",
-              border: "1px solid rgba(47,168,79,0.4)",
-            }}
-          >
-            <span
-              className="text-xs uppercase tracking-widest"
-              style={{ fontFamily: "Inter, sans-serif", color: "#2FA84F" }}
-            >
-              Our Clients
-            </span>
-          </div>
-          <h1
-            className="text-white mb-4"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              fontWeight: 800,
-              fontSize: "clamp(2rem, 4vw, 3rem)",
-              maxWidth: "700px",
-              lineHeight: 1.2,
-              color: "#fff",
-            }}
-          >
+
+      <PageHero
+        backgroundImage={clientsHeroImage}
+        badge="Our Clients"
+        currentPage="Clients"
+        title={
+          <>
             Trusted by Organizations &{" "}
-            <span style={{ color: "#2FA84F" }}>
+            <span className="text-primary">
               Institutions Across Nigeria
             </span>
-          </h1>
-          <p
-            style={{
-              fontFamily: "Inter, sans-serif",
-              color: "rgba(255,255,255,0.75)",
-              maxWidth: "560px",
-            }}
-          >
-            Our client portfolio spans over three decades and includes leading
-            corporations, financial institutions, telecom companies, government
-            agencies, and private developers.
-          </p>
-        </div>
-      </section>
+          </>
+        }
+        description="Our client portfolio spans over three decades and includes leading corporations, financial institutions, telecom companies, government agencies, and private developers."
+      />
 
-      {/* TRUST STATS */}
-      <section style={{ backgroundColor: "#3B52A5" }} className="py-10">
-        <div className="max-w-7xl mx-auto px-4 lg:px-6">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { val: "30+", label: "Corporate Clients" },
-              { val: "33+", label: "Years of Service" },
-              { val: "5+", label: "Industry Sectors" },
-              { val: "100+", label: "Projects Delivered" },
-            ].map((s, i) => (
-              <div key={i} className="text-center">
-                <div
-                  className="text-white mb-1"
-                  style={{
-                    fontFamily: "Montserrat, sans-serif",
-                    fontWeight: 800,
-                    fontSize: "2rem",
-                  }}
-                >
-                  {s.val}
-                </div>
-                <div
-                  className="text-sm"
-                  style={{
-                    fontFamily: "Inter, sans-serif",
-                    color: "rgba(255,255,255,0.65)",
-                  }}
-                >
-                  {s.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StatsSection />
+      <SectorsSection />
+      <ClientsWallSection />
 
-      {/* BY SECTOR */}
-      <section className="py-20" style={{ backgroundColor: "#F5F7FA" }}>
-        <div className="max-w-7xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-14">
-            <p
-              className="uppercase tracking-widest text-xs mb-3"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                color: "#2FA84F",
-                fontWeight: 600,
-              }}
-            >
-              By Sector
-            </p>
-            <h2
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontWeight: 800,
-                fontSize: "clamp(1.5rem, 2.5vw, 2.1rem)",
-                color: "#3B52A5",
-              }}
-            >
-              Clients Across Multiple Industries
-            </h2>
-            <div
-              className="w-16 h-1 mx-auto mt-4 rounded"
-              style={{ backgroundColor: "#2FA84F" }}
-            />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {clientSectors.map((sector, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-lg p-6 shadow-sm border hover:shadow-md transition-all"
-                style={{ borderColor: "#E5E7EB" }}
-              >
-                <div className="flex items-center gap-3 mb-5">
-                  <div
-                    className="w-10 h-10 rounded flex items-center justify-center"
-                    style={{ backgroundColor: "rgba(59,82,165,0.08)" }}
-                  >
-                    <sector.icon size={18} style={{ color: "#3B52A5" }} />
-                  </div>
-                  <h3
-                    style={{
-                      fontFamily: "Montserrat, sans-serif",
-                      fontWeight: 700,
-                      color: "#3B52A5",
-                      fontSize: "0.9rem",
-                    }}
-                  >
-                    {sector.sector}
-                  </h3>
-                </div>
-                <ul className="space-y-2">
-                  {sector.clients.map((client, j) => (
-                    <li key={j} className="flex items-center gap-2">
-                      <div
-                        className="w-1.5 h-1.5 rounded-full shrink-0"
-                        style={{ backgroundColor: "#2FA84F" }}
-                      />
-                      <span
-                        className="text-sm"
-                        style={{
-                          fontFamily: "Inter, sans-serif",
-                          color: "#374151",
-                        }}
-                      >
-                        {client}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ALL CLIENTS WALL */}
-      <section className="py-20" style={{ backgroundColor: "#fff" }}>
-        <div className="max-w-7xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-12">
-            <p
-              className="uppercase tracking-widest text-xs mb-3"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                color: "#2FA84F",
-                fontWeight: 600,
-              }}
-            >
-              Full Client List
-            </p>
-            <h2
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontWeight: 800,
-                fontSize: "clamp(1.5rem, 2.5vw, 2.1rem)",
-                color: "#3B52A5",
-              }}
-            >
-              Organizations We Have Served
-            </h2>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-            {allClients.map((client, i) => {
-              const colors = categoryColors[client.category] || {
-                bg: "#F9FAFB",
-                text: "#374151",
-              };
-              return (
-                <div
-                  key={i}
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-full border text-sm font-medium transition-all hover:shadow-md"
-                  style={{
-                    fontFamily: "Inter, sans-serif",
-                    backgroundColor: colors.bg,
-                    color: colors.text,
-                    borderColor: "transparent",
-                  }}
-                >
-                  {client.name}
-                  <span
-                    className="text-xs px-1.5 py-0.5 rounded"
-                    style={{
-                      backgroundColor: "rgba(0,0,0,0.05)",
-                      fontSize: "0.65rem",
-                    }}
-                  >
-                    {client.category}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16" style={{ backgroundColor: "#3B52A5" }}>
-        <div className="max-w-4xl mx-auto px-4 lg:px-6 text-center">
-          <h2
-            className="text-white mb-5"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              fontWeight: 800,
-              fontSize: "clamp(1.5rem, 3vw, 2.1rem)",
-              color: "#fff",
-            }}
-          >
-            Join Our Growing List of Satisfied Clients
-          </h2>
-          <p
-            className="mb-8"
-            style={{
-              fontFamily: "Inter, sans-serif",
-              color: "rgba(255,255,255,0.7)",
-              maxWidth: "450px",
-              margin: "0 auto 2rem",
-            }}
-          >
-            Partner with Kanato Engineering for your next project and experience
-            the difference that professionalism, integrity, and experience
-            makes.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/request-quote"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
-              style={{
-                backgroundColor: "#2FA84F",
-                color: "#fff",
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
-              Request a Quote
-              <ArrowRight size={16} />
-            </Link>
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold hover:bg-white/10 transition-all"
-              style={{
-                border: "2px solid rgba(255,255,255,0.5)",
-                color: "#fff",
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </section>
+      <PageCTA
+        title="Join Our Growing List of Satisfied Clients"
+        description="Partner with Kanato Engineering for your next project and experience the difference that professionalism, integrity, and experience makes."
+        primaryAction={{ href: "/request-quote", label: "Request a Quote" }}
+        secondaryAction={{ href: "/contact", label: "Contact Us" }}
+      />
     </div>
   );
 }

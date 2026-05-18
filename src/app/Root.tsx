@@ -1,14 +1,14 @@
-import { Outlet, useLocation } from "react-router";
 import { useEffect } from "react";
-import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
-import { WhatsAppButton } from "./components/WhatsAppButton";
+import { Outlet, useLocation } from "react-router";
 import { useAnalytics } from "../hooks/useAnalytics";
+import { Footer } from "./components/Footer";
+import { Navbar } from "./components/Navbar";
+import { WhatsAppButton } from "./components/WhatsAppButton";
 
 export function Root() {
   const { pathname } = useLocation();
 
-  // Google Analytics 4 — page view tracking
+  // Google Analytics 4 page view tracking
   useAnalytics();
 
   useEffect(() => {
@@ -26,4 +26,3 @@ export function Root() {
     </div>
   );
 }
-

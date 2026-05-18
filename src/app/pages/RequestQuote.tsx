@@ -1,4 +1,4 @@
-import type { FormEvent, ChangeEvent } from "react";
+import type { ChangeEvent, FormEvent } from "react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { EMAILJS_CONFIG } from "../../lib/emailjs.config";
@@ -24,12 +24,30 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_RE = /^\+?[\d\s\-().]{10,}$/;
 
 function validateQuoteForm(form: FormState): string {
-  if (form.fullName.trim().length < 2) return "Please enter your full name (at least 2 characters).";
-  if (!EMAIL_RE.test(form.email)) return "Please enter a valid email address.";
-  if (!PHONE_RE.test(form.phone)) return "Please enter a valid phone number (at least 10 digits).";
-  if (!form.serviceType) return "Please select the type of service you need.";
-  if (form.projectLocation.trim().length < 3) return "Please enter your project location.";
-  if (form.description.trim().length < 20) return "Please describe your project (at least 20 characters).";
+  if (form.fullName.trim().length < 2) {
+    return "Please enter your full name (at least 2 characters).";
+  }
+
+  if (!EMAIL_RE.test(form.email)) {
+    return "Please enter a valid email address.";
+  }
+
+  if (!PHONE_RE.test(form.phone)) {
+    return "Please enter a valid phone number (at least 10 digits).";
+  }
+
+  if (!form.serviceType) {
+    return "Please select the type of service you need.";
+  }
+
+  if (form.projectLocation.trim().length < 3) {
+    return "Please enter your project location.";
+  }
+
+  if (form.description.trim().length < 20) {
+    return "Please describe your project (at least 20 characters).";
+  }
+
   return "";
 }
 
@@ -115,17 +133,16 @@ export function RequestQuote() {
   return (
     <div>
       <SEO
-        title="Request a Quote — Free Engineering Project Assessment"
+        title="Request a Quote - Free Engineering Project Assessment"
         description="Request a free, no-obligation engineering quote from Kanato Engineering. We cover Electrical, Mechanical, Civil, Telecom, Power & Energy projects. Get a detailed response within 24 hours."
         path="/request-quote"
       />
 
       <HeroSection />
 
-      {/* Form + Info */}
       <section className="py-20 bg-grey-light">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
             <div className="lg:col-span-2">
               <QuoteForm
                 submitted={submitted}

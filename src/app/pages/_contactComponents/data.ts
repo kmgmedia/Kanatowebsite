@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { COMPANY } from "../../../constants/company";
 
 export const HERO_IMG =
@@ -32,7 +32,7 @@ export const contactCards = [
 ] as const;
 
 export const officeHours = [
-  { day: "Monday – Friday", time: COMPANY.hours.weekdays.label },
+  { day: "Monday - Friday", time: COMPANY.hours.weekdays.label },
   { day: "Saturday", time: COMPANY.hours.saturday.label },
   { day: "Sunday", time: "Closed" },
 ];

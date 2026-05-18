@@ -1,4 +1,4 @@
-import { Heart, CheckCircle, Target, Users } from "lucide-react";
+import { CheckCircle, Heart, Target, Users } from "lucide-react";
 
 export const HERO_IMG =
   "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778807759/Kanato_Website/Home%20Page/Ultra-realistic_Nigerian_engineering_and_construction_202605150157_nvxcku.jpg";
@@ -37,12 +37,12 @@ export const coreValues = [
     title: "Client Commitment",
     desc: "We are dedicated to turning the vision and dreams of our clients into reality.",
   },
-];
+] as const;
 
 export const milestones = [
   {
     year: "1991",
-    event: "Founded as Kanato Engineering Resources Nig. Ltd. — RC 666713",
+    event: "Founded as Kanato Engineering Resources Nig. Ltd. - RC 666713",
   },
   {
     year: "1992",
@@ -72,6 +72,6 @@ export const milestones = [
   },
   {
     year: "2013",
-    event: "Street light electrification for LASG — Jimoh Ajao and environs",
+    event: "Street light electrification for LASG - Jimoh Ajao and environs",
   },
-];
+] as const;

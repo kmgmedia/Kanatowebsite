@@ -39,7 +39,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   ],
   email: COMPANY.email,
   sameAs: [],
-  priceRange: "₦₦",
+  priceRange: "NGN",
   currenciesAccepted: "NGN",
   openingHoursSpecification: [
     {
@@ -59,13 +59,40 @@ const LOCAL_BUSINESS_SCHEMA = {
     "@type": "OfferCatalog",
     name: "Engineering Services",
     itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Electrical Installation" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mechanical Installation" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Civil Engineering Works" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Maintenance & Servicing" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Telecom Infrastructure Support" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Power & Energy Solutions" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Supply of Engineering Materials" } },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Electrical Installation" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Mechanical Installation" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Civil Engineering Works" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Maintenance & Servicing" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Telecom Infrastructure Support",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Power & Energy Solutions" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Supply of Engineering Materials",
+        },
+      },
     ],
   },
   areaServed: { "@type": "Country", name: "Nigeria" },
@@ -79,7 +106,13 @@ interface SEOProps {
   ogImage?: string;
 }
 
-export function SEO({ title, description, path = "", schema, ogImage }: SEOProps) {
+export function SEO({
+  title,
+  description,
+  path = "",
+  schema,
+  ogImage,
+}: SEOProps) {
   const fullTitle = `${title} | ${COMPANY.name}`;
   const canonicalUrl = `${SITE_URL}${path}`;
   const image = ogImage ?? SITE_LOGO;
@@ -114,11 +147,9 @@ export function SEO({ title, description, path = "", schema, ogImage }: SEOProps
         {JSON.stringify(LOCAL_BUSINESS_SCHEMA)}
       </script>
 
-      {schema && (
-        <script type="application/ld+json">
-          {JSON.stringify(schema)}
-        </script>
-      )}
+      {schema ? (
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      ) : null}
     </Helmet>
   );
 }
