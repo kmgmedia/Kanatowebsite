@@ -24,13 +24,7 @@ export function ServiceDetailsSection() {
                     {service.tagline}
                   </p>
 
-                  <h2
-                    className="mb-4 text-secondary"
-                    style={{
-                      fontSize: "clamp(1.4rem, 2.5vw, 1.9rem)",
-                      lineHeight: 1.3,
-                    }}
-                  >
+                  <h2 className="mb-4 text-[clamp(1.4rem,2.5vw,1.9rem)] leading-[1.3] text-secondary">
                     {service.title}
                   </h2>
 
@@ -59,10 +53,7 @@ export function ServiceDetailsSection() {
                 </div>
 
                 <div className={isReversed ? "lg:order-1" : undefined}>
-                  <div
-                    className="overflow-hidden rounded-lg shadow-xl"
-                    style={{ height: "360px" }}
-                  >
+                  <div className="h-[360px] overflow-hidden rounded-lg shadow-xl">
                     <img
                       src={service.image}
                       alt={service.title}

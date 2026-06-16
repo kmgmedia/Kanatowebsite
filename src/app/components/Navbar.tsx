@@ -143,16 +143,29 @@ export function Navbar() {
         </div>
 
         {/* Mobile hamburger */}
-        <button
-          ref={toggleRef}
-          className="lg:hidden text-white p-2"
-          onClick={() => setIsOpen((prev) => !prev)}
-          aria-label={isOpen ? "Close menu" : "Open menu"}
-          aria-expanded={isOpen}
-          aria-controls="mobile-menu"
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {isOpen ? (
+          <button
+            ref={toggleRef}
+            className="lg:hidden text-white p-2"
+            onClick={() => setIsOpen(false)}
+            aria-label="Close menu"
+            aria-expanded="true"
+            aria-controls="mobile-menu"
+          >
+            <X size={24} />
+          </button>
+        ) : (
+          <button
+            ref={toggleRef}
+            className="lg:hidden text-white p-2"
+            onClick={() => setIsOpen(true)}
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <Menu size={24} />
+          </button>
+        )}
       </nav>
 
       {/* Mobile menu */}

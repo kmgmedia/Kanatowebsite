@@ -36,14 +36,11 @@ export function ProjectsGridSection({
             <button
               key={category}
               onClick={() => onFilterChange(category)}
-              className="rounded-full border px-4 py-2 text-sm font-medium transition-all"
-              style={{
-                backgroundColor:
-                  activeFilter === category ? "#3B52A5" : "#FFFFFF",
-                color: activeFilter === category ? "#FFFFFF" : "#374151",
-                borderColor:
-                  activeFilter === category ? "#3B52A5" : "#D1D5DB",
-              }}
+              className={`rounded-full border px-4 py-2 text-sm font-medium transition-all ${
+                activeFilter === category
+                  ? "border-primary bg-primary text-white"
+                  : "border-gray-300 bg-white text-gray-700"
+              }`}
             >
               {category}
             </button>
@@ -64,10 +61,7 @@ export function ProjectsGridSection({
                 key={`${project.title}-${project.year}`}
                 className="group overflow-hidden rounded-lg bg-white shadow-sm transition-all duration-300 hover:shadow-xl"
               >
-                <div
-                  className="relative overflow-hidden"
-                  style={{ height: "200px" }}
-                >
+                <div className="relative h-[200px] overflow-hidden">
                   <img
                     src={imageSource}
                     alt={project.title}
