@@ -2,92 +2,41 @@ import { Eye, Target } from "lucide-react";
 
 export function VisionMission() {
   return (
-    <section className="py-20" style={{ backgroundColor: "#F5F7FA" }}>
-      <div className="max-w-7xl mx-auto px-4 lg:px-6">
-        <div className="text-center mb-14">
-          <p
-            className="uppercase tracking-widest text-xs mb-3"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              color: "#2FA84F",
-              fontWeight: 600,
-            }}
-          >
+    <section className="kanato-section-soft py-20">
+      <div className="mx-auto max-w-7xl px-4 lg:px-6">
+        <div className="mb-14 text-center">
+          <p className="kanato-eyebrow mb-3 text-xs uppercase tracking-widest">
             Our Purpose
           </p>
-          <h2
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              fontWeight: 800,
-              fontSize: "clamp(1.5rem, 2.5vw, 2.1rem)",
-              color: "#3B52A5",
-            }}
-          >
+          <h2 className="kanato-compact-section-title kanato-secondary-text font-extrabold">
             Vision & Mission
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div
-            className="p-8 rounded-lg shadow-sm"
-            style={{ backgroundColor: "#fff", border: "1px solid #E5E7EB" }}
-          >
-            <div
-              className="w-14 h-14 rounded-lg flex items-center justify-center mb-5"
-              style={{ backgroundColor: "rgba(47,168,79,0.1)" }}
-            >
-              <Eye size={26} style={{ color: "#2FA84F" }} />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="kanato-card rounded-lg border p-8 shadow-sm">
+            <div className="kanato-icon-tile-primary mb-5 flex h-14 w-14 items-center justify-center rounded-lg">
+              <Eye size={26} className="kanato-icon-primary" />
             </div>
-            <h3
-              className="mb-3"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontWeight: 700,
-                color: "#3B52A5",
-                fontSize: "1.15rem",
-              }}
-            >
+            <h3 className="kanato-secondary-text mb-3 text-[1.15rem] font-bold">
               Our Vision
             </h3>
-            <p
-              className="leading-relaxed"
-              style={{ fontFamily: "Inter, sans-serif", color: "#4B5563" }}
-            >
+            <p className="kanato-charcoal-text leading-relaxed">
               To provide excellent service of Electrical, Mechanical, and Civil
-              Installation and Servicing through a professional team — becoming
+              Installation and Servicing through a professional team - becoming
               a trusted engineering partner recognized for delivering efficient
               and reliable solutions across Nigeria and West Africa.
             </p>
           </div>
-          <div
-            className="p-8 rounded-lg shadow-sm"
-            style={{ backgroundColor: "#3B52A5", border: "1px solid #3B52A5" }}
-          >
-            <div
-              className="w-14 h-14 rounded-lg flex items-center justify-center mb-5"
-              style={{ backgroundColor: "rgba(47,168,79,0.2)" }}
-            >
-              <Target size={26} style={{ color: "#2FA84F" }} />
+          <div className="rounded-lg border border-secondary bg-secondary p-8 shadow-sm">
+            <div className="kanato-primary-badge mb-5 flex h-14 w-14 items-center justify-center rounded-lg">
+              <Target size={26} className="kanato-icon-primary" />
             </div>
-            <h3
-              className="mb-3 text-white"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontWeight: 700,
-                fontSize: "1.15rem",
-                color: "#fff",
-              }}
-            >
+            <h3 className="mb-3 text-[1.15rem] font-bold text-white">
               Our Mission
             </h3>
-            <p
-              className="leading-relaxed"
-              style={{
-                fontFamily: "Inter, sans-serif",
-                color: "rgba(255,255,255,0.75)",
-              }}
-            >
+            <p className="leading-relaxed text-white/75">
               To uphold integrity and professionalism in the daily discharge of
-              our products and services — to bring the dreams of our clients to
+              our products and services - to bring the dreams of our clients to
               reality through quality workmanship, innovation, and unwavering
               commitment to excellence.
             </p>
@@ -97,5 +46,3 @@ export function VisionMission() {
     </section>
   );
 }
-
-

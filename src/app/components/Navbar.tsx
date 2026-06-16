@@ -35,7 +35,7 @@ export function Navbar() {
   useEffect(() => {
     if (!isOpen) return;
 
-    document.body.style.overflow = "hidden";
+    document.body.classList.add("kanato-scroll-lock");
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -68,7 +68,7 @@ export function Navbar() {
 
     document.addEventListener("keydown", handleKeyDown);
     return () => {
-      document.body.style.overflow = "";
+      document.body.classList.remove("kanato-scroll-lock");
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, [isOpen]);
@@ -94,10 +94,10 @@ export function Navbar() {
               {COMPANY.phone.primary}
             </a>
             <a
-              href={`mailto:${COMPANY.email}`}
+              href={`mailto:${COMPANY.emailMailto}`}
               className="text-white text-xs font-medium transition-colors hover:text-white/80"
             >
-              {COMPANY.email}
+              {COMPANY.emailDisplay}
             </a>
           </div>
         </div>

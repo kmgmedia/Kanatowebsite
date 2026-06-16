@@ -2,6 +2,36 @@ import { Menu } from "lucide-react";
 import { BrandLogo } from "../../components/BrandLogo";
 import { SectionHeader, Divider } from "./helpers";
 
+const navSpecs = [
+  {
+    title: "Top Bar",
+    specs: [
+      "BG: #FFA323",
+      "Text: white - text-xs - Inter",
+      "Height: py-1.5",
+      "Content: RC - phone",
+    ],
+  },
+  {
+    title: "Main Nav",
+    specs: [
+      "BG: rgba(59,82,165,0.97)",
+      "Position: fixed top-0 z-50",
+      "Links: Inter 500 text-sm",
+      "Active: #48BC65 + amber underline",
+    ],
+  },
+  {
+    title: "Mobile Menu",
+    specs: [
+      "BG: #3B52A5",
+      "Active bg: rgba(47,168,79,0.1)",
+      "Active text: #2FA84F",
+      "Closes on route",
+    ],
+  },
+];
+
 export function NavigationShowcase() {
   return (
     <>
@@ -11,139 +41,59 @@ export function NavigationShowcase() {
         desc="Navbar structure, states, mobile menu, and footer CTA section specifications."
       />
 
-      <div
-        className="rounded-xl overflow-hidden mb-6"
-        style={{ border: "1px solid #E5E7EB" }}
-      >
-        <p
-          style={{
-            fontFamily: "Inter, sans-serif",
-            fontSize: "0.65rem",
-            color: "#9CA3AF",
-            textTransform: "uppercase",
-            letterSpacing: "0.05em",
-            padding: "12px 16px",
-            backgroundColor: "#F5F7FA",
-            borderBottom: "1px solid #E5E7EB",
-          }}
-        >
+      <div className="mb-6 overflow-hidden rounded-xl border border-[#E5E7EB]">
+        <p className="border-b border-[#E5E7EB] bg-[#F5F7FA] px-4 py-3 font-['Inter',sans-serif] text-[0.65rem] uppercase tracking-[0.05em] text-[#9CA3AF]">
           Navbar Preview
         </p>
-        <div style={{ backgroundColor: "rgba(59, 82, 165, 0.97)" }}>
-          <div style={{ backgroundColor: "#FFA323" }} className="py-1.5 px-4">
-            <div className="max-w-4xl mx-auto flex justify-between items-center">
-              <span
-                className="text-white text-xs"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
+        <div className="bg-[rgba(59,82,165,0.97)]">
+          <div className="bg-[#FFA323] px-4 py-1.5">
+            <div className="mx-auto flex max-w-4xl items-center justify-between">
+              <span className="font-['Inter',sans-serif] text-xs text-white">
                 RC 666713 | Est. 23rd July 1991
               </span>
-              <span
-                className="text-white text-xs flex items-center gap-2"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
-                08096691601
+              <span className="flex items-center gap-2 font-['Inter',sans-serif] text-xs text-white">
+                08033201366
               </span>
             </div>
           </div>
-          <nav className="max-w-4xl mx-auto px-4 flex items-center justify-between py-4">
+          <nav className="mx-auto flex max-w-4xl items-center justify-between px-4 py-4">
             <BrandLogo onDark imageClassName="h-10" />
-            <div className="hidden lg:flex items-center gap-1">
+            <div className="hidden items-center gap-1 lg:flex">
               {["Home", "About Us", "Services"].map((link, i) => (
                 <span
                   key={link}
-                  className="px-4 py-2 text-sm rounded"
-                  style={{
-                    fontFamily: "Inter, sans-serif",
-                    color: i === 1 ? "#48BC65" : "rgba(255,255,255,0.9)",
-                    borderBottom:
-                      i === 1 ? "2px solid #FFA323" : "2px solid transparent",
-                    fontWeight: 500,
-                  }}
+                  className={`rounded border-b-2 px-4 py-2 font-['Inter',sans-serif] text-sm font-medium ${
+                    i === 1
+                      ? "border-[#FFA323] text-[#48BC65]"
+                      : "border-transparent text-white/90"
+                  }`}
                 >
                   {link}
                 </span>
               ))}
-              <span
-                className="ml-4 px-5 py-2.5 rounded text-sm font-semibold"
-                style={{
-                  backgroundColor: "#2FA84F",
-                  color: "#fff",
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
+              <span className="ml-4 rounded bg-[#2FA84F] px-5 py-2.5 font-['Inter',sans-serif] text-sm font-semibold text-white">
                 Request
               </span>
             </div>
-            <button className="lg:hidden text-white p-2">
+            <button className="p-2 text-white lg:hidden" aria-label="Open menu preview">
               <Menu size={24} />
             </button>
           </nav>
         </div>
       </div>
 
-      {/* Navbar specs */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
-        {[
-          {
-            title: "Top Bar",
-            specs: [
-              "BG: #FFA323",
-              "Text: white · text-xs · Inter",
-              "Height: py-1.5",
-              "Content: RC · phone",
-            ],
-          },
-          {
-            title: "Main Nav",
-            specs: [
-              "BG: rgba(59,82,165,0.97)",
-              "Position: fixed top-0 z-50",
-              "Links: Inter 500 text-sm",
-              "Active: #48BC65 + amber underline",
-            ],
-          },
-          {
-            title: "Mobile Menu",
-            specs: [
-              "BG: #3B52A5",
-              "Active bg: rgba(47,168,79,0.1)",
-              "Active text: #2FA84F",
-              "Closes on route",
-            ],
-          },
-        ].map((col) => (
-          <div
-            key={col.title}
-            className="bg-white rounded-xl p-5"
-            style={{ border: "1px solid #E5E7EB" }}
-          >
-            <h4
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontWeight: 700,
-                color: "#3B52A5",
-                fontSize: "0.85rem",
-                marginBottom: "10px",
-              }}
-            >
+      <div className="mb-8 grid grid-cols-1 gap-5 md:grid-cols-3">
+        {navSpecs.map((col) => (
+          <div key={col.title} className="rounded-xl border border-[#E5E7EB] bg-white p-5">
+            <h4 className="mb-2.5 font-['Montserrat',sans-serif] text-[0.85rem] font-bold text-[#3B52A5]">
               {col.title}
             </h4>
             <div className="flex flex-col gap-1.5">
-              {col.specs.map((s) => (
-                <div key={s} className="flex items-start gap-2">
-                  <div
-                    className="w-1 h-1 rounded-full shrink-0 mt-1.5"
-                    style={{ backgroundColor: "#2FA84F" }}
-                  />
-                  <span
-                    style={{
-                      fontFamily: "Inter, sans-serif",
-                      fontSize: "0.7rem",
-                      color: "#6B7280",
-                    }}
-                  >
-                    {s}
+              {col.specs.map((spec) => (
+                <div key={spec} className="flex items-start gap-2">
+                  <div className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-[#2FA84F]" />
+                  <span className="font-['Inter',sans-serif] text-[0.7rem] text-[#6B7280]">
+                    {spec}
                   </span>
                 </div>
               ))}
@@ -156,6 +106,3 @@ export function NavigationShowcase() {
     </>
   );
 }
-
-
-

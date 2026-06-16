@@ -1,21 +1,24 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { COMPANY } from "../../../constants/company";
+import { optimizeCloudinaryImage } from "../../../lib/cloudinary";
 
 export const HERO_IMG =
-  "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778807759/Kanato_Website/Home%20Page/Ultra-realistic_Nigerian_engineering_and_construction_202605150157_nvxcku.jpg";
+  optimizeCloudinaryImage(
+    "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778807759/Kanato_Website/Home%20Page/Ultra-realistic_Nigerian_engineering_and_construction_202605150157_nvxcku.jpg",
+  );
 
 export const contactCards = [
   {
     icon: Phone,
     title: "Call Us",
-    lines: [COMPANY.phone.primary, COMPANY.phone.secondary],
+    lines: COMPANY.phone.numbers,
     href: `tel:${COMPANY.phone.primary}`,
   },
   {
     icon: Mail,
     title: "Email Us",
-    lines: [COMPANY.email],
-    href: `mailto:${COMPANY.email}`,
+    lines: COMPANY.emails,
+    href: `mailto:${COMPANY.emailMailto}`,
   },
   {
     icon: MapPin,

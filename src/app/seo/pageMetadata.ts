@@ -43,7 +43,7 @@ export const PAGE_METADATA = {
   clients: {
     title: "Our Clients - Trusted by Corporations, Banks & Government Bodies",
     description:
-      "Kanato Engineering has served 30+ clients including Union Bank, Nestle Foods Nigeria, MTN, Etisalat, Ecobank, Lagos State Government, and many more across multiple sectors since 1991.",
+      "Kanato Engineering has served 30+ clients including Union Bank, Nestle Foods Nigeria, MTN, Etisalat, Ecobank, Ikeja Electric, Eko Disco, Lagos State Government, and many more across multiple sectors since 1991.",
     path: "/clients",
     changefreq: "yearly",
     priority: "0.7",
@@ -51,7 +51,7 @@ export const PAGE_METADATA = {
   contact: {
     title: "Contact Us - Get in Touch with Kanato Engineering",
     description:
-      "Contact Kanato Engineering Resources Nig. Ltd. - call 08096691601, email kanato4reel@yahoo.com, or visit our head office at 10, Oyewole Close, Baruwa B/Stop, Ipaja, Lagos. We respond within hours.",
+      "Contact Kanato Engineering Resources Nig. Ltd. - call 08033201366, 08023945686, or 08055799998, email kanato4reel@yahoo.com or kanato4reel@gmail.com, or visit our head office at 10, Oyewole Close, Baruwa B/Stop, Ipaja, Lagos. We respond within hours.",
     path: "/contact",
     changefreq: "yearly",
     priority: "0.8",

@@ -92,6 +92,18 @@ export async function optimizeImage(filePath, maxWidth = 1600, quality = 80) {
   }
 }
 
+export async function optimizeImageBuffer(buffer, maxWidth = 1200, quality = 76) {
+  try {
+    return await sharp(buffer)
+      .rotate()
+      .resize({ width: maxWidth, withoutEnlargement: true })
+      .jpeg({ quality, mozjpeg: true })
+      .toBuffer();
+  } catch {
+    return buffer;
+  }
+}
+
 export async function optimizeLocalAssets() {
   await ensureLocalAssets();
 
@@ -128,13 +140,16 @@ export async function loadProjectImages(projects) {
       }
 
       if (typeof source === "string" && /^https?:\/\//.test(source)) {
-        return loadRemoteImage(source);
+        const buffer = await loadRemoteImage(source);
+        return optimizeImageBuffer(buffer, 1100, 74);
       }
 
       try {
-        return loadBuffer(source);
+        const buffer = await loadBuffer(source);
+        return optimizeImageBuffer(buffer, 1100, 74);
       } catch {
-        return loadRemoteImage(String(source));
+        const buffer = await loadRemoteImage(String(source));
+        return optimizeImageBuffer(buffer, 1100, 74);
       }
     }),
   );

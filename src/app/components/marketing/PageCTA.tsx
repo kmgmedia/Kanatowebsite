@@ -32,10 +32,7 @@ export function PageCTA({
           </p>
         ) : null}
 
-        <h2
-          className="mb-5 text-white font-extrabold"
-          style={{ fontSize: "clamp(1.5rem, 3vw, 2.2rem)" }}
-        >
+        <h2 className="kanato-cta-title mb-5 font-extrabold text-white">
           {title}
         </h2>
 

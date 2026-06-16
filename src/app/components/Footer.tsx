@@ -161,27 +161,30 @@ export function Footer() {
               <div className="flex gap-3">
                 <Phone size={16} className="mt-0.5 shrink-0 text-accent" />
                 <div className="space-y-1">
-                  {[COMPANY.phone.primary, COMPANY.phone.secondary].map(
-                    (phone) => (
-                      <a
-                        key={phone}
-                        href={`tel:${phone}`}
-                        className="block text-sm text-white/60 transition-colors hover:text-white"
-                      >
-                        {phone}
-                      </a>
-                    ),
-                  )}
+                  {COMPANY.phone.numbers.map((phone) => (
+                    <a
+                      key={phone}
+                      href={`tel:${phone}`}
+                      className="block text-sm text-white/60 transition-colors hover:text-white"
+                    >
+                      {phone}
+                    </a>
+                  ))}
                 </div>
               </div>
               <div className="flex gap-3">
                 <Mail size={16} className="mt-0.5 shrink-0 text-accent" />
-                <a
-                  href={`mailto:${COMPANY.email}`}
-                  className="text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  {COMPANY.email}
-                </a>
+                <div className="space-y-1">
+                  {COMPANY.emails.map((email) => (
+                    <a
+                      key={email}
+                      href={`mailto:${email}`}
+                      className="block text-sm text-white/60 transition-colors hover:text-white"
+                    >
+                      {email}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

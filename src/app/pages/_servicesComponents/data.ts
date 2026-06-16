@@ -1,7 +1,10 @@
 import { Building2, Package, Power, Radio, Settings, Wrench, Zap } from "lucide-react";
+import { optimizeCloudinaryImage } from "../../../lib/cloudinary";
 
 export const servicesHeroImage =
-  "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779058508/Kanato_Website/Home%20Page/Photorealistic__recommended___Photorealistic_engineering_photo_202605172352_zhouhr.jpg";
+  optimizeCloudinaryImage(
+    "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779058508/Kanato_Website/Home%20Page/Photorealistic__recommended___Photorealistic_engineering_photo_202605172352_zhouhr.jpg",
+  );
 
 export const serviceCards = [
   {
@@ -124,12 +127,13 @@ export const serviceCards = [
     title: "Power & Energy Solutions",
     tagline: "Reliable power delivery for every project scale",
     description:
-      "From sub-station construction to transformer relocation and energy infrastructure, Kanato handles complex power engineering projects for banks, government bodies, and corporate organizations across Nigeria.",
+      "From sub-station construction to transformer relocation and energy infrastructure, Kanato handles complex power engineering projects for banks, government bodies, corporate organizations, Ikeja Electric, and Eko Disco across Nigeria.",
     scope: [
       "Sub-station construction and renovation",
       "Transformer installation and relocation",
       "Power distribution infrastructure",
       "Electrical sub-station maintenance",
+      "Power utility support for Ikeja Electric and Eko Disco",
       "Standby power system support",
       "Energy infrastructure upgrade",
       "HV/LV system works",

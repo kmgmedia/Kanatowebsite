@@ -3,6 +3,7 @@ import PDFDocument from "pdfkit";
 import { aboutImagePath, logoPath, outputPath } from "./config.mjs";
 import { loadBuffer, loadProjectImages, optimizeLocalAssets } from "./assets.mjs";
 import { COMPANY, PROJECTS } from "./data.mjs";
+import { addPageFooter } from "./pdf-utils.mjs";
 import {
   renderClientsPage,
   renderCompanyOverviewPage,
@@ -44,6 +45,16 @@ export async function buildPdf() {
   renderProjectsPage(doc, projectImages);
   renderClientsPage(doc);
   renderContactPage(doc);
+
+  const pageRange = doc.bufferedPageRange();
+  for (
+    let pageIndex = pageRange.start + 1;
+    pageIndex < pageRange.start + pageRange.count;
+    pageIndex += 1
+  ) {
+    doc.switchToPage(pageIndex);
+    addPageFooter(doc, pageIndex + 1, pageRange.count);
+  }
 
   doc.end();
 

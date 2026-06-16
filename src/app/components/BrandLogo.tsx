@@ -35,10 +35,9 @@ export function BrandLogo({
         <span className="relative inline-block pr-8">
           <span
             className={cn(
-              "block text-[1.28rem] font-black tracking-[-0.08em] sm:text-[1.6rem] font-heading",
+              "kanato-logo-wordmark block text-[1.28rem] font-black tracking-[-0.08em] sm:text-[1.6rem] font-heading",
               wordmarkColor,
             )}
-            style={{ lineHeight: 0.9 }}
           >
             KANATO
           </span>

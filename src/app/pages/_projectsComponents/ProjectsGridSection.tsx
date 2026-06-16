@@ -71,6 +71,8 @@ export function ProjectsGridSection({
                   <img
                     src={imageSource}
                     alt={project.title}
+                    loading="lazy"
+                    decoding="async"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute left-3 top-3 rounded bg-primary px-2.5 py-1 text-xs font-semibold text-white">

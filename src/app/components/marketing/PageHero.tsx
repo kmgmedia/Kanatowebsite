@@ -17,22 +17,12 @@ export function PageHero({
   currentPage,
 }: PageHeroProps) {
   return (
-    <section
-      className="relative flex items-center"
-      style={{ paddingTop: "110px", paddingBottom: "80px" }}
-    >
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      />
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(135deg, rgba(30,45,97,0.95) 0%, rgba(59,82,165,0.85) 100%)",
-        }}
-      />
-      <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-10">
+    <section className="kanato-page-hero relative flex items-center">
+      <div className="absolute inset-0">
+        <img src={backgroundImage} alt="" className="kanato-hero-image" />
+      </div>
+      <div className="kanato-page-hero-overlay absolute inset-0" />
+      <div className="relative mx-auto max-w-7xl px-4 pt-10 lg:px-6">
         <nav className="mb-6 flex items-center gap-2 text-xs text-white/50">
           <Link to="/" className="transition-colors hover:text-white">
             Home
@@ -42,18 +32,12 @@ export function PageHero({
         </nav>
 
         <div className="mb-4 inline-flex items-center gap-2 rounded border border-primary/40 bg-primary/20 px-4 py-1.5">
-          <span className="text-xs font-medium uppercase tracking-widest text-primary">
+          <span className="kanato-primary-text text-xs font-medium uppercase tracking-widest">
             {badge}
           </span>
         </div>
 
-        <h1
-          className="mb-4 max-w-[650px] text-white"
-          style={{
-            fontSize: "clamp(2rem, 4vw, 3rem)",
-            lineHeight: 1.2,
-          }}
-        >
+        <h1 className="kanato-page-title mb-4 max-w-[650px] text-white">
           {title}
         </h1>
 

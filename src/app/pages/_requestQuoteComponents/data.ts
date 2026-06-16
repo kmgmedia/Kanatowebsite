@@ -1,6 +1,7 @@
 import type { ComponentType } from "react";
 import { Phone, Mail, MessageCircle } from "lucide-react";
 import { COMPANY } from "../../../constants/company";
+import { optimizeCloudinaryImage } from "../../../lib/cloudinary";
 
 interface ContactChannel {
   icon: ComponentType<{ size?: number; className?: string }>;
@@ -13,7 +14,9 @@ interface ContactChannel {
 }
 
 export const HERO_IMG =
-  "https://images.unsplash.com/photo-1734184451009-e21cacf54f9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBlbmdpbmVlcmluZyUyMGluZnJhc3RydWN0dXJlJTIwTmlnZXJpYXxlbnwxfHx8fDE3NzUyMTEzODJ8MA&ixlib=rb-4.1.0&q=80&w=1080";
+  optimizeCloudinaryImage(
+    "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779058508/Kanato_Website/Home%20Page/Photorealistic__recommended___Photorealistic_engineering_photo_202605172352_zhouhr.jpg",
+  );
 
 export const serviceOptions = [
   "Civil Engineering Works",
@@ -31,7 +34,7 @@ export const contactChannels: ContactChannel[] = [
   {
     icon: Phone,
     title: "Call Us",
-    description: `${COMPANY.phone.primary} / ${COMPANY.phone.secondary}`,
+    description: COMPANY.phone.display,
     href: `tel:${COMPANY.phone.primary}`,
     bgColor: "bg-secondary/10",
     iconColor: "text-secondary",
@@ -39,8 +42,8 @@ export const contactChannels: ContactChannel[] = [
   {
     icon: Mail,
     title: "Email Us",
-    description: COMPANY.email,
-    href: `mailto:${COMPANY.email}`,
+    description: COMPANY.emailDisplay,
+    href: `mailto:${COMPANY.emailMailto}`,
     bgColor: "bg-primary/10",
     iconColor: "text-primary",
   },

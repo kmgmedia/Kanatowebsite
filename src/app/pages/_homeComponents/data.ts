@@ -10,9 +10,12 @@ import {
   MapPin,
   Shield,
 } from "lucide-react";
+import { optimizeCloudinaryImage } from "../../../lib/cloudinary";
 
 export const HERO_BG =
-  "https://images.unsplash.com/photo-1734184451009-e21cacf54f9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBlbmdpbmVlcmluZyUyMGluZnJhc3RydWN0dXJlJTIwTmlnZXJpYXxlbnwxfHx8fDE3NzUyMTEzODJ8MA&ixlib=rb-4.1.0&q=80&w=1080";
+  optimizeCloudinaryImage(
+    "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778807759/Kanato_Website/Home%20Page/Ultra-realistic_Nigerian_engineering_and_construction_202605150157_nvxcku.jpg",
+  );
 
 export const ABOUT_IMG = "/about-engineering-team.jpeg";
 
@@ -175,6 +178,8 @@ export const clients = [
   "MTN Nigeria",
   "Etisalat Nigeria",
   "Ecobank Nigeria",
+  "Ikeja Electric",
+  "Eko Disco",
   "Ikeja Local Govt.",
   "Mass Telecom Innovation",
   "Trusnet Limited",

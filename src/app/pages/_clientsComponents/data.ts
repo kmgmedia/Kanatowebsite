@@ -1,7 +1,10 @@
 import { Building2, Radio, Shield, Users, Zap } from "lucide-react";
+import { optimizeCloudinaryImage } from "../../../lib/cloudinary";
 
 export const clientsHeroImage =
-  "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779057754/Kanato_Website/Home%20Page/2_Office_Complex___Alfa_202605172340_vh7jfq.jpg";
+  optimizeCloudinaryImage(
+    "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779057754/Kanato_Website/Home%20Page/2_Office_Complex___Alfa_202605172340_vh7jfq.jpg",
+  );
 
 export const clientStats = [
   { value: "30+", label: "Corporate Clients" },
@@ -33,6 +36,8 @@ export const clientSectors = [
     icon: Zap,
     sector: "Power & Energy",
     clients: [
+      "Ikeja Electric",
+      "Eko Disco",
       "Income Electrix Limited",
       "A.E.E. Nig. Ltd.",
       "Afolabi Nig. Ltd.",
@@ -88,6 +93,8 @@ export const allClients = [
   { name: "Wauline & Clockwise Ltd.", category: "Construction" },
   { name: "Mass Telecom Innovation Ltd.", category: "Telecom" },
   { name: "Trusnet Limited", category: "Power" },
+  { name: "Ikeja Electric", category: "Power" },
+  { name: "Eko Disco", category: "Power" },
   { name: "Income Electrix Limited", category: "Power" },
   { name: "Primal Concept Ltd.", category: "Construction" },
   { name: "Sabkay Nig. Ltd.", category: "Construction" },

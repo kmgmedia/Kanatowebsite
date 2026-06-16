@@ -1,5 +1,9 @@
+import { optimizeCloudinaryImage } from "../../../lib/cloudinary";
+
 export const projectsHeroImage =
-  "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779049606/Kanato_Website/Home%20Page/Seven_Flat_Complex___Anthony_Village_202605172126_diiceq.jpg";
+  optimizeCloudinaryImage(
+    "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779049606/Kanato_Website/Home%20Page/Seven_Flat_Complex___Anthony_Village_202605172126_diiceq.jpg",
+  );
 
 const imageLibrary = {
   construction:
@@ -22,10 +26,10 @@ const imageLibrary = {
 export const projectCategories = [
   "All",
   "Civil",
+  "Civil & Electrical",
   "Electrical",
   "Telecom",
   "Power",
-  "Civil & Electrical",
 ] as const;
 
 export const projectCards = [

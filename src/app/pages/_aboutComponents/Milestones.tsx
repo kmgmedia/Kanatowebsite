@@ -2,77 +2,37 @@ import { milestones } from "./data";
 
 export function Milestones() {
   return (
-    <section className="py-20" style={{ backgroundColor: "#3B52A5" }}>
-      <div className="max-w-7xl mx-auto px-4 lg:px-6">
-        <div className="text-center mb-14">
-          <p
-            className="uppercase tracking-widest text-xs mb-3"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              color: "#2FA84F",
-              fontWeight: 600,
-            }}
-          >
+    <section className="kanato-section-secondary py-20">
+      <div className="mx-auto max-w-7xl px-4 lg:px-6">
+        <div className="mb-14 text-center">
+          <p className="kanato-eyebrow mb-3 text-xs uppercase tracking-widest">
             Our Journey
           </p>
-          <h2
-            className="text-white"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              fontWeight: 800,
-              fontSize: "clamp(1.5rem, 2.5vw, 2.1rem)",
-              color: "#fff",
-            }}
-          >
+          <h2 className="kanato-compact-section-title font-extrabold text-white">
             Key Milestones
           </h2>
         </div>
         <div className="relative">
-          <div
-            className="absolute left-1/2 top-0 bottom-0 w-px hidden lg:block"
-            style={{
-              backgroundColor: "rgba(255,163,35,0.3)",
-              transform: "translateX(-50%)",
-            }}
-          />
+          <div className="absolute bottom-0 left-1/2 top-0 hidden w-px -translate-x-1/2 bg-accent/30 lg:block" />
           <div className="space-y-8">
             {milestones.map((m, i) => (
               <div
                 key={i}
-                className={`flex items-center gap-6 ${i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}
+                className={`flex items-center gap-6 ${
+                  i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+                }`}
               >
-                <div className="flex-1 hidden lg:block" />
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center shrink-0 z-10"
-                  style={{ backgroundColor: "#2FA84F" }}
-                >
-                  <span
-                    className="text-white text-xs font-bold"
-                    style={{ fontFamily: "Montserrat, sans-serif" }}
-                  >
+                <div className="hidden flex-1 lg:block" />
+                <div className="kanato-button-primary z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full">
+                  <span className="kanato-heading-font text-xs font-bold text-white">
                     {m.year}
                   </span>
                 </div>
-                <div
-                  className="flex-1 p-5 rounded-lg"
-                  style={{ backgroundColor: "rgba(255,255,255,0.07)" }}
-                >
-                  <span
-                    className="text-xs uppercase tracking-wider mb-1 block"
-                    style={{
-                      fontFamily: "Montserrat, sans-serif",
-                      color: "#2FA84F",
-                    }}
-                  >
+                <div className="flex-1 rounded-lg bg-white/10 p-5">
+                  <span className="kanato-primary-text mb-1 block text-xs uppercase tracking-wider">
                     {m.year}
                   </span>
-                  <p
-                    className="text-sm leading-relaxed"
-                    style={{
-                      fontFamily: "Inter, sans-serif",
-                      color: "rgba(255,255,255,0.8)",
-                    }}
-                  >
+                  <p className="text-sm leading-relaxed text-white/80">
                     {m.event}
                   </p>
                 </div>
@@ -84,5 +44,3 @@ export function Milestones() {
     </section>
   );
 }
-
-

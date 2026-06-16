@@ -13,9 +13,24 @@
     color: var(--color-charcoal);
   }
 
+  body.kanato-scroll-lock {
+    overflow: hidden;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--color-charcoal);
+  }
+
+  a[href],
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [role="link"]:not([aria-disabled="true"]),
+  input[type="button"]:not(:disabled),
+  input[type="submit"]:not(:disabled),
+  input[type="reset"]:not(:disabled),
+  summary {
+    cursor: pointer;
   }
 }
 
@@ -39,4 +54,216 @@
   );
   box-shadow: 0 12px 30px rgba(8, 14, 33, 0.32);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.kanato-section-white {
+  background-color: #fff;
+}
+
+.kanato-section-soft {
+  background-color: var(--color-grey-light);
+}
+
+.kanato-section-secondary {
+  background-color: var(--color-secondary);
+}
+
+.kanato-section-secondary-dark {
+  background-color: var(--color-secondary-dark);
+}
+
+.kanato-page-shell {
+  background-color: var(--color-grey-light);
+  min-height: 100vh;
+}
+
+.kanato-home-hero {
+  padding-top: 120px;
+}
+
+.kanato-page-hero {
+  padding-top: 110px;
+  padding-bottom: 80px;
+}
+
+.kanato-compact-hero {
+  padding-top: 110px;
+  padding-bottom: 70px;
+}
+
+.kanato-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kanato-home-hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 45, 97, 0.92) 0%,
+    rgba(59, 82, 165, 0.85) 50%,
+    rgba(30, 45, 97, 0.75) 100%
+  );
+}
+
+.kanato-page-hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 45, 97, 0.95) 0%,
+    rgba(59, 82, 165, 0.85) 100%
+  );
+}
+
+.kanato-accent-badge {
+  background-color: rgba(255, 163, 35, 0.16);
+  border: 1px solid rgba(255, 163, 35, 0.35);
+}
+
+.kanato-primary-badge {
+  background-color: rgba(47, 168, 79, 0.2);
+  border: 1px solid rgba(47, 168, 79, 0.4);
+}
+
+.kanato-eyebrow {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.kanato-accent-eyebrow {
+  font-family: var(--font-body);
+  color: var(--color-accent);
+}
+
+.kanato-heading-font {
+  font-family: var(--font-heading);
+}
+
+.kanato-primary-text {
+  color: var(--color-primary);
+}
+
+.kanato-secondary-text {
+  color: var(--color-secondary);
+}
+
+.kanato-secondary-border {
+  border-color: var(--color-secondary);
+}
+
+.kanato-grey-border {
+  border-color: var(--color-grey-border);
+}
+
+.kanato-muted-text {
+  font-family: var(--font-body);
+  color: var(--color-muted);
+}
+
+.kanato-charcoal-text {
+  font-family: var(--font-body);
+  color: #4b5563;
+}
+
+.kanato-section-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: var(--color-secondary);
+}
+
+.kanato-compact-section-title {
+  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+}
+
+.kanato-cta-title {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.kanato-page-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+.kanato-home-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1.15;
+}
+
+.kanato-home-copy {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+}
+
+.kanato-page-copy {
+  font-family: var(--font-body);
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 520px;
+}
+
+.kanato-divider-primary {
+  background-color: var(--color-primary);
+}
+
+.kanato-card {
+  background-color: #fff;
+  border-color: #e5e7eb;
+}
+
+.kanato-icon-tile-secondary {
+  background-color: rgba(59, 82, 165, 0.1);
+}
+
+.kanato-icon-tile-primary {
+  background-color: rgba(47, 168, 79, 0.1);
+}
+
+.kanato-icon-secondary {
+  color: var(--color-secondary);
+}
+
+.kanato-icon-primary {
+  color: var(--color-primary);
+}
+
+.kanato-button-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-body);
+}
+
+.kanato-button-secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+  font-family: var(--font-body);
+}
+
+.kanato-button-outline-light {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  font-family: var(--font-body);
+}
+
+.kanato-scroll-line {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 163, 35, 0.82),
+    transparent
+  );
+}
+
+.kanato-map-frame {
+  height: 300px;
+}
+
+.kanato-map-embed {
+  border: 0;
+}
+
+.kanato-logo-wordmark {
+  line-height: 0.9;
 }

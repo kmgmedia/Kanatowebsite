@@ -187,7 +187,7 @@ This project is proprietary software. All rights reserved. Unauthorized copying,
 For support, inquiries, or collaboration opportunities, please reach out to:
 
 - **Website**: https://Kanatowebsite.com
-- **Email**: contact@kanato.com
+- **Email**: kanato4reel@yahoo.com / kanato4reel@gmail.com
 - **WhatsApp**: [Contact via WhatsApp](https://wa.me/1234567890)
 
 For bug reports or feature requests, please open an issue on the GitHub repository.

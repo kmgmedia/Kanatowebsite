@@ -5,13 +5,13 @@ export function MapAndInfo() {
   return (
     <div className="space-y-6">
       {/* Map */}
-      <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200" style={{ height: "300px" }}>
+      <div className="kanato-map-frame overflow-hidden rounded-xl border border-gray-200 shadow-sm">
         <iframe
           title="Kanato Engineering Location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.648!2d3.2890!3d6.6012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9216dffe2d71%3A0x9e5fef6b7b1e9c45!2sAlimosho%2C%20Lagos!5e0!3m2!1sen!2sng!4v1680000000000!5m2!1sen!2sng"
           width="100%"
           height="100%"
-          style={{ border: 0 }}
+          className="kanato-map-embed"
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

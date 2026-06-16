@@ -4,45 +4,23 @@ import { ABOUT_IMG } from "./data";
 
 export function AboutPreview() {
   return (
-    <section className="py-20" style={{ backgroundColor: "#F5F7FA" }}>
-      <div className="max-w-7xl mx-auto px-4 lg:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="kanato-section-soft py-20">
+      <div className="mx-auto max-w-7xl px-4 lg:px-6">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div>
-            <p
-              className="uppercase tracking-widest text-xs mb-4"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                color: "#2FA84F",
-                fontWeight: 600,
-              }}
-            >
+            <p className="kanato-eyebrow mb-4 text-xs uppercase tracking-widest">
               About Kanato
             </p>
-            <h2
-              className="mb-6"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontWeight: 800,
-                fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
-                color: "#3B52A5",
-                lineHeight: 1.25,
-              }}
-            >
+            <h2 className="kanato-section-title mb-6 leading-tight">
               Engineering Solutions Backed by Over 30 Years of Experience
             </h2>
-            <p
-              className="mb-4 leading-relaxed"
-              style={{ fontFamily: "Inter, sans-serif", color: "#4B5563" }}
-            >
+            <p className="kanato-charcoal-text mb-4 leading-relaxed">
               Kanato Engineering Resources Nigeria Limited was incorporated on
               the 23rd of July 1991 as a distinct engineering company
-              specialising in Electrical, Mechanical, and Civil services — RC
+              specialising in Electrical, Mechanical, and Civil services - RC
               666713.
             </p>
-            <p
-              className="mb-6 leading-relaxed"
-              style={{ fontFamily: "Inter, sans-serif", color: "#4B5563" }}
-            >
+            <p className="kanato-charcoal-text mb-6 leading-relaxed">
               As a wholly indigenous engineering company, we engage in
               Electrical & Mechanical Installation, Sales, Supply, Construction,
               and Service/Maintenance. Our dynamic, resourceful, and experienced
@@ -51,44 +29,27 @@ export function AboutPreview() {
             </p>
             <Link
               to="/about"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded text-sm font-semibold transition-all hover:opacity-90"
-              style={{
-                backgroundColor: "#3B52A5",
-                color: "#fff",
-                fontFamily: "Inter, sans-serif",
-              }}
+              className="kanato-button-secondary inline-flex items-center gap-2 rounded px-6 py-3 text-sm font-semibold transition-all hover:opacity-90"
             >
               Learn More About Us
               <ArrowRight size={16} />
             </Link>
           </div>
           <div className="relative">
-            <div
-              className="rounded-lg overflow-hidden shadow-2xl"
-              style={{ height: "420px" }}
-            >
+            <div className="h-[420px] overflow-hidden rounded-lg shadow-2xl">
               <img
                 src={ABOUT_IMG}
                 alt="Kanato Engineering Team"
-                className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover"
               />
             </div>
-            <div
-              className="absolute -bottom-5 -left-5 rounded-lg p-5 shadow-xl hidden md:block"
-              style={{ backgroundColor: "#2FA84F" }}
-            >
-              <p
-                className="text-white text-2xl font-bold"
-                style={{ fontFamily: "Montserrat, sans-serif" }}
-              >
+            <div className="kanato-button-primary absolute -bottom-5 -left-5 hidden rounded-lg p-5 shadow-xl md:block">
+              <p className="kanato-heading-font text-2xl font-bold text-white">
                 1991
               </p>
-              <p
-                className="text-white/80 text-xs"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
-                Year Founded
-              </p>
+              <p className="text-xs text-white/80">Year Founded</p>
             </div>
           </div>
         </div>
@@ -96,5 +57,3 @@ export function AboutPreview() {
     </section>
   );
 }
-
-

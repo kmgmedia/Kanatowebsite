@@ -41,21 +41,15 @@ function buildHeadMarkup(page: PageMetadata) {
       addressCountry: "NG",
     },
     contactPoint: [
-      {
+      ...COMPANY.phone.intl.numbers.map((telephone, index) => ({
         "@type": "ContactPoint",
-        telephone: COMPANY.phone.intl.primary,
-        contactType: "customer service",
+        telephone,
+        contactType: index === 0 ? "customer service" : "sales",
         areaServed: "NG",
-        availableLanguage: "English",
-      },
-      {
-        "@type": "ContactPoint",
-        telephone: COMPANY.phone.intl.secondary,
-        contactType: "sales",
-        areaServed: "NG",
-      },
+        ...(index === 0 ? { availableLanguage: "English" } : {}),
+      })),
     ],
-    email: COMPANY.email,
+    email: COMPANY.emails,
     sameAs: [],
     priceRange: "NGN",
     currenciesAccepted: "NGN",

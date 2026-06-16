@@ -127,6 +127,7 @@ export const COMPANY_PROFILE = {
         "Sub-station construction and renovation",
         "Transformer installation and relocation",
         "Power distribution infrastructure",
+        "Power utility support for Ikeja Electric and Eko Disco",
         "Standby power system support",
         "Energy infrastructure upgrade",
       ],
@@ -164,6 +165,8 @@ export const COMPANY_PROFILE = {
     "MTN Nigeria",
     "Etisalat Nigeria",
     "Ecobank Nigeria",
+    "Ikeja Electric",
+    "Eko Disco",
     "Ikeja Local Government",
     "Mass Telecom Innovation",
     "Pentorise Ltd.",
@@ -174,8 +177,8 @@ export const COMPANY_PROFILE = {
   contact: {
     headOffice: "10, Oyewole Close, Baruwa B/Stop, Ipaja, Lagos.",
     branchOffice: "Suite 7, Carol Plaza, 29-39 Alimosho Road, Iyana Ipaja, Lagos.",
-    phone: ["08096691601", "08033201366"],
-    email: "kanato4reel@yahoo.com",
+    phone: ["08033201366", "08023945686", "08055799998"],
+    email: "kanato4reel@yahoo.com / kanato4reel@gmail.com",
   },
 };
 
@@ -185,7 +188,7 @@ export const COMPANY = {
   rc: COMPANY_PROFILE.registration,
   founded: COMPANY_PROFILE.established,
   description: COMPANY_PROFILE.about.text,
-  phone: "08096691601 / 08033201366",
+  phone: "08033201366 / 08023945686 / 08055799998",
   email: COMPANY_PROFILE.contact.email,
   headOffice: COMPANY_PROFILE.contact.headOffice,
   branchOffice: COMPANY_PROFILE.contact.branchOffice,
@@ -233,11 +236,19 @@ export const SERVICES = [
     ],
   },
   {
-    title: "Telecom & Power Solutions",
+    title: "Telecom Infrastructure Support",
     points: [
       "Telecom mast and tower installation",
       "Power-to-site provisioning and BTS site preparation",
-      "Sub-station construction, transformer installation, and energy infrastructure",
+      "MTN and Etisalat site build support",
+    ],
+  },
+  {
+    title: "Power & Energy Solutions",
+    points: [
+      "Sub-station construction and renovation",
+      "Transformer installation and relocation",
+      "Power utility support for Ikeja Electric and Eko Disco",
     ],
   },
 ];
@@ -247,6 +258,8 @@ export const CLIENTS = [
   "Ecobank Nigeria",
   "MTN Nigeria",
   "Etisalat Nigeria",
+  "Ikeja Electric",
+  "Eko Disco",
   "Lagos State Government (LASG)",
   "Ikeja Local Government",
   "Nestle Foods Nigeria",

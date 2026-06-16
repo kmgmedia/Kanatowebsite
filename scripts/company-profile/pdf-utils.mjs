@@ -7,6 +7,9 @@ export function pageMargin() {
 export function addHeader(doc, title, subtitle) {
   const margin = pageMargin();
   doc.save();
+  doc.rect(0, 0, doc.page.width, doc.page.height).fill("#FFFFFF");
+  doc.rect(0, 0, doc.page.width, 18).fill(COLORS.navy);
+  doc.roundedRect(margin, margin - 8, 28, 4, 2).fill(COLORS.green);
   doc.fillColor(COLORS.blue).fontSize(20).font("Helvetica-Bold").text(title, margin, margin);
 
   if (subtitle) {
@@ -28,7 +31,7 @@ export function addHeader(doc, title, subtitle) {
 }
 
 export function addBulletList(doc, items, options = {}) {
-  const { indent = 12, bullet = "*", gap = 6, width } = options;
+  const { indent = 12, bullet = "-", gap = 6, width } = options;
   const startX = doc.x;
   const textWidth = width || doc.page.width - startX - pageMargin();
 
@@ -67,4 +70,50 @@ export function drawLabelValue(doc, label, value, x, y, width) {
     .font("Helvetica")
     .fontSize(10)
     .text(value, x, y + 12, { width });
+}
+
+export function drawPill(doc, text, x, y, options = {}) {
+  const {
+    width = doc.widthOfString(text) + 22,
+    fill = "#EEF4FF",
+    color = COLORS.blue,
+  } = options;
+
+  doc.roundedRect(x, y, width, 24, 12).fill(fill);
+  doc
+    .fillColor(color)
+    .font("Helvetica-Bold")
+    .fontSize(8.8)
+    .text(text, x + 11, y + 7, { width: width - 22, align: "center" });
+}
+
+export function addPageFooter(doc, pageNumber, totalPages) {
+  const margin = pageMargin();
+  const y = doc.page.height - 42;
+
+  doc.save();
+  doc
+    .moveTo(margin, y - 10)
+    .lineTo(doc.page.width - margin, y - 10)
+    .strokeColor("#E3E7EF")
+    .lineWidth(0.8)
+    .stroke();
+
+  doc
+    .fillColor(COLORS.muted)
+    .font("Helvetica")
+    .fontSize(8)
+    .text("Kanato Engineering Resources Nig. Ltd.", margin, y, {
+      width: 260,
+    });
+
+  doc
+    .fillColor(COLORS.blue)
+    .font("Helvetica-Bold")
+    .fontSize(8)
+    .text(`${pageNumber} / ${totalPages}`, doc.page.width - margin - 60, y, {
+      width: 60,
+      align: "right",
+    });
+  doc.restore();
 }

@@ -1,7 +1,10 @@
 import { CheckCircle, Heart, Target, Users } from "lucide-react";
+import { optimizeCloudinaryImage } from "../../../lib/cloudinary";
 
 export const HERO_IMG =
-  "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778807759/Kanato_Website/Home%20Page/Ultra-realistic_Nigerian_engineering_and_construction_202605150157_nvxcku.jpg";
+  optimizeCloudinaryImage(
+    "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778807759/Kanato_Website/Home%20Page/Ultra-realistic_Nigerian_engineering_and_construction_202605150157_nvxcku.jpg",
+  );
 
 export const CIVIL_IMG =
   "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779060108/Kanato_Website/Home%20Page/Prompt___Corporate_engineering_company_profile_202605180020_ardr12.jpg";

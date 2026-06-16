@@ -3,53 +3,26 @@ import { ArrowRight } from "lucide-react";
 
 export function FinalCTA() {
   return (
-    <section className="py-16" style={{ backgroundColor: "#F5F7FA" }}>
-      <div className="max-w-4xl mx-auto px-4 lg:px-6 text-center">
-        <h2
-          className="mb-4"
-          style={{
-            fontFamily: "Montserrat, sans-serif",
-            fontWeight: 800,
-            fontSize: "clamp(1.4rem, 2.5vw, 2rem)",
-            color: "#3B52A5",
-          }}
-        >
+    <section className="kanato-section-soft py-16">
+      <div className="mx-auto max-w-4xl px-4 text-center lg:px-6">
+        <h2 className="kanato-compact-section-title kanato-secondary-text mb-4 font-extrabold">
           Ready to Work with a Trusted Engineering Partner?
         </h2>
-        <p
-          className="mb-8"
-          style={{
-            fontFamily: "Inter, sans-serif",
-            color: "#6B7280",
-            maxWidth: "450px",
-            margin: "0 auto 2rem",
-          }}
-        >
+        <p className="kanato-muted-text mx-auto mb-8 max-w-[450px]">
           Let's discuss your project and deliver the engineering solution your
           needs deserve.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col justify-center gap-4 sm:flex-row">
           <Link
             to="/request-quote"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all hover:opacity-90"
-            style={{
-              backgroundColor: "#2FA84F",
-              color: "#fff",
-              fontFamily: "Inter, sans-serif",
-            }}
+            className="kanato-button-primary inline-flex items-center justify-center gap-2 rounded px-8 py-4 text-sm font-semibold transition-all hover:opacity-90"
           >
             Request a Quote
             <ArrowRight size={16} />
           </Link>
           <Link
             to="/services"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-sm font-semibold transition-all"
-            style={{
-              backgroundColor: "#fff",
-              color: "#3B52A5",
-              border: "1px solid #3B52A5",
-              fontFamily: "Inter, sans-serif",
-            }}
+            className="kanato-secondary-border kanato-secondary-text inline-flex items-center justify-center gap-2 rounded border bg-white px-8 py-4 text-sm font-semibold transition-all"
           >
             Explore Services
             <ArrowRight size={16} />
@@ -59,5 +32,3 @@ export function FinalCTA() {
     </section>
   );
 }
-
-

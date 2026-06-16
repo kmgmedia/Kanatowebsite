@@ -109,7 +109,7 @@ export function RequestQuote() {
       const message = err instanceof Error ? err.message : "Unknown error";
       console.error("[Quote form]", message);
       setError(
-        `Failed to submit your request. Please try again or reach us directly at ${COMPANY.email}.`,
+        `Failed to submit your request. Please try again or reach us directly at ${COMPANY.emailDisplay}.`,
       );
     } finally {
       setSending(false);

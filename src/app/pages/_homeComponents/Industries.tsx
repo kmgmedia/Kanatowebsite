@@ -2,63 +2,29 @@ import { industries } from "./data";
 
 export function Industries() {
   return (
-    <section className="py-20" style={{ backgroundColor: "#fff" }}>
-      <div className="max-w-7xl mx-auto px-4 lg:px-6">
-        <div className="text-center mb-14">
-          <p
-            className="uppercase tracking-widest text-xs mb-3"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              color: "#2FA84F",
-              fontWeight: 600,
-            }}
-          >
+    <section className="kanato-section-white py-20">
+      <div className="mx-auto max-w-7xl px-4 lg:px-6">
+        <div className="mb-14 text-center">
+          <p className="kanato-eyebrow mb-3 text-xs uppercase tracking-widest">
             Sectors
           </p>
-          <h2
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              fontWeight: 800,
-              fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
-              color: "#3B52A5",
-            }}
-          >
-            Industries We Serve
-          </h2>
-          <div
-            className="w-16 h-1 mx-auto mt-4 rounded"
-            style={{ backgroundColor: "#2FA84F" }}
-          />
+          <h2 className="kanato-section-title">Industries We Serve</h2>
+          <div className="kanato-divider-primary mx-auto mt-4 h-1 w-16 rounded" />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {industries.map((ind, i) => (
             <div
               key={i}
-              className="flex items-start gap-4 p-6 rounded-lg border transition-all hover:border-[var(--color-accent)] hover:shadow-md"
-              style={{ borderColor: "#E5E7EB" }}
+              className="flex items-start gap-4 rounded-lg border border-gray-200 p-6 transition-all hover:border-[var(--color-accent)] hover:shadow-md"
             >
-              <div
-                className="w-11 h-11 rounded flex items-center justify-center shrink-0"
-                style={{ backgroundColor: "rgba(47,168,79,0.1)" }}
-              >
-                <ind.icon size={20} style={{ color: "#2FA84F" }} />
+              <div className="kanato-icon-tile-primary flex h-11 w-11 shrink-0 items-center justify-center rounded">
+                <ind.icon size={20} className="kanato-icon-primary" />
               </div>
               <div>
-                <h3
-                  className="mb-1"
-                  style={{
-                    fontFamily: "Montserrat, sans-serif",
-                    fontWeight: 700,
-                    color: "#3B52A5",
-                    fontSize: "0.9rem",
-                  }}
-                >
+                <h3 className="kanato-secondary-text mb-1 text-[0.9rem] font-bold">
                   {ind.label}
                 </h3>
-                <p
-                  className="text-xs leading-relaxed"
-                  style={{ fontFamily: "Inter, sans-serif", color: "#6B7280" }}
-                >
+                <p className="kanato-muted-text text-xs leading-relaxed">
                   {ind.desc}
                 </p>
               </div>
@@ -69,5 +35,3 @@ export function Industries() {
     </section>
   );
 }
-
-

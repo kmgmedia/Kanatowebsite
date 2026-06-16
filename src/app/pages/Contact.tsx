@@ -91,7 +91,7 @@ export function Contact() {
       const message = err instanceof Error ? err.message : "Unknown error";
       console.error("[Contact form]", message);
       setError(
-        `Failed to send your message. Please try again or reach us directly at ${COMPANY.email}.`,
+        `Failed to send your message. Please try again or reach us directly at ${COMPANY.emailDisplay}.`,
       );
     } finally {
       setSending(false);

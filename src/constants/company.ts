@@ -7,15 +7,24 @@ export const COMPANY = {
   description:
     "Kanato Engineering Resources Nigeria Limited is a wholly indigenous engineering company incorporated in 1991, specialising in Electrical, Mechanical, and Civil engineering services across Nigeria.",
   phone: {
-    primary: "08096691601",
-    secondary: "08033201366",
+    primary: "08033201366",
+    secondary: "08023945686",
+    tertiary: "08055799998",
+    numbers: ["08033201366", "08023945686", "08055799998"],
+    display: "08033201366 / 08023945686 / 08055799998",
     intl: {
-      primary: "+234-809-669-1601",
-      secondary: "+234-803-320-1366",
+      primary: "+234-803-320-1366",
+      secondary: "+234-802-394-5686",
+      tertiary: "+234-805-579-9998",
+      numbers: ["+234-803-320-1366", "+234-802-394-5686", "+234-805-579-9998"],
     },
-    whatsapp: "2348096691601",
+    whatsapp: "2348033201366",
   },
   email: "kanato4reel@yahoo.com",
+  secondaryEmail: "kanato4reel@gmail.com",
+  emails: ["kanato4reel@yahoo.com", "kanato4reel@gmail.com"],
+  emailDisplay: "kanato4reel@yahoo.com / kanato4reel@gmail.com",
+  emailMailto: "kanato4reel@yahoo.com,kanato4reel@gmail.com",
   addresses: {
     headOffice: {
       street: "10, Oyewole Close, Baruwa B/Stop",
