@@ -37,7 +37,7 @@ export const projectCards = [
     title: "2 Wing Duplex - Maitama Hill",
     client: "Clockwise Dev. Ltd.",
     category: "Civil",
-    year: "1991",
+    year: "2011",
     location: "Abuja",
     image: imageLibrary.housing,
   },
@@ -45,7 +45,7 @@ export const projectCards = [
     title: "Street Light Electrification - G.R.A.",
     client: "Ikeja Local Government",
     category: "Electrical",
-    year: "1992",
+    year: "2012",
     location: "Ikeja, Lagos",
     image: imageLibrary.electrical,
     imageUrl:
@@ -55,7 +55,7 @@ export const projectCards = [
     title: "Seven Flat Complex - Anthony Village",
     client: "Clockwise Dev. Ltd.",
     category: "Civil",
-    year: "1992",
+    year: "2012",
     location: "Anthony, Lagos",
     image: imageLibrary.civil,
   },
@@ -63,7 +63,7 @@ export const projectCards = [
     title: "Niger Insurance Building",
     client: "Solem Nig. Ltd.",
     category: "Civil",
-    year: "1993",
+    year: "2013",
     location: "Anthony B/Stop, Lagos",
     image: imageLibrary.office,
     imageUrl:
@@ -73,7 +73,7 @@ export const projectCards = [
     title: "2 Wing Duplex - Opebi",
     client: "Tuag Nig. Ltd.",
     category: "Civil",
-    year: "1993",
+    year: "2013",
     location: "Opebi, Lagos",
     image: imageLibrary.housing,
     imageUrl:
@@ -83,7 +83,7 @@ export const projectCards = [
     title: "12 Flat Complex - Allen",
     client: "Engineer Agbakwu",
     category: "Civil",
-    year: "1994",
+    year: "2014",
     location: "Allen, Lagos",
     image: imageLibrary.construction,
     imageUrl:
@@ -93,7 +93,7 @@ export const projectCards = [
     title: "2 Wing Duplex with Penthouse",
     client: "Lawyer Tunde Seriki",
     category: "Civil",
-    year: "1997",
+    year: "2015",
     location: "Victoria Island, Lagos",
     image: imageLibrary.housing,
     imageUrl:
@@ -103,7 +103,7 @@ export const projectCards = [
     title: "4 Flat Complex - Ifako",
     client: "Clockwise Dev. Ltd.",
     category: "Civil",
-    year: "1999",
+    year: "2016",
     location: "Ifako, Lagos",
     image: imageLibrary.civil,
     imageUrl:
@@ -113,7 +113,7 @@ export const projectCards = [
     title: "Duplex Mansion - Agenebode",
     client: "Francis Alimekhena",
     category: "Civil",
-    year: "1999",
+    year: "2016",
     location: "Ijiode, Edo State",
     image: imageLibrary.housing,
     imageUrl:
@@ -123,7 +123,7 @@ export const projectCards = [
     title: "Union Bank Head Office Renovation",
     client: "Tuag Nig. Ltd.",
     category: "Civil & Electrical",
-    year: "2001",
+    year: "2017",
     location: "40 Marina, Lagos",
     image: imageLibrary.office,
     imageUrl:
@@ -133,7 +133,7 @@ export const projectCards = [
     title: "Office Complex - Agbaani",
     client: "Union Bank (Tuag Nig. Ltd.)",
     category: "Civil & Electrical",
-    year: "2002",
+    year: "2018",
     location: "Agbaani, Enugu",
     image: imageLibrary.office,
     imageUrl:
@@ -143,7 +143,7 @@ export const projectCards = [
     title: "Union Bank Sub Station",
     client: "Tuag Nig. Ltd.",
     category: "Power",
-    year: "2002",
+    year: "2018",
     location: "Agbaani, Enugu",
     image: imageLibrary.power,
     imageUrl:
@@ -153,7 +153,7 @@ export const projectCards = [
     title: "Rural Electrification - Ijedodo",
     client: "A.E.E. Nig. Ltd.",
     category: "Electrical",
-    year: "2003",
+    year: "2019",
     location: "Ijedodo, Lagos",
     image: imageLibrary.electrical,
     imageUrl:
@@ -163,7 +163,7 @@ export const projectCards = [
     title: "MTN Sub Station - Seme Border",
     client: "Afolabi Nig. Ltd.",
     category: "Telecom",
-    year: "2003",
+    year: "2019",
     location: "Seme Border, Lagos",
     image: imageLibrary.telecom,
     imageUrl:
@@ -173,7 +173,7 @@ export const projectCards = [
     title: "Duplex with Pent House",
     client: "Primal Concept Ltd.",
     category: "Civil",
-    year: "2003",
+    year: "2019",
     location: "Abeokuta, Ogun State",
     image: imageLibrary.housing,
     imageUrl: imageLibrary.housing,
@@ -182,7 +182,7 @@ export const projectCards = [
     title: "2 Office Complex - Alfa Beach",
     client: "Sister Galardis",
     category: "Civil",
-    year: "2004",
+    year: "2020",
     location: "Ajah, Lagos",
     image: imageLibrary.office,
     imageUrl:
@@ -192,7 +192,7 @@ export const projectCards = [
     title: "Rural Electrification - Golden Park",
     client: "A.E.E Nig. Ltd.",
     category: "Electrical",
-    year: "2004",
+    year: "2020",
     location: "Ajah, Lagos",
     image: imageLibrary.electrical,
     imageUrl:
@@ -202,7 +202,7 @@ export const projectCards = [
     title: "Nestle Foods Office Complex Renovation",
     client: "Nestle Foods, Ilupeju",
     category: "Civil & Electrical",
-    year: "2005",
+    year: "2021",
     location: "Ilupeju, Lagos",
     image: imageLibrary.maintenance,
     imageUrl:
@@ -212,7 +212,7 @@ export const projectCards = [
     title: "MTN & V.Mobile Telecom Site",
     client: "Wauline & Clockwise Ltd.",
     category: "Telecom",
-    year: "2005",
+    year: "2021",
     location: "Tilka, Lucasasa",
     image: imageLibrary.telecom,
     imageUrl:
@@ -222,7 +222,7 @@ export const projectCards = [
     title: "Transformer Installation - Power to Site",
     client: "Mass Telecom Innovation Ltd.",
     category: "Power",
-    year: "2006",
+    year: "2022",
     location: "Lagos State",
     image: imageLibrary.power,
     imageUrl:
@@ -232,7 +232,7 @@ export const projectCards = [
     title: "Transformer Installation - Power to Site",
     client: "Trusnet Limited",
     category: "Power",
-    year: "2006",
+    year: "2022",
     location: "Lagos State",
     image: imageLibrary.electrical,
     imageUrl:
@@ -242,7 +242,7 @@ export const projectCards = [
     title: "Ecobank Office Complex",
     client: "Pentorise Ltd.",
     category: "Civil & Electrical",
-    year: "2011",
+    year: "2024",
     location: "Oyinjolayemi, Lagos",
     image: imageLibrary.office,
     imageUrl:
@@ -252,7 +252,7 @@ export const projectCards = [
     title: "8 Wing Duplex - Arepo",
     client: "Pentorise Ltd.",
     category: "Civil",
-    year: "2011",
+    year: "2024",
     location: "Arepo, Ogun State",
     image: imageLibrary.housing,
     imageUrl:
@@ -262,7 +262,7 @@ export const projectCards = [
     title: "MTN/Etisalat Telecom Site Build",
     client: "Servtek",
     category: "Telecom",
-    year: "2010",
+    year: "2023",
     location: "Lagos State",
     image: imageLibrary.telecom,
     imageUrl:
@@ -272,7 +272,7 @@ export const projectCards = [
     title: "Sub Station Renovation - Maryland",
     client: "M.T.I. Ltd.",
     category: "Power",
-    year: "2011",
+    year: "2024",
     location: "Maryland, Lagos",
     image: imageLibrary.power,
     imageUrl:
@@ -282,7 +282,7 @@ export const projectCards = [
     title: "Govt. Office - Xentorage Office",
     client: "Siktob Ltd.",
     category: "Civil & Electrical",
-    year: "2012",
+    year: "2025",
     location: "Ogun State",
     image: imageLibrary.office,
     imageUrl:
@@ -292,7 +292,7 @@ export const projectCards = [
     title: "Street Light Electrification - Jimoh Ajao",
     client: "Siktob Nig. Ltd./LASG",
     category: "Electrical",
-    year: "2013",
+    year: "2026",
     location: "Jimoh Ajao, Lagos",
     image: imageLibrary.electrical,
     imageUrl:
@@ -302,7 +302,7 @@ export const projectCards = [
     title: "Transformer Relocation - Jimoh Ajao",
     client: "Siktob Nig. Ltd./LASG",
     category: "Power",
-    year: "2013",
+    year: "2026",
     location: "Jimoh Ajao, Lagos",
     image: imageLibrary.power,
     imageUrl:

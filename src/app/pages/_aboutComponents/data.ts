@@ -48,33 +48,33 @@ export const milestones = [
     event: "Founded as Kanato Engineering Resources Nig. Ltd. - RC 666713",
   },
   {
-    year: "1992",
+    year: "2012",
     event:
       "Completed electrification of G.R.A. Ikeja street lights for Ikeja Local Govt.",
   },
   {
-    year: "2001",
+    year: "2017",
     event: "Handled Union Bank Head Office renovation at 40 Marina, Lagos",
   },
   {
-    year: "2003",
+    year: "2019",
     event: "Rural electrification project at Ijedodo with AEE Nigeria Ltd.",
   },
   {
-    year: "2005",
+    year: "2021",
     event: "Extension of Nestle Foods Nigeria office complex, Ilupeju",
   },
   {
-    year: "2006",
+    year: "2022",
     event:
       "Multiple transformer installations for Mass Telecom Innovation Ltd.",
   },
   {
-    year: "2010",
+    year: "2023",
     event: "MTN/Etisalat telecom site build projects across Lagos",
   },
   {
-    year: "2013",
+    year: "2026",
     event: "Street light electrification for LASG - Jimoh Ajao and environs",
   },
 ] as const;

@@ -88,7 +88,7 @@ export const featuredProjects = [
     client: "Union Bank Plc (via Tuag Nig. Ltd.)",
     category: "Civil & Electrical Works",
     location: "40 Marina, Lagos",
-    year: "2001",
+    year: "2017",
     image:
       "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778808057/Kanato_Website/Home%20Page/Ultra-realistic_corporate_building_renovation_project_202605150220_pp6mad.jpg",
   },
@@ -97,16 +97,16 @@ export const featuredProjects = [
     client: "Nestle Foods Nigeria, Ilupeju",
     category: "Extension & Renovation",
     location: "Ilupeju, Lagos",
-    year: "2005",
+    year: "2021",
     image:
       "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778808158/Kanato_Website/Home%20Page/Ultra-realistic_industrial_renovation_and_facility_202605150222_gllypm.jpg",
   },
   {
     title: "MTN/Etisalat Telecom Site Build",
-    client: "Servtek / ATB Technology",
+    client: "Servtek / Clockwise,Wadmus",
     category: "Telecom Infrastructure",
     location: "Lagos State",
-    year: "2010",
+    year: "2023",
     image:
       "https://res.cloudinary.com/ds2h3iwys/image/upload/v1778808373/Kanato_Website/Home%20Page/Ultra-realistic_Nigerian_telecom_infrastructure_construction_202605150225_jxwfoq.jpg",
   },
@@ -115,7 +115,7 @@ export const featuredProjects = [
     client: "A.E.E. Nig. Ltd.",
     category: "Electrical Works",
     location: "Ijedodo, Lagos",
-    year: "2003",
+    year: "2019",
     image:
       "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779057503/Kanato_Website/Home%20Page/Rural_Electrification___Ijedodo_Prompt__202605172338_vdpoqq.jpg",
   },
@@ -124,7 +124,7 @@ export const featuredProjects = [
     client: "Siktob Nig. Ltd./LASG",
     category: "Civil & Electrical Works",
     location: "Jimoh Ajao, Lagos",
-    year: "2013",
+    year: "2026",
     image:
       "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779058508/Kanato_Website/Home%20Page/Photorealistic__recommended___Photorealistic_engineering_photo_202605172352_zhouhr.jpg",
   },
@@ -133,9 +133,25 @@ export const featuredProjects = [
     client: "Pentorise Ltd.",
     category: "Civil Engineering",
     location: "Arepo, Ogun State",
-    year: "2011",
+    year: "2024",
     image:
       "https://res.cloudinary.com/ds2h3iwys/image/upload/v1779056817/Kanato_Website/Home%20Page/8_Wing_Duplex___Arepo_Prompt__202605172326_zykmlk.jpg",
+  },
+  {
+    title: "Oceanic Bank Headquarter",
+    client: "Pentorise Ltd.",
+    category: "Commercial Building Works",
+    location: "Oyin Jolayemi, Lagos",
+    year: "2024",
+    image: "/images/oceanic-bank-signboard.png",
+  },
+  {
+    title: "2 Wings Duplex - Cowrie Creek Estate",
+    client: "Atb Homes Ltd.",
+    category: "Residential Building Works",
+    location: "Lekki, Lagos",
+    year: "2025",
+    image: "/images/cowrie-creek-duplex.png",
   },
 ];
 
@@ -185,7 +201,7 @@ export const clients = [
   "Trusnet Limited",
   "Clockwise Dev. Ltd.",
   "Pentorise Ltd.",
-  "ATB Technology",
+  "Clockwise,Wadmus",
   "Cennic Ltd.",
   "Siktob Nig. Ltd.",
   "Tuag Nig. Ltd.",
